@@ -366,6 +366,7 @@
     position: relative;
     padding-top:2rem;
 }
+.join-form__fieldset.mt0 {margin-top:0;}
 
 .personal-group {
     display: grid;
