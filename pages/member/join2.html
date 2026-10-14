@@ -14,7 +14,7 @@
     <script src="../../js/header-fixed.js" defer></script>
     <script src="../../js/mobile-menu.js" defer></script>
     <script src="../../js/sort-menu.js" defer></script>
-    <script src="../../js/join-terms.js" defer></script>
+    <script src="../../js/join-personal.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -62,13 +62,13 @@
     </nav>
     <main id="main" class="subpage">
         <div class="subpage__inner">
-            <header class="subpage__heading subpage__heading--with-tabs">
+            <header class="subpage__heading">
                 <h2 class="subpage__title">햇빛시민 가입</h2>
                 <p class="subpage__lead">시민에너지협동조합 조합원이 되어 함께 참여하세요.</p>
             </header>
             
             <div class="join-form">
-                <form>
+                <form class="join-personal" aria-label="개인정보 입력">
                     <section class="section-terms" aria-label="가입 절차">
                         <ol class="flow-group" aria-label="햇빛시민 가입 단계">
                             <li class="flow-group__step flow-group__step--completed">
@@ -92,7 +92,62 @@
                             </li>
                         </ol>
                     </section>
-                    
+                    <div class="join-form__fieldset">
+                        <div class="personal-group" role="group" aria-label="회원 개인정보">
+                            <div class="personal-form">
+                                <label class="personal-form__label" for="member-id">아이디 <span class="personal-form__required" aria-hidden="true">*</span></label>
+                                <div class="personal-form__field">
+                                    <input class="personal-form__input" type="text" id="member-id" name="username" placeholder="영문·숫자 6~20자" autocomplete="username" minlength="6" maxlength="20" pattern="[A-Za-z0-9]{6,20}" aria-describedby="member-id-message" required>
+                                    <button class="personal-form__button" type="button" id="member-id-check" aria-controls="member-id-message">중복확인</button>
+                                </div>
+                                <p class="personal-form__message" id="member-id-message" role="status" aria-live="polite" aria-atomic="true" hidden></p>
+                            </div>
+                            <div class="personal-form">
+                                <label class="personal-form__label" for="member-password">비밀번호 <span class="personal-form__required" aria-hidden="true">*</span></label>
+                                <div class="personal-form__field">
+                                    <input class="personal-form__input personal-form__input--password" type="password" id="member-password" name="password" placeholder="●●●●●●" autocomplete="new-password" required>
+                                </div>
+                            </div>
+                            <div class="personal-form">
+                                <label class="personal-form__label" for="member-name">이름 <span class="personal-form__required" aria-hidden="true">*</span></label>
+                                <div class="personal-form__field">
+                                    <input class="personal-form__input" type="text" id="member-name" name="name" autocomplete="name" required>
+                                </div>
+                            </div>
+                            <div class="personal-form">
+                                <label class="personal-form__label" for="member-phone">휴대전화 <span class="personal-form__required" aria-hidden="true">*</span></label>
+                                <div class="personal-form__field">
+                                    <input class="personal-form__input" type="tel" id="member-phone" name="phone" placeholder="010-000-0000" autocomplete="tel" aria-describedby="member-phone-message" required>
+                                    <button class="personal-form__button" type="button" id="member-phone-check" aria-controls="member-phone-message">본인확인</button>
+                                </div>
+                                <p class="personal-form__message" id="member-phone-message" role="status" aria-live="polite" aria-atomic="true" hidden></p>
+                            </div>
+                            <div class="personal-form">
+                                <label class="personal-form__label" for="member-address">주소 <span class="personal-form__required" aria-hidden="true">*</span></label>
+                                <div class="personal-form__field">
+                                    <input class="personal-form__input" type="text" id="member-address" name="address" placeholder="주소를 검색하세요" autocomplete="street-address" aria-describedby="member-address-message" required>
+                                    <button class="personal-form__button" type="button" id="member-address-search" aria-controls="member-address-message">주소검색</button>
+                                </div>
+                                <p class="personal-form__message" id="member-address-message" role="status" aria-live="polite" aria-atomic="true" hidden></p>
+                            </div>
+                            <div class="personal-form">
+                                <label class="personal-form__label" for="member-referrer">추천인(선택)</label>
+                                <div class="personal-form__field">
+                                    <input class="personal-form__input" type="text" id="member-referrer" name="referrer" placeholder="추천 조합원 아이디" autocomplete="off">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="join-actions">
+                            <a class="join-actions__previous" href="./join.html">
+                                <img src="../../images/icon/join-previous-arrow.svg" alt="" width="7" height="12">
+                                <span>이전</span>
+                            </a>
+                            <button class="join-actions__next" type="button">
+                                <span>다음(출자신청)</span>
+                                <img src="../../images/icon/join-next-arrow.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>

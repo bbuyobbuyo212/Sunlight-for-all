@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="모두의 햇빛 햇빛발전소 찾기">
+    <title>햇빛시민가입 | 모두의 햇빛</title>
+    <link rel="stylesheet" href="../../fonts/pretendard.css">
+    <link rel="stylesheet" href="../../css/default.css">
+    <link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/join.css">
+    <script src="../../js/footer-dropdown.js" defer></script>
+    <script src="../../js/header-fixed.js" defer></script>
+    <script src="../../js/mobile-menu.js" defer></script>
+    <script src="../../js/sort-menu.js" defer></script>
+    <script src="../../js/join-personal.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <h1><a class="header__logo" href="../../index.html" aria-label="모두의 햇빛 홈"><img src="../../images/common/logo.svg" alt="모두의 햇빛"></a></h1>
+            <nav class="gnb" aria-label="주요 메뉴">
+                <ul class="gnb__list">
+                    <li><a class="gnb__link" href="../../pages/platform/platform.html">플랫폼 소개</a></li>
+                    <li><a class="gnb__link" href="../../pages/guide/guide.html">이용안내</a></li>
+                    <li><a class="gnb__link" href="../../pages/search/search.html">햇빛발전소 찾기</a></li>
+                    <li><a class="gnb__link" href="../../pages/guide/guide.html">조합·설립 가이드</a></li>
+                    <li><a class="gnb__link" href="../../pages/notice/notice.html">알림마당</a></li>
+                </ul>
+            </nav>
+            <div class="header__auth">
+                <a class="header__login" href="../../pages/member/login.html">로그인</a>
+                <a class="header__join" href="../../pages/member/join.html">햇빛시민 가입</a>
+            </div>
+            <div class="header__menu-box">
+                <button type="button" class="header__menu-btn" aria-label="메뉴 열기" aria-controls="mobile-gnb" aria-expanded="false">
+                    <span class="header__menu-btn__line"></span>
+                    <span class="header__menu-btn__line"></span>
+                    <span class="header__menu-btn__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <nav id="mobile-gnb" class="mobile-gnb" aria-label="모바일 메뉴" aria-hidden="true" inert>
+        <div class="mobile-gnb__head">
+            <button type="button" aria-label="메뉴 닫기"></button>
+        </div>
+        <div class="mobile-gnb__body">
+            <div class="mobile-gnb__utile">
+                <a href="../../pages/member/login.html" class="header__utile__link">로그인</a>
+                <a href="../../pages/member/join.html" class="header__utile__link">햇빛시민 가입</a>
+            </div>
+            <ul class="mobile-gnb__list">
+                <li class="mobile-gnb__1dpet"><a href="../../pages/platform/platform.html" class="mobile-gnb__1dpet__link">플랫폼 소개</a></li>
+                <li class="mobile-gnb__1dpet"><a href="../../pages/guide/guide.html" class="mobile-gnb__1dpet__link">이용안내</a></li>
+                <li class="mobile-gnb__1dpet"><a href="../../pages/search/search.html" class="mobile-gnb__1dpet__link" aria-current="page">햇빛발전소 찾기</a></li>
+                <li class="mobile-gnb__1dpet"><a href="../../pages/guide/guide.html" class="mobile-gnb__1dpet__link">조합·설립 가이드</a></li>
+                <li class="mobile-gnb__1dpet"><a href="../../pages/notice/notice.html" class="mobile-gnb__1dpet__link">알림마당</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main id="main" class="subpage">
+        <div class="subpage__inner">
+            <header class="subpage__heading">
+                <h2 class="subpage__title">햇빛시민 가입</h2>
+                <p class="subpage__lead">시민에너지협동조합 조합원이 되어 함께 참여하세요.</p>
+            </header>
+
+            <div class="join-form">
+                <form class="join-personal join-application" aria-label="조합원 가입 및 출자 신청">
+                    <section class="section-terms" aria-label="가입 절차">
+                        <ol class="flow-group" aria-label="햇빛시민 가입 단계">
+                            <li class="flow-group__step flow-group__step--completed">
+                                <img class="flow-group__check" src="../../images/icon/join-step-completed.svg" alt="1단계 완료" width="47" height="47">
+                                <span class="flow-group__label">약관 동의</span>
+                                <img class="flow-group__arrow" src="../../images/icon/join-step-arrow.svg" alt="" width="20" height="14">
+                            </li>
+                            <li class="flow-group__step flow-group__step--completed" aria-current="step">
+                                <img class="flow-group__check" src="../../images/icon/join-step-completed.svg" alt="2단계 완료" width="47" height="47">
+                                <span class="flow-group__label">개인정보</span>
+                                <img class="flow-group__arrow" src="../../images/icon/join-step-arrow.svg" alt="" width="20" height="14">
+                            </li>
+                            <li class="flow-group__step flow-group__step--completed">
+                                <img class="flow-group__check" src="../../images/icon/join-step-completed.svg" alt="3단계 완료" width="47" height="47">
+                                <span class="flow-group__label">조합원 가입·출자</span>
+                                <img class="flow-group__arrow" src="../../images/icon/join-step-arrow-active.svg" alt="" width="20" height="14">
+                            </li>
+                            <li class="flow-group__step flow-group__step--active">
+                                <span class="flow-group__number">4</span>
+                                <span class="flow-group__label">신청 확인</span>
+                            </li>
+                        </ol>
+                    </section>
+                    <div class="join-form__fieldset">
+
+                        <div class="join-result">
+                            <div class="join-result__intro" role="status">
+                                <img class="join-result__icon" src="../../images/icon/join-result-completed.svg" alt="" width="44" height="42">
+                                <div class="join-result__message">
+                                    <h3>신규 조합원 가입 · 출자 신청이 접수되었습니다</h3>
+                                    <p>입금 확인 후 관리자 승인이 완료되면 조합원으로 전환됩니다.</p>
+                                </div>
+                            </div>
+                            <dl class="join-result__details">
+                                <div class="join-result__item">
+                                    <dt>접수번호</dt>
+                                    <dd>MHB-2026-004821</dd>
+                                </div>
+                                <div class="join-result__item">
+                                    <dt>가입 조합</dt>
+                                    <dd>달구벌시민햇빛발전협동조합</dd>
+                                </div>
+                                <div class="join-result__item">
+                                    <dt>조합원 가입</dt>
+                                    <dd>정관 동의·주민번호 등록 완료</dd>
+                                </div>
+                                <div class="join-result__item">
+                                    <dt>입금 계좌</dt>
+                                    <dd>대구은행 000-00-000000</dd>
+                                </div>
+                                <div class="join-result__item">
+                                    <dt>입금 금액</dt>
+                                    <dd>1,000,000원</dd>
+                                </div>
+                                <div class="join-result__item">
+                                    <dt>승인 상태</dt>
+                                    <dd>입금 대기 → 승인 대기</dd>
+                                </div>
+                            </dl>
+                        </div>
+
+                        <div class="join-actions">
+                            <a class="join-actions__previous" href="../../index.html">
+                                <span>홈으로</span>
+                            </a>
+                            <button class="join-actions__next" type="submit">
+                                <span>승인 상태 확인</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </main>
+    <footer id="footer" class="footer">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <nav class="footer__legal" aria-label="법적 안내">
+                    <a href="../../pages/privacy/privacy.html">개인정보처리방침</a>
+                    <span>·</span>
+                    <a href="../../pages/privacy/terms.html">이용약관</a>
+                    <span>·</span>
+                    <a href="../../pages/privacy/email.html">이메일무단수집거부</a>
+                </nav>
+                <div class="footer__partners" aria-label="협력 기관">
+                    <div class="footer__logos">
+                        <img src="../../images/common/daegu_logo.svg" alt="대구그린파워" width="98" height="22">
+                        <img src="../../images/common/motie_logo.svg" alt="산업통상부" width="89" height="23">
+                        <img src="../../images/common/kea_logo.svg" alt="한국에너지공단" width="105" height="20">
+                        <img src="../../images/common/kosea_logo.svg" alt="한국사회적기업진흥원" width="145" height="28">
+                    </div>
+                    <details class="footer__dropdown">
+                        <summary aria-controls="footer-coop-links" aria-expanded="false">협동조합 바로가기</summary>
+                        <ul id="footer-coop-links">
+                            <li><a href="#footer">달구벌시민햇빛발전협동조합</a></li>
+                            <li><a href="#footer">청라시민에너지협동조합</a></li>
+                            <li><a href="#footer">녹색소비자에너지협동조합</a></li>
+                            <li><a href="#footer">자전거시민협동조합</a></li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+            <div class="footer__info">
+                <ul class="footer__info-list">
+                    <li><strong>주소</strong> 대구광역시 남구 대명동 000</li>
+                    <li><strong>대표전화</strong> 053-000-0000</li>
+                    <li><strong>팩스</strong> 053-000-0001</li>
+                    <li><strong>이메일</strong> help@moduhaetbit.kr</li>
+                    <li><strong>사업자등록번호</strong> 000-00-00000</li>
+                </ul>
+                <p>© 2026 모두의 햇빛 플랫폼&nbsp; All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
