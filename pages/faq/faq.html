@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="모두의 햇빛 햇빛발전소 찾기">
+    <title>자주 묻는 질문_FAQ | 모두의 햇빛</title>
+    <link rel="stylesheet" href="../../fonts/pretendard.css">
+    <link rel="stylesheet" href="../../css/default.css">
+    <link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/board.css">
+    <script src="../../js/footer-dropdown.js" defer></script>
+    <script src="../../js/header-fixed.js" defer></script>
+    <script src="../../js/mobile-menu.js" defer></script>
+    <script src="../../js/faq.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <h1><a class="header__logo" href="../../index.html" aria-label="모두의 햇빛 홈"><img src="../../images/common/logo.svg" alt="모두의 햇빛"></a></h1>
+            <nav class="gnb" aria-label="주요 메뉴">
+                <ul class="gnb__list">
+                    <li><a class="gnb__link" href="../../pages/platform/platform.html">플랫폼 소개</a></li>
+                    <li><a class="gnb__link gnb__link--active" href="../../pages/guide/guide.html" aria-current="page">이용안내</a></li>
+                    <li><a class="gnb__link" href="../../pages/search/search.html">햇빛발전소 찾기</a></li>
+                    <li><a class="gnb__link" href="../../pages/guide/guide.html">조합·설립 가이드</a></li>
+                    <li><a class="gnb__link" href="../../pages/notice/notice.html">알림마당</a></li>
+                </ul>
+            </nav>
+            <div class="header__auth"><a class="header__login" href="../../pages/member/login.html">로그인</a><a class="header__join" href="../../pages/member/join.html">햇빛시민 가입</a></div>
+            <div class="header__menu-box"><button type="button" class="header__menu-btn" aria-label="메뉴 열기" aria-controls="mobile-gnb" aria-expanded="false"><span class="header__menu-btn__line"></span><span class="header__menu-btn__line"></span><span class="header__menu-btn__line"></span></button></div>
+        </div>
+    </header>
+    <nav id="mobile-gnb" class="mobile-gnb" aria-label="모바일 메뉴" aria-hidden="true" inert>
+        <div class="mobile-gnb__head"><button type="button" aria-label="메뉴 닫기"></button></div>
+        <div class="mobile-gnb__body">
+            <div class="mobile-gnb__utile">
+                <a href="../../pages/member/login.html" class="header__utile__link">로그인</a>
+                <a href="../../pages/member/join.html" class="header__utile__link">햇빛시민 가입</a></div>
+            <ul class="mobile-gnb__list">
+                <li class="mobile-gnb__1dpet">
+                    <a href="../../pages/platform/platform.html" class="mobile-gnb__1dpet__link">플랫폼 소개</a>
+                </li>
+                <li class="mobile-gnb__1dpet">
+                    <a href="../../pages/guide/guide.html" class="mobile-gnb__1dpet__link" aria-current="page">이용안내</a>
+                </li>
+                <li class="mobile-gnb__1dpet">
+                    <a href="../../pages/search/search.html" class="mobile-gnb__1dpet__link">햇빛발전소 찾기</a>
+                </li>
+                <li class="mobile-gnb__1dpet">
+                    <a href="../../pages/guide/guide.html" class="mobile-gnb__1dpet__link">조합·설립 가이드</a>
+                </li>
+                <li class="mobile-gnb__1dpet">
+                    <a href="../../pages/notice/notice.html" class="mobile-gnb__1dpet__link">알림마당</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main id="main" class="subpage">
+        <div class="subpage__inner">
+            <header class="subpage__heading subpage__heading--faq">
+                <h2 class="subpage__title">자주 묻는 질문_FAQ</h2>
+                <p class="subpage__lead">가입·출자·배당·펀드·설립·운영 관련 자주 묻는 질문</p>
+            </header>
+            <div class="tab-group" role="group" aria-label="자주 묻는 질문 분류">
+                <ul class="tab-group__list">
+                    <li><button class="tab-group__button" type="button" aria-pressed="true">전체</button></li>
+                    <li><button class="tab-group__button" type="button" aria-pressed="false">가입</button></li>
+                    <li><button class="tab-group__button" type="button" aria-pressed="false">출자 · 증자</button></li>
+                    <li><button class="tab-group__button" type="button" aria-pressed="false">배당</button></li>
+                    <li><button class="tab-group__button" type="button" aria-pressed="false">펀드</button></li>
+                    <li><button class="tab-group__button" type="button" aria-pressed="false">발전소</button></li>
+                </ul>
+            </div>
+
+            <section class="search-group" aria-label="자주 묻는 질문 검색">
+                <form class="search-group__form" role="search">
+                    <label class="screen_hide" for="faq-keyword">궁금한 내용 검색</label>
+                    <input class="search-group__input" id="faq-keyword" name="keyword" type="search" placeholder="궁금한 내용을 검색하세요">
+                    <button class="search-group__button" type="submit" aria-label="검색">
+                        <img src="../../images/common/icon-search.svg" alt="">
+                    </button>
+                </form>
+            </section>
+            <section class="search-faq" aria-label="자주 묻는 질문">
+                <ul class="search-faq__list">
+                    <li class="search-faq__item is-expanded" data-category="출자 · 증자">
+                        <h3 class="search-faq__question">
+                            <button class="search-faq__trigger" type="button" aria-expanded="true" aria-controls="faq-answer-1">
+                                <span>Q. 출자금은 얼마부터 참여할 수 있나요?</span>
+                                <span class="search-faq__icon" aria-hidden="true"></span>
+                            </button>
+                        </h3>
+                        <div class="search-faq__answer" id="faq-answer-1">
+                            <p>1구좌 20만원부터 참여할 수 있으며, 1인 한도 내에서 여러 구좌를 신청할 수 있습니다. 자세한 한도는 조합 설정에 따릅니다.</p>
+                        </div>
+                    </li>
+                    <li class="search-faq__item" data-category="배당">
+                        <h3 class="search-faq__question">
+                            <button class="search-faq__trigger" type="button" aria-expanded="false" aria-controls="faq-answer-2">
+                                <span>Q. 배당은 언제, 어떻게 지급되나요?</span>
+                                <span class="search-faq__icon" aria-hidden="true"></span>
+                            </button>
+                        </h3>
+                        <div class="search-faq__answer" id="faq-answer-2" hidden>
+                            <p>배당 일정과 지급 방법은 조합의 총회 의결 및 운영 기준에 따라 결정됩니다.</p>
+                        </div>
+                    </li>
+                    <li class="search-faq__item" data-category="출자 · 증자">
+                        <h3 class="search-faq__question">
+                            <button class="search-faq__trigger" type="button" aria-expanded="false" aria-controls="faq-answer-3">
+                                <span>Q. 증자(출자 늘리기)는 어떻게 하나요?</span>
+                                <span class="search-faq__icon" aria-hidden="true"></span>
+                            </button>
+                        </h3>
+                        <div class="search-faq__answer" id="faq-answer-3" hidden>
+                            <p>조합원 계정에서 출자 신청을 진행할 수 있으며, 자세한 절차는 해당 조합의 안내를 확인해 주세요.</p>
+                        </div>
+                    </li>
+                    <li class="search-faq__item" data-category="펀드">
+                        <h3 class="search-faq__question">
+                            <button class="search-faq__trigger" type="button" aria-expanded="false" aria-controls="faq-answer-4">
+                                <span>Q. 펀드와 출자는 무엇이 다른가요?</span>
+                                <span class="search-faq__icon" aria-hidden="true"></span>
+                            </button>
+                        </h3>
+                        <div class="search-faq__answer" id="faq-answer-4" hidden>
+                            <p>출자와 펀드는 참여 방식과 적용되는 약정이 다르므로 각 상품의 안내 내용을 확인해 주세요.</p>
+                        </div>
+                    </li>
+                    <li class="search-faq__item" data-category="가입">
+                        <h3 class="search-faq__question">
+                            <button class="search-faq__trigger" type="button" aria-expanded="false" aria-controls="faq-answer-5">
+                                <span>Q. 조합원 탈퇴 시 출자금 반환은?</span>
+                                <span class="search-faq__icon" aria-hidden="true"></span>
+                            </button>
+                        </h3>
+                        <div class="search-faq__answer" id="faq-answer-5" hidden>
+                            <p>탈퇴 신청과 출자금 반환 절차는 조합 정관 및 운영 기준에 따라 진행됩니다.</p>
+                        </div>
+                    </li>
+                    <li class="search-faq__item" data-category="배당">
+                        <h3 class="search-faq__question">
+                            <button class="search-faq__trigger" type="button" aria-expanded="false" aria-controls="faq-answer-6">
+                                <span>Q. 배당은 언제, 어떻게 지급되나요?</span>
+                                <span class="search-faq__icon" aria-hidden="true"></span>
+                            </button>
+                        </h3>
+                        <div class="search-faq__answer" id="faq-answer-6" hidden>
+                            <p>배당 일정과 지급 방법은 조합의 총회 의결 및 운영 기준에 따라 결정됩니다.</p>
+                        </div>
+                    </li>
+                </ul>
+                <p class="search-faq__empty" role="status" hidden>검색 결과가 없습니다.</p>
+                <div class="search-faq__more-group">
+                    <button class="search-faq__more" type="button" aria-label="더보기 5 / 10">
+                        <span>더보기</span>
+                        <span class="search-faq__more-current">5</span>
+                        <span class="search-faq__more-total">/ 10</span>
+                    </button>
+                </div>
+            </section>
+
+        </div>  
+    </main>
+    <footer id="footer" class="footer">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <nav class="footer__legal" aria-label="법적 안내">
+                    <a href="../../pages/privacy/privacy.html">개인정보처리방침</a>
+                    <span>·</span>
+                    <a href="../../pages/privacy/terms.html">이용약관</a>
+                    <span>·</span>
+                    <a href="../../pages/privacy/email.html">이메일무단수집거부</a>
+                </nav>
+                <div class="footer__partners" aria-label="협력 기관">
+                    <div class="footer__logos">
+                        <img src="../../images/common/daegu_logo.svg" alt="대구그린파워" width="98" height="22">
+                        <img src="../../images/common/motie_logo.svg" alt="산업통상부" width="89" height="23">
+                        <img src="../../images/common/kea_logo.svg" alt="한국에너지공단" width="105" height="20">
+                        <img src="../../images/common/kosea_logo.svg" alt="한국사회적기업진흥원" width="145" height="28">
+                    </div>
+                    <details class="footer__dropdown">
+                        <summary aria-controls="footer-coop-links" aria-expanded="false">협동조합 바로가기</summary>
+                        <ul id="footer-coop-links">
+                            <li><a href="#footer">달구벌시민햇빛발전협동조합</a></li>
+                            <li><a href="#footer">청라시민에너지협동조합</a></li>
+                            <li><a href="#footer">녹색소비자에너지협동조합</a></li>
+                            <li><a href="#footer">자전거시민협동조합</a></li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+            <div class="footer__info">
+                <ul class="footer__info-list">
+                    <li><strong>주소</strong> 대구광역시 남구 대명동 000</li>
+                    <li><strong>대표전화</strong> 053-000-0000</li>
+                    <li><strong>팩스</strong> 053-000-0001</li>
+                    <li><strong>이메일</strong> help@moduhaetbit.kr</li>
+                    <li><strong>사업자등록번호</strong> 000-00-00000</li>
+                </ul>
+                <p>© 2026 모두의 햇빛 플랫폼&nbsp; All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

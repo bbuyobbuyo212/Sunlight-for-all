@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="모두의 햇빛 햇빛발전소 찾기">
+    <title>햇빛시민가입 | 모두의 햇빛</title>
+    <link rel="stylesheet" href="../../fonts/pretendard.css">
+    <link rel="stylesheet" href="../../css/default.css">
+    <link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/join.css">
+    <script src="../../js/footer-dropdown.js" defer></script>
+    <script src="../../js/header-fixed.js" defer></script>
+    <script src="../../js/mobile-menu.js" defer></script>
+    <script src="../../js/sort-menu.js" defer></script>
+    <script src="../../js/join-terms.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <h1><a class="header__logo" href="../../index.html" aria-label="모두의 햇빛 홈"><img src="../../images/common/logo.svg" alt="모두의 햇빛"></a></h1>
+            <nav class="gnb" aria-label="주요 메뉴">
+                <ul class="gnb__list">
+                    <li><a class="gnb__link" href="../../pages/platform/platform.html">플랫폼 소개</a></li>
+                    <li><a class="gnb__link" href="../../pages/guide/guide.html">이용안내</a></li>
+                    <li><a class="gnb__link" href="../../pages/search/search.html">햇빛발전소 찾기</a></li>
+                    <li><a class="gnb__link" href="../../pages/guide/guide.html">조합·설립 가이드</a></li>
+                    <li><a class="gnb__link" href="../../pages/notice/notice.html">알림마당</a></li>
+                </ul>
+            </nav>
+            <div class="header__auth">
+                <a class="header__login" href="../../pages/member/login.html">로그인</a>
+                <a class="header__join" href="../../pages/member/join.html">햇빛시민 가입</a>
+            </div>
+            <div class="header__menu-box">
+                <button type="button" class="header__menu-btn" aria-label="메뉴 열기" aria-controls="mobile-gnb" aria-expanded="false">
+                    <span class="header__menu-btn__line"></span>
+                    <span class="header__menu-btn__line"></span>
+                    <span class="header__menu-btn__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <nav id="mobile-gnb" class="mobile-gnb" aria-label="모바일 메뉴" aria-hidden="true" inert>
+        <div class="mobile-gnb__head">
+            <button type="button" aria-label="메뉴 닫기"></button>
+        </div>
+        <div class="mobile-gnb__body">
+            <div class="mobile-gnb__utile">
+                <a href="../../pages/member/login.html" class="header__utile__link">로그인</a>
+                <a href="../../pages/member/join.html" class="header__utile__link">햇빛시민 가입</a>
+            </div>
+            <ul class="mobile-gnb__list">
+                <li class="mobile-gnb__1dpet"><a href="../../pages/platform/platform.html" class="mobile-gnb__1dpet__link">플랫폼 소개</a></li>
+                <li class="mobile-gnb__1dpet"><a href="../../pages/guide/guide.html" class="mobile-gnb__1dpet__link">이용안내</a></li>
+                <li class="mobile-gnb__1dpet"><a href="../../pages/search/search.html" class="mobile-gnb__1dpet__link" aria-current="page">햇빛발전소 찾기</a></li>
+                <li class="mobile-gnb__1dpet"><a href="../../pages/guide/guide.html" class="mobile-gnb__1dpet__link">조합·설립 가이드</a></li>
+                <li class="mobile-gnb__1dpet"><a href="../../pages/notice/notice.html" class="mobile-gnb__1dpet__link">알림마당</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main id="main" class="subpage">
+        <div class="subpage__inner">
+            <header class="subpage__heading subpage__heading--with-tabs">
+                <h2 class="subpage__title">햇빛시민 가입</h2>
+                <p class="subpage__lead">시민에너지협동조합 조합원이 되어 함께 참여하세요.</p>
+            </header>
+            
+            <div class="join-form">
+                <form>
+                    <section class="section-terms" aria-label="가입 절차">
+                        <ol class="flow-group" aria-label="햇빛시민 가입 단계">
+                            <li class="flow-group__step flow-group__step--active" aria-current="step">
+                                <span class="flow-group__number">1</span>
+                                <span class="flow-group__label">약관 동의</span>
+                                <img class="flow-group__arrow" src="../../images/icon/join-step-arrow-active.svg" alt="" width="20" height="14">
+                            </li>
+                            <li class="flow-group__step">
+                                <span class="flow-group__number">2</span>
+                                <span class="flow-group__label">개인정보</span>
+                                <img class="flow-group__arrow" src="../../images/icon/join-step-arrow.svg" alt="" width="20" height="14">
+                            </li>
+                            <li class="flow-group__step">
+                                <span class="flow-group__number">3</span>
+                                <span class="flow-group__label">조합원 가입·출자</span>
+                                <img class="flow-group__arrow" src="../../images/icon/join-step-arrow.svg" alt="" width="20" height="14">
+                            </li>
+                            <li class="flow-group__step">
+                                <span class="flow-group__number">4</span>
+                                <span class="flow-group__label">신청 확인</span>
+                            </li>
+                        </ol>
+                    </section>
+                    <div class="terms-wrap">
+                        <section class="terms-group" aria-labelledby="service-terms-title">
+                            <div class="terms-group__header">
+                                <label class="terms-group__agreement">
+                                    <input class="terms-group__checkbox" type="checkbox" name="service-terms" required>
+                                    <span class="terms-group__title" id="service-terms-title">이용약관 동의</span>
+                                    <span class="terms-group__badge">필수</span>
+                                </label>
+                                <button class="terms-group__toggle" type="button" aria-expanded="false" aria-controls="service-terms-content">
+                                    <span>전문 보기</span>
+                                    <img src="../../images/icon/terms-expand-arrow.svg" alt="" width="7" height="12">
+                                </button>
+                            </div>
+                            <div class="terms-group__content" id="service-terms-content" role="region" aria-label="이용약관 전문" tabindex="0" hidden>                            
+                                <p class="terms-group__article-title">제1조 목적 (예시)</p>
+                                <p>이 예시는 모두의 햇빛 플랫폼의 회원가입 화면에서 약관을 확인하는 방법을 안내하기 위한 내용입니다. 실제 서비스의 권리와 의무를 정하는 약관으로 사용할 수 없습니다.</p>
+                                <p class="terms-group__article-title">제2조 서비스 안내 (예시)</p>
+                                <p>플랫폼은 시민에너지협동조합과 햇빛발전소에 관한 정보를 소개하는 화면으로 구성됩니다. 제공 서비스의 범위와 이용 조건은 정식 약관에서 확인할 수 있도록 안내해야 합니다.</p>
+                                <p class="terms-group__article-title">제3조 회원가입 (예시)</p>
+                                <p>이용자는 가입 과정에서 안내되는 정보를 확인하고 필요한 항목을 입력합니다. 가입 자격, 신청 절차 및 승인 조건은 운영 정책에 따라 정식 약관에 구체적으로 명시해야 합니다.</p>
+                                <p class="terms-group__article-title">제4조 개인정보 안내 (예시)</p>
+                                <p>개인정보의 수집 항목, 이용 목적, 보유 기간과 동의 거부에 관한 안내는 실제 서비스에 맞게 작성한 개인정보 처리방침 및 별도의 동의 내용을 통해 확인할 수 있어야 합니다.</p>
+                                <p class="terms-group__article-title">제5조 조합원 가입과 출자 (예시)</p>
+                                <p>플랫폼 회원가입과 협동조합 조합원 가입은 구분하여 안내해야 합니다. 조합원 가입 및 출자에 관한 조건은 해당 협동조합의 정관과 별도 안내 자료에서 확인하도록 구성해야 합니다.</p>
+                                <p class="terms-group__article-title">제6조 이용자 안내 (예시)</p>
+                                <p>서비스 이용 시 필요한 주의 사항과 문의 방법은 이용자가 쉽게 확인할 수 있도록 제공합니다. 실제 운영 방식과 관련 법령을 검토하여 정식 안내 내용을 작성해야 합니다.</p>
+                                <p class="terms-group__article-title">제7조 서비스 변경 안내 (예시)</p>
+                                <p>서비스 변경이나 일시 중단에 관한 안내 방식과 절차는 정식 약관에 기재해야 합니다. 이 예시에는 실제 운영 정책이나 공지 기간이 정해져 있지 않습니다.</p>
+                                <p class="terms-group__article-title">제8조 문의 및 적용 시점 (예시)</p>
+                                <p>정식 약관에는 운영 주체의 문의처와 약관 적용 시점을 명시해야 합니다. 현재 본문은 디자인 및 펼침·스크롤 동작을 확인하기 위한 임시 내용입니다.</p>
+                            </div>
+                        </section>
+                        <section class="terms-group" aria-labelledby="privacy-terms-title">
+                            <div class="terms-group__header">
+                                <label class="terms-group__agreement">
+                                    <input class="terms-group__checkbox" type="checkbox" name="service-terms" required>
+                                    <span class="terms-group__title" id="privacy-terms-title">개인정보 수집·이용 동의</span>
+                                    <span class="terms-group__badge">필수</span>
+                                </label>
+                                <button class="terms-group__toggle" type="button" aria-expanded="false" aria-controls="privacy-terms-content">
+                                    <span>전문 보기</span>
+                                    <img src="../../images/icon/terms-expand-arrow.svg" alt="" width="7" height="12">
+                                </button>
+                            </div>
+                            <div class="terms-group__content" id="privacy-terms-content" role="region" aria-label="개인정보 수집·이용 동의 전문" tabindex="0" hidden>                            
+                                <p class="terms-group__article-title">제1조 목적 (예시)</p>
+                                <p>이 예시는 모두의 햇빛 플랫폼의 회원가입 화면에서 약관을 확인하는 방법을 안내하기 위한 내용입니다. 실제 서비스의 권리와 의무를 정하는 약관으로 사용할 수 없습니다.</p>
+                                <p class="terms-group__article-title">제2조 서비스 안내 (예시)</p>
+                                <p>플랫폼은 시민에너지협동조합과 햇빛발전소에 관한 정보를 소개하는 화면으로 구성됩니다. 제공 서비스의 범위와 이용 조건은 정식 약관에서 확인할 수 있도록 안내해야 합니다.</p>
+                                <p class="terms-group__article-title">제3조 회원가입 (예시)</p>
+                                <p>이용자는 가입 과정에서 안내되는 정보를 확인하고 필요한 항목을 입력합니다. 가입 자격, 신청 절차 및 승인 조건은 운영 정책에 따라 정식 약관에 구체적으로 명시해야 합니다.</p>
+                                <p class="terms-group__article-title">제4조 개인정보 안내 (예시)</p>
+                                <p>개인정보의 수집 항목, 이용 목적, 보유 기간과 동의 거부에 관한 안내는 실제 서비스에 맞게 작성한 개인정보 처리방침 및 별도의 동의 내용을 통해 확인할 수 있어야 합니다.</p>
+                                <p class="terms-group__article-title">제5조 조합원 가입과 출자 (예시)</p>
+                                <p>플랫폼 회원가입과 협동조합 조합원 가입은 구분하여 안내해야 합니다. 조합원 가입 및 출자에 관한 조건은 해당 협동조합의 정관과 별도 안내 자료에서 확인하도록 구성해야 합니다.</p>
+                                <p class="terms-group__article-title">제6조 이용자 안내 (예시)</p>
+                                <p>서비스 이용 시 필요한 주의 사항과 문의 방법은 이용자가 쉽게 확인할 수 있도록 제공합니다. 실제 운영 방식과 관련 법령을 검토하여 정식 안내 내용을 작성해야 합니다.</p>
+                                <p class="terms-group__article-title">제7조 서비스 변경 안내 (예시)</p>
+                                <p>서비스 변경이나 일시 중단에 관한 안내 방식과 절차는 정식 약관에 기재해야 합니다. 이 예시에는 실제 운영 정책이나 공지 기간이 정해져 있지 않습니다.</p>
+                                <p class="terms-group__article-title">제8조 문의 및 적용 시점 (예시)</p>
+                                <p>정식 약관에는 운영 주체의 문의처와 약관 적용 시점을 명시해야 합니다. 현재 본문은 디자인 및 펼침·스크롤 동작을 확인하기 위한 임시 내용입니다.</p>
+                            </div>
+                        </section>
+                        <section class="terms-group" aria-labelledby="third-party-terms-title">
+                            <div class="terms-group__header">
+                                <label class="terms-group__agreement">
+                                    <input class="terms-group__checkbox" type="checkbox" name="service-terms" required>
+                                    <span class="terms-group__title" id="third-party-terms-title">제3자 제공 동의</span>
+                                    <span class="terms-group__badge">필수</span>
+                                </label>
+                                <button class="terms-group__toggle" type="button" aria-expanded="false" aria-controls="third-party-terms-content">
+                                    <span>전문 보기</span>
+                                    <img src="../../images/icon/terms-expand-arrow.svg" alt="" width="7" height="12">
+                                </button>
+                            </div>
+                            <div class="terms-group__content" id="third-party-terms-content" role="region" aria-label="제3자 제공 동의 전문" tabindex="0" hidden>                            
+                                <p class="terms-group__article-title">제1조 목적 (예시)</p>
+                                <p>이 예시는 모두의 햇빛 플랫폼의 회원가입 화면에서 약관을 확인하는 방법을 안내하기 위한 내용입니다. 실제 서비스의 권리와 의무를 정하는 약관으로 사용할 수 없습니다.</p>
+                                <p class="terms-group__article-title">제2조 서비스 안내 (예시)</p>
+                                <p>플랫폼은 시민에너지협동조합과 햇빛발전소에 관한 정보를 소개하는 화면으로 구성됩니다. 제공 서비스의 범위와 이용 조건은 정식 약관에서 확인할 수 있도록 안내해야 합니다.</p>
+                                <p class="terms-group__article-title">제3조 회원가입 (예시)</p>
+                                <p>이용자는 가입 과정에서 안내되는 정보를 확인하고 필요한 항목을 입력합니다. 가입 자격, 신청 절차 및 승인 조건은 운영 정책에 따라 정식 약관에 구체적으로 명시해야 합니다.</p>
+                                <p class="terms-group__article-title">제4조 개인정보 안내 (예시)</p>
+                                <p>개인정보의 수집 항목, 이용 목적, 보유 기간과 동의 거부에 관한 안내는 실제 서비스에 맞게 작성한 개인정보 처리방침 및 별도의 동의 내용을 통해 확인할 수 있어야 합니다.</p>
+                                <p class="terms-group__article-title">제5조 조합원 가입과 출자 (예시)</p>
+                                <p>플랫폼 회원가입과 협동조합 조합원 가입은 구분하여 안내해야 합니다. 조합원 가입 및 출자에 관한 조건은 해당 협동조합의 정관과 별도 안내 자료에서 확인하도록 구성해야 합니다.</p>
+                                <p class="terms-group__article-title">제6조 이용자 안내 (예시)</p>
+                                <p>서비스 이용 시 필요한 주의 사항과 문의 방법은 이용자가 쉽게 확인할 수 있도록 제공합니다. 실제 운영 방식과 관련 법령을 검토하여 정식 안내 내용을 작성해야 합니다.</p>
+                                <p class="terms-group__article-title">제7조 서비스 변경 안내 (예시)</p>
+                                <p>서비스 변경이나 일시 중단에 관한 안내 방식과 절차는 정식 약관에 기재해야 합니다. 이 예시에는 실제 운영 정책이나 공지 기간이 정해져 있지 않습니다.</p>
+                                <p class="terms-group__article-title">제8조 문의 및 적용 시점 (예시)</p>
+                                <p>정식 약관에는 운영 주체의 문의처와 약관 적용 시점을 명시해야 합니다. 현재 본문은 디자인 및 펼침·스크롤 동작을 확인하기 위한 임시 내용입니다.</p>
+                            </div>
+                        </section>
+                        <section class="terms-group" aria-labelledby="marketing-terms-title">
+                            <div class="terms-group__header">
+                                <label class="terms-group__agreement">
+                                    <input class="terms-group__checkbox" type="checkbox" name="marketing-terms">
+                                    <span class="terms-group__title" id="marketing-terms-title">마케팅 정보 수신 </span>
+                                    <span class="terms-group__badge terms-group__badge--optional">선택</span>
+                                </label>
+                                <button class="terms-group__toggle" type="button" aria-expanded="false" aria-controls="marketing-terms-content">
+                                    <span>전문 보기</span>
+                                    <img src="../../images/icon/terms-expand-arrow.svg" alt="" width="7" height="12">
+                                </button>
+                            </div>
+                            <div class="terms-group__content" id="marketing-terms-content" role="region" aria-label="마케팅 정보 수신  전문" tabindex="0" hidden>                            
+                                <p class="terms-group__article-title">제1조 목적 (예시)</p>
+                                <p>이 예시는 모두의 햇빛 플랫폼의 회원가입 화면에서 약관을 확인하는 방법을 안내하기 위한 내용입니다. 실제 서비스의 권리와 의무를 정하는 약관으로 사용할 수 없습니다.</p>
+                                <p class="terms-group__article-title">제2조 서비스 안내 (예시)</p>
+                                <p>플랫폼은 시민에너지협동조합과 햇빛발전소에 관한 정보를 소개하는 화면으로 구성됩니다. 제공 서비스의 범위와 이용 조건은 정식 약관에서 확인할 수 있도록 안내해야 합니다.</p>
+                                <p class="terms-group__article-title">제3조 회원가입 (예시)</p>
+                                <p>이용자는 가입 과정에서 안내되는 정보를 확인하고 필요한 항목을 입력합니다. 가입 자격, 신청 절차 및 승인 조건은 운영 정책에 따라 정식 약관에 구체적으로 명시해야 합니다.</p>
+                                <p class="terms-group__article-title">제4조 개인정보 안내 (예시)</p>
+                                <p>개인정보의 수집 항목, 이용 목적, 보유 기간과 동의 거부에 관한 안내는 실제 서비스에 맞게 작성한 개인정보 처리방침 및 별도의 동의 내용을 통해 확인할 수 있어야 합니다.</p>
+                                <p class="terms-group__article-title">제5조 조합원 가입과 출자 (예시)</p>
+                                <p>플랫폼 회원가입과 협동조합 조합원 가입은 구분하여 안내해야 합니다. 조합원 가입 및 출자에 관한 조건은 해당 협동조합의 정관과 별도 안내 자료에서 확인하도록 구성해야 합니다.</p>
+                                <p class="terms-group__article-title">제6조 이용자 안내 (예시)</p>
+                                <p>서비스 이용 시 필요한 주의 사항과 문의 방법은 이용자가 쉽게 확인할 수 있도록 제공합니다. 실제 운영 방식과 관련 법령을 검토하여 정식 안내 내용을 작성해야 합니다.</p>
+                                <p class="terms-group__article-title">제7조 서비스 변경 안내 (예시)</p>
+                                <p>서비스 변경이나 일시 중단에 관한 안내 방식과 절차는 정식 약관에 기재해야 합니다. 이 예시에는 실제 운영 정책이나 공지 기간이 정해져 있지 않습니다.</p>
+                                <p class="terms-group__article-title">제8조 문의 및 적용 시점 (예시)</p>
+                                <p>정식 약관에는 운영 주체의 문의처와 약관 적용 시점을 명시해야 합니다. 현재 본문은 디자인 및 펼침·스크롤 동작을 확인하기 위한 임시 내용입니다.</p>
+                            </div>
+                        </section>
+
+                        <div class="terms-group terms-group--notice">
+                            <img class="terms-group__notice-icon" src="../../images/icon/terms-consent-notice.svg" alt="">
+                            <p class="terms-group__notice-text">정관 동의는 다음 단계(조합원 가입·출자)에서 진행합니다. 동의 시각이 기록되며, <span class="terms-group__notice-highlight">내 정보 관리 › 동의 내역</span>에서 확인할 수 있습니다.</p>
+                        </div>
+
+                        <div class="join-actions">
+                            <button class="join-actions__next" type="button">
+                                <span>다음(개인정보)</span>
+                                <img src="../../images/icon/join-next-arrow.svg" alt="">
+                            </button>
+                        </div>
+                        
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </main>
+    <footer id="footer" class="footer">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <nav class="footer__legal" aria-label="법적 안내">
+                    <a href="../../pages/privacy/privacy.html">개인정보처리방침</a>
+                    <span>·</span>
+                    <a href="../../pages/privacy/terms.html">이용약관</a>
+                    <span>·</span>
+                    <a href="../../pages/privacy/email.html">이메일무단수집거부</a>
+                </nav>
+                <div class="footer__partners" aria-label="협력 기관">
+                    <div class="footer__logos">
+                        <img src="../../images/common/daegu_logo.svg" alt="대구그린파워" width="98" height="22">
+                        <img src="../../images/common/motie_logo.svg" alt="산업통상부" width="89" height="23">
+                        <img src="../../images/common/kea_logo.svg" alt="한국에너지공단" width="105" height="20">
+                        <img src="../../images/common/kosea_logo.svg" alt="한국사회적기업진흥원" width="145" height="28">
+                    </div>
+                    <details class="footer__dropdown">
+                        <summary aria-controls="footer-coop-links" aria-expanded="false">협동조합 바로가기</summary>
+                        <ul id="footer-coop-links">
+                            <li><a href="#footer">달구벌시민햇빛발전협동조합</a></li>
+                            <li><a href="#footer">청라시민에너지협동조합</a></li>
+                            <li><a href="#footer">녹색소비자에너지협동조합</a></li>
+                            <li><a href="#footer">자전거시민협동조합</a></li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+            <div class="footer__info">
+                <ul class="footer__info-list">
+                    <li><strong>주소</strong> 대구광역시 남구 대명동 000</li>
+                    <li><strong>대표전화</strong> 053-000-0000</li>
+                    <li><strong>팩스</strong> 053-000-0001</li>
+                    <li><strong>이메일</strong> help@moduhaetbit.kr</li>
+                    <li><strong>사업자등록번호</strong> 000-00-00000</li>
+                </ul>
+                <p>© 2026 모두의 햇빛 플랫폼&nbsp; All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

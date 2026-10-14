@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="모두의 햇빛 공지사항과 알림을 확인하세요.">
+    <title>알림마당 | 모두의 햇빛</title>
+    <link rel="stylesheet" href="../../fonts/pretendard.css">
+    <link rel="stylesheet" href="../../css/default.css">
+    <link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/board.css">
+    <script src="../../js/footer-dropdown.js" defer></script>
+    <script src="../../js/header-fixed.js" defer></script>
+    <script src="../../js/mobile-menu.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <h1><a class="header__logo" href="../../index.html" aria-label="모두의 햇빛 홈"><img src="../../images/common/logo.svg" alt="모두의 햇빛"></a></h1>
+            <nav class="gnb" aria-label="주요 메뉴">
+                <ul class="gnb__list">
+                    <li><a class="gnb__link" href="../../pages/platform/platform.html">플랫폼 소개</a></li>
+                    <li><a class="gnb__link" href="../../pages/guide/guide.html">이용안내</a></li>
+                    <li><a class="gnb__link" href="../../pages/search/search.html">햇빛발전소 찾기</a></li>
+                    <li><a class="gnb__link" href="../../pages/guide/guide.html">조합·설립 가이드</a></li>
+                    <li><a class="gnb__link gnb__link--active" href="../../pages/notice/notice.html" aria-current="page">알림마당</a></li>
+                </ul>
+            </nav>
+            <div class="header__auth"><a class="header__login" href="../../pages/member/login.html">로그인</a><a class="header__join" href="../../pages/member/join.html">햇빛시민 가입</a></div>
+            <div class="header__menu-box"><button type="button" class="header__menu-btn" aria-label="메뉴 열기" aria-controls="mobile-gnb" aria-expanded="false"><span class="header__menu-btn__line"></span><span class="header__menu-btn__line"></span><span class="header__menu-btn__line"></span></button></div>
+        </div>
+    </header>
+    <nav id="mobile-gnb" class="mobile-gnb" aria-label="모바일 메뉴" aria-hidden="true" inert>
+        <div class="mobile-gnb__head"><button type="button" aria-label="메뉴 닫기"></button></div>
+        <div class="mobile-gnb__body">
+            <div class="mobile-gnb__utile"><a href="../../pages/member/login.html" class="header__utile__link">로그인</a><a href="../../pages/member/join.html" class="header__utile__link">햇빛시민 가입</a></div>
+            <ul class="mobile-gnb__list"><li class="mobile-gnb__1dpet"><a href="../../pages/platform/platform.html" class="mobile-gnb__1dpet__link">플랫폼 소개</a></li><li class="mobile-gnb__1dpet"><a href="../../pages/guide/guide.html" class="mobile-gnb__1dpet__link">이용안내</a></li><li class="mobile-gnb__1dpet"><a href="../../pages/search/search.html" class="mobile-gnb__1dpet__link">햇빛발전소 찾기</a></li><li class="mobile-gnb__1dpet"><a href="../../pages/guide/guide.html" class="mobile-gnb__1dpet__link">조합·설립 가이드</a></li><li class="mobile-gnb__1dpet"><a href="../../pages/notice/notice.html" class="mobile-gnb__1dpet__link" aria-current="page">알림마당</a></li></ul>
+        </div>
+    </nav>
+    <main id="main" class="subpage">
+        <div class="subpage__inner">
+            <header class="subpage__heading">
+                <h2 class="subpage__title">알림마당</h2>
+                <p class="subpage__lead">모두의 햇빛의 새 소식과 공지사항을 안내합니다.</p>
+            </header>
+            <section class="subpage__section" aria-label="공지사항 목록">
+                <table class="board">
+                    <thead>
+                        <tr>
+                            <th class="board__number" scope="col">번호</th>
+                            <th class="board__title" scope="col">제목</th>
+                            <th class="board__date" scope="col">등록일</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td class="board__empty" colspan="3">등록된 공지사항이 없습니다.</td></tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+    <footer id="footer" class="footer">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <nav class="footer__legal" aria-label="법적 안내"><a href="../../pages/privacy/privacy.html">개인정보처리방침</a><span>·</span><a href="../../pages/privacy/terms.html">이용약관</a><span>·</span><a href="../../pages/privacy/email.html">이메일무단수집거부</a></nav>
+                <div class="footer__partners" aria-label="협력 기관">
+                    <div class="footer__logos"><img src="../../images/common/daegu_logo.svg" alt="대구그린파워" width="98" height="22"><img src="../../images/common/motie_logo.svg" alt="산업통상부" width="89" height="23"><img src="../../images/common/kea_logo.svg" alt="한국에너지공단" width="105" height="20"><img src="../../images/common/kosea_logo.svg" alt="한국사회적기업진흥원" width="145" height="28"></div>
+                    <details class="footer__dropdown"><summary aria-controls="footer-coop-links" aria-expanded="false">협동조합 바로가기</summary><ul id="footer-coop-links"><li><a href="#footer">달구벌시민햇빛발전협동조합</a></li><li><a href="#footer">청라시민에너지협동조합</a></li><li><a href="#footer">녹색소비자에너지협동조합</a></li><li><a href="#footer">자전거시민협동조합</a></li></ul></details>
+                </div>
+            </div>
+            <div class="footer__info"><ul class="footer__info-list"><li><strong>주소</strong> 대구광역시 남구 대명동 000</li><li><strong>대표전화</strong> 053-000-0000</li><li><strong>팩스</strong> 053-000-0001</li><li><strong>이메일</strong> help@moduhaetbit.kr</li><li><strong>사업자등록번호</strong> 000-00-00000</li></ul><p>© 2026 모두의 햇빛 플랫폼&nbsp; All Rights Reserved</p></div>
+        </div>
+    </footer>
+</body>
+</html>

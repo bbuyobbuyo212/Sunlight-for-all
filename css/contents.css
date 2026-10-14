@@ -1,0 +1,120 @@
+.subpage {
+    padding:8rem 0 6.4rem;
+    background-color: var(--Grayscale-5, #F8F8F8);
+}
+
+.inner {
+    width:100%;
+    max-width:1232px;
+    padding: 0 1.6rem;
+    margin: 0 auto;
+}
+
+.subpage__inner {
+    width: 100%;
+    max-width: 123.2rem;
+    padding: 0 1.6rem;
+    margin: 0 auto;
+}
+
+.subpage__heading {
+    position: relative;
+    margin-bottom: 4.8rem;   
+    text-align:center;
+}
+
+.subpage__heading--with-tabs {
+    padding-bottom: 4.8rem;
+    margin-bottom: 0;
+}
+
+.subpage__heading--with-tabs .subpage__title {
+    line-height: 1.2;
+}
+
+.subpage__heading--with-tabs .subpage__lead {
+    line-height: normal;
+}
+
+.subpage__title {
+    color: var(--Grayscale-90-Text-Title-Body, #1D1D1D);
+    font-size:5rem;
+    font-weight: 700;
+    letter-spacing:-0.1rem;
+}
+.subpage__lead {
+    margin-top:0.8rem;
+    color: var(--Grayscale-60, #717171);    
+    font-size:1.6rem;
+    font-weight: 400;
+    letter-spacing:-0.1rem;
+}
+
+.tab-group {
+    padding-bottom: 6.4rem;
+}
+
+.tab-group__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+}
+
+.tab-group__list > li {
+    flex: 0 0 auto;
+}
+
+.tab-group__button {
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem 1.6rem;
+    min-height: 4.6rem;
+    border: 0;
+    border-radius: 100px;
+    background-color: var(--Grayscale-20, #E4E4E4);
+    color: var(--Grayscale-60, #717171);
+    font-family: inherit;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    line-height: normal;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.tab-group .tab-group__button {
+    border-radius: 100px !important;
+    -webkit-border-radius: 100px !important;
+}
+
+.tab-group__button[aria-pressed="true"] {
+    background-color: var(--Secondary-90, #000B17);
+    color: var(--Primary-0, #FFFFFF);
+}
+
+.tab-group__button:focus-visible {
+    outline: 2px solid var(--point);
+    outline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+    .tab-group {
+        overflow-x: auto;
+        margin: 0 -1.6rem;
+        padding: 0 1.6rem 6.4rem;
+        scrollbar-width: none;
+    }
+
+    .tab-group__list {
+        justify-content: flex-start;
+        width: max-content;
+        min-width: 100%;
+    }
+
+    .tab-group::-webkit-scrollbar {
+        display: none;
+    }
+}

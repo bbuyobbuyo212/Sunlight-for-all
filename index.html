@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="시민이 함께 짓는 햇빛발전소, 모두의 햇빛">
+    <title>모두의 햇빛 플랫폼</title>
+    <link rel="stylesheet" href="fonts/pretendard.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/contents.css">
+    <link rel="stylesheet" href="css/board.css">
+    <link rel="stylesheet" href="css/join.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/footer-dropdown.js" defer></script>
+    <script src="js/header-fixed.js" defer></script>
+    <script src="js/mobile-menu.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <h1>
+                <a class="header__logo" href="#top" aria-label="모두의 햇빛 홈">
+                    <img src="images/common/logo.svg" alt="모두의 햇빛">
+                </a>
+            </h1>
+            <nav class="gnb" aria-label="주요 메뉴">
+                <ul class="gnb__list">
+                    <li><a class="gnb__link" href="pages/platform/platform.html">플랫폼 소개</a></li>
+                    <li><a class="gnb__link" href="pages/guide/guide.html">이용안내</a></li>
+                    <li><a class="gnb__link" href="pages/search/search.html">햇빛발전소 찾기</a></li>
+                    <li><a class="gnb__link" href="pages/guide/guide.html">조합·설립 가이드</a></li>
+                    <li><a class="gnb__link" href="pages/notice/notice.html">알림마당</a></li>
+                </ul>
+            </nav>
+            <div class="header__auth">
+                <a class="header__login" href="pages/member/login.html">로그인</a>
+                <a class="header__join" href="pages/member/join.html">햇빛시민 가입</a>
+            </div>
+            <div class="header__menu-box">
+                <button type="button" class="header__menu-btn" aria-label="메뉴 열기" aria-controls="mobile-gnb" aria-expanded="false">
+                    <span class="header__menu-btn__line"></span>
+                    <span class="header__menu-btn__line"></span>
+                    <span class="header__menu-btn__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 모바일 메뉴 -->
+    <nav id="mobile-gnb" class="mobile-gnb" aria-label="모바일 메뉴" aria-hidden="true" inert>
+        <div class="mobile-gnb__head">
+            <button type="button" aria-label="메뉴 닫기"></button>
+        </div>
+        <div class="mobile-gnb__body">
+            <div class="mobile-gnb__utile">                
+                <a href="pages/member/login.html" class="header__utile__link">로그인</a>
+                <a href="pages/member/join.html" class="header__utile__link">햇빛시민 가입</a>
+            </div>
+            <ul class="mobile-gnb__list">
+                <li class="mobile-gnb__1dpet">
+                    <a href="pages/platform/platform.html" class="mobile-gnb__1dpet__link mobile-gnb__1dpet__link--right-arr">
+                        플랫폼 소개
+                    </a>                            
+                </li>
+                <li class="mobile-gnb__1dpet">
+                    <a href="pages/guide/guide.html" class="mobile-gnb__1dpet__link mobile-gnb__1dpet__link--right-arr">
+                        이용안내
+                    </a>
+                </li>
+                <li class="mobile-gnb__1dpet">
+                    <a href="pages/search/search.html" class="mobile-gnb__1dpet__link mobile-gnb__1dpet__link--right-arr">
+                        햇빛발전소 찾기
+                    </a>
+                </li>
+                <li class="mobile-gnb__1dpet">
+                    <a href="pages/guide/guide.html" class="mobile-gnb__1dpet__link mobile-gnb__1dpet__link--right-arr">
+                        조합 · 설립 가이드  
+                    </a>
+                </li>
+                <li class="mobile-gnb__1dpet">
+                    <a href="pages/notice/notice.html" class="mobile-gnb__1dpet__link mobile-gnb__1dpet__link--right-arr">
+                        알림마당
+                    </a>
+                </li>                                        
+            </ul>
+        </div>
+    </nav>
+    <!-- 모바일 메뉴 끝 -->
+
+    <main id="main">
+        <section class="main-banner" aria-labelledby="banner-title">
+            <div class="main-banner__inner">
+                <div class="main-banner__copy">
+                    <p class="main-banner__eyebrow">대구시민햇빛발전소 · 시민참여형 에너지전환</p>
+                    <h2 id="banner-title" class="main-banner__title">시민이 함께 짓는 햇빛발전소<br>모두의 햇빛</h2>
+                    <p class="main-banner__description">가입·출자·배당, 발전소 설립·운영, 통합관리까지 한 곳에서</p>
+                    <div class="main-banner__actions">
+                        <a class="main-banner__button main-banner__button--primary" href="#platform-menu">햇빛시민 가입</a>
+                        <a class="main-banner__button main-banner__button--secondary" href="#monitoring">발전소 찾기</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-banner__art" aria-hidden="true">
+                <video class="main-banner__video" autoplay muted loop playsinline preload="metadata"><source src="images/main/main_visual.mp4" type="video/mp4"></video>
+            </div>
+        </section>
+
+        <section id="platform" class="platform" aria-labelledby="platform-title">
+            <div class="platform__inner">
+                <h2 id="platform-title" class="platform__title">플랫폼 소개</h2>
+                <nav id="platform-menu" class="platform__nav" aria-label="플랫폼 안내">
+                    <a class="platform__nav-link" href="#platform-cards">모두의 햇빛이란 <span aria-hidden="true"><img src="images/icon/icon_cr_left_arr.svg" alt=""></span></a>
+                    <a class="platform__nav-link" href="#platform-cards">서비스 <span aria-hidden="true"><img src="images/icon/icon_cr_left_arr.svg" alt=""></span></a>
+                    <a class="platform__nav-link" href="#platform-cards">대구시민햇빛발전소 <span aria-hidden="true"><img src="images/icon/icon_cr_left_arr.svg" alt=""></span></a>
+                    <a class="platform__nav-link" href="#platform-cards">협동조합 이야기 <span aria-hidden="true"><img src="images/icon/icon_cr_left_arr.svg" alt=""></span></a>
+                    <a class="platform__nav-link" href="#platform-cards">함께하면 좋은점 <span aria-hidden="true"><img src="images/icon/icon_cr_left_arr.svg" alt=""></span></a>
+                    <a class="platform__nav-link" href="#platform-cards">출자와 배당 안내 <span aria-hidden="true"><img src="images/icon/icon_cr_left_arr.svg" alt=""></span></a>
+                </nav>
+                <div id="platform-cards" class="platform__cards">
+                    <article class="platform-card">
+                        <span class="platform-card__icon platform-card__icon--light" aria-hidden="true">
+                            <img src="images/main/light.svg" alt="">
+                        </span>
+                        <h3 class="platform-card__title">모두의 햇빛이란?</h3>
+                        <p class="platform-card__text">시민의 참여로 친환경 재생에너지를 생산하고, 지속 가능한 지역 사회의 미래를 만들어가는 에너지 전환 통합 플랫폼</p>
+                    </article>
+                    <article class="platform-card">
+                        <span class="platform-card__icon platform-card__icon--coop" aria-hidden="true">
+                            <img src="images/main/coop.svg" alt="">
+                        </span>
+                        <h3 class="platform-card__title">시민에너지협동조합 이야기</h3>
+                        <p class="platform-card__text">투명하고 공정한 조합 운영을 통해 시민이 직접 발전소의 주인이 되어 에너지 자립을 실현해 나갑니다.</p>
+                    </article>
+                    <article class="platform-card">
+                        <span class="platform-card__icon platform-card__icon--graph" aria-hidden="true">
+                            <img src="images/main/graph.svg" alt="">
+                        </span>
+                        <h3 class="platform-card__title">함께하면 좋은 점</h3>
+                        <p class="platform-card__text">시민 출자를 통한 안정적인 배당 수익 창출은 물론, 지역 공동체와 함께 성장하는 상생의 가치를 실현할 수 있습니다.</p>
+                    </article>
+                    <article class="platform-card">
+                        <span class="platform-card__icon platform-card__icon--money" aria-hidden="true">
+                            <img src="images/main/money.svg" alt="">
+                        </span>
+                        <h3 class="platform-card__title">시민출자와 배당안내</h3>
+                        <p class="platform-card__text">햇빛발전소 건립을 위한 시민 출자 신청 방법부터 발전 수익으로 돌아오는 배당 구조까지 한눈에 확인하세요.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="monitoring" class="monitoring" aria-label="햇빛발전소 운영 현황">
+            <div class="monitoring__inner">
+                <article class="monitoring-card monitoring-card--green">
+                    <p class="monitoring-card__value">42 <span>개소</span></p>
+                    <h2 class="monitoring-card__label">운영 발전소</h2>
+                </article>
+                <article class="monitoring-card monitoring-card--blue">
+                    <p class="monitoring-card__value">8.6 <span>MW</span></p>
+                    <h2 class="monitoring-card__label">총 발전용량</h2>
+                </article>
+                <article class="monitoring-card monitoring-card--green">
+                    <p class="monitoring-card__value">12,480 <span>MWh</span></p>
+                    <h2 class="monitoring-card__label">누적 발전량</h2>
+                </article>
+                <article class="monitoring-card monitoring-card--gray">
+                    <p class="monitoring-card__value">5,675 <span>tCO2</span></p>
+                    <h2 class="monitoring-card__label">CO2 저감</h2>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <nav class="footer__legal" aria-label="법적 안내">
+                    <a href="pages/privacy/privacy.html">개인정보처리방침</a>
+                    <span>·</span>
+                    <a href="pages/privacy/terms.html">이용약관</a>
+                    <span>·</span>
+                    <a href="pages/privacy/email.html">이메일무단수집거부</a>
+                </nav>
+                <div class="footer__partners" aria-label="협력 기관">
+                    <div class="footer__logos">
+                        <img src="images/common/daegu_logo.svg" alt="대구그린파워" width="98" height="22">
+                        <img src="images/common/motie_logo.svg" alt="산업통상부" width="89" height="23">
+                        <img src="images/common/kea_logo.svg" alt="한국에너지공단" width="105" height="20">
+                        <img src="images/common/kosea_logo.svg" alt="한국사회적기업진흥원" width="145" height="28">
+                    </div>
+                    <details class="footer__dropdown">
+                        <summary aria-controls="footer-coop-links" aria-expanded="false">협동조합 바로가기</summary>
+                        <ul id="footer-coop-links">
+                            <li><a href="#footer">달구벌시민햇빛발전협동조합</a></li>
+                            <li><a href="#footer">청라시민에너지협동조합</a></li>
+                            <li><a href="#footer">녹색소비자에너지협동조합</a></li>
+                            <li><a href="#footer">자전거시민협동조합</a></li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+            <div class="footer__info">
+                <ul class="footer__info-list">
+                    <li><strong>주소</strong> 대구광역시 남구 대명동 000</li>
+                    <li><strong>대표전화</strong> 053-000-0000</li>
+                    <li><strong>팩스</strong> 053-000-0001</li>
+                    <li><strong>이메일</strong> help@moduhaetbit.kr</li>
+                    <li><strong>사업자등록번호</strong> 000-00-00000</li>
+                </ul>
+                <p>© 2026 모두의 햇빛 플랫폼&nbsp; All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+ 
