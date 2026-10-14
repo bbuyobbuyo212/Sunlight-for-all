@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="모두의 햇빛 햇빛발전소 찾기">
+    <title>햇빛시민가입 | 모두의 햇빛</title>
+    <link rel="stylesheet" href="../../fonts/pretendard.css">
+    <link rel="stylesheet" href="../../css/default.css">
+    <link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/board.css">
+    <link rel="stylesheet" href="../../css/join.css">
+    <script src="../../js/footer-dropdown.js" defer></script>
+    <script src="../../js/header-fixed.js" defer></script>
+    <script src="../../js/mobile-menu.js" defer></script>
+    <script src="../../js/sort-menu.js" defer></script>
+    <script src="../../js/join-personal.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <h1><a class="header__logo" href="../../index.html" aria-label="모두의 햇빛 홈"><img src="../../images/common/logo.svg" alt="모두의 햇빛"></a></h1>
+            <nav class="gnb" aria-label="주요 메뉴">
+                <ul class="gnb__list">
+                    <li><a class="gnb__link" href="../../pages/platform/platform.html">플랫폼 소개</a></li>
+                    <li><a class="gnb__link" href="../../pages/guide/guide.html">이용안내</a></li>
+                    <li><a class="gnb__link" href="../../pages/search/search.html">햇빛발전소 찾기</a></li>
+                    <li><a class="gnb__link" href="../../pages/setup_guide/setup_guide.html">조합·설립 가이드</a></li>
+                    <li><a class="gnb__link" href="../../pages/notice/notice.html">알림마당</a></li>
+                </ul>
+            </nav>
+            <div class="header__auth">
+                <a class="header__login" href="../../pages/member/login.html">로그인</a>
+                <a class="header__join" href="../../pages/member/join.html">햇빛시민 가입</a>
+            </div>
+            <div class="header__menu-box">
+                <button type="button" class="header__menu-btn" aria-label="메뉴 열기" aria-controls="mobile-gnb" aria-expanded="false">
+                    <span class="header__menu-btn__line"></span>
+                    <span class="header__menu-btn__line"></span>
+                    <span class="header__menu-btn__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <nav id="mobile-gnb" class="mobile-gnb" aria-label="모바일 메뉴" aria-hidden="true" inert>
+        <div class="mobile-gnb__head">
+            <button type="button" aria-label="메뉴 닫기"></button>
+        </div>
+        <div class="mobile-gnb__body">
+            <div class="mobile-gnb__utile">
+                <a href="../../pages/member/login.html" class="header__utile__link">로그인</a>
+                <a href="../../pages/member/join.html" class="header__utile__link">햇빛시민 가입</a>
+            </div>
+            <ul class="mobile-gnb__list">
+                <li class="mobile-gnb__1dpet"><a href="../../pages/platform/platform.html" class="mobile-gnb__1dpet__link">플랫폼 소개</a></li>
+                <li class="mobile-gnb__1dpet"><a href="../../pages/guide/guide.html" class="mobile-gnb__1dpet__link">이용안내</a></li>
+                <li class="mobile-gnb__1dpet"><a href="../../pages/search/search.html" class="mobile-gnb__1dpet__link" aria-current="page">햇빛발전소 찾기</a></li>
+                <li class="mobile-gnb__1dpet"><a href="../../pages/setup_guide/setup_guide.html" class="mobile-gnb__1dpet__link">조합·설립 가이드</a></li>
+                <li class="mobile-gnb__1dpet"><a href="../../pages/notice/notice.html" class="mobile-gnb__1dpet__link">알림마당</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main id="main" class="subpage">
+        <div class="subpage__inner">
+            <header class="subpage__heading">
+                <h2 class="subpage__title">알림마당</h2>
+                <p class="subpage__lead">조합소식·총회공고를 열람하는 공개 게시판</p>
+            </header>
+            <div class="tab-group" role="group" aria-label="알림마당 분류">
+                <ul class="tab-group__list">
+                    <li>
+                        <a href="./notice.html" class="tab-group__button" aria-pressed="false">공지사항</a>
+                    </li>
+                    <li>
+                        <a href="./dataroom.html" class="tab-group__button" aria-pressed="false">자료실</a>
+                    </li>
+                    <li>
+                        <a href="./qa.html" class="tab-group__button" aria-pressed="true">묻고 답하기</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="board-search flex-between">
+                <div class="board-search__left">
+                    <a href="./board_write.html" class="board-search__inquiry">
+                        <span>1:1 문의하기</span>
+                        <svg viewBox="0 0 7.4 12" aria-hidden="true">
+                            <path d="M0 10.6 4.6 6 0 1.4 1.4 0l6 6-6 6L0 10.6Z"/>
+                        </svg>
+                    </a>
+                </div>
+                <form class="board-search__form" role="search">
+                    <label class="board-search__label" for="notice-search">게시판 검색</label>
+                    <input class="board-search__input" type="search" id="notice-search" name="query" placeholder="제목 · 내용 검색">
+                    <button class="board-search__button" type="submit" aria-label="검색">
+                        <img src="../../images/common/icon-search.svg" alt="" width="30" height="30">
+                    </button>
+                </form>
+            </div>
+
+            <div class="board">
+                <a href="./qa_detail.html" class="qa-item">
+                    <span class="qa-item__title">출자 배당 지급일이 궁금합니다</span>
+                    <span class="qa-item__badge qa-item__badge--waiting">답변대기</span>
+                    <span class="qa-item__author">홍길동</span>
+                    <span class="qa-item__date">2026-10-08</span>
+                </a>
+                <a href="./qa_detail.html" class="qa-item">
+                    <span class="qa-item__title">증자 신청은 어디서 하나요?</span>
+                    <span class="qa-item__badge qa-item__badge--waiting">답변대기</span>
+                    <span class="qa-item__author">홍길동</span>
+                    <span class="qa-item__date">2026-10-08</span>
+                </a>
+                <a href="./qa_detail.html" class="qa-item">
+                    <span class="qa-item__title">펀드 만기 후 재가입 가능한가요?</span>
+                    <span class="qa-item__badge qa-item__badge--complete">답변완료</span>
+                    <span class="qa-item__author">홍길동</span>
+                    <span class="qa-item__date">2026-10-08</span>
+                </a>
+                <a href="./qa_detail.html" class="qa-item">
+                    <span class="qa-item__title">펀드 최대 금액이 궁금합니다</span>
+                    <span class="qa-item__badge qa-item__badge--complete">답변완료</span>
+                    <span class="qa-item__author">홍길동</span>
+                    <span class="qa-item__date">2026-10-08</span>
+                </a>
+                <a href="./qa_detail.html" class="qa-item">
+                    <span class="qa-item__title">배당은 언제 주나요?</span>
+                    <span class="qa-item__badge qa-item__badge--complete">답변완료</span>
+                    <span class="qa-item__author">홍길동</span>
+                    <span class="qa-item__date">2026-10-08</span>
+                </a>
+            </div>
+
+            <div class="board-btnbox">
+                <button type="button" class="board-btn">
+                    <span>더보기 5</span><span class="board-btn-total"> / 10</span>
+                </button>
+            </div>
+            
+        </div>
+
+    </main>
+    <footer id="footer" class="footer">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <nav class="footer__legal" aria-label="법적 안내">
+                    <a href="../../pages/privacy/privacy.html">개인정보처리방침</a>
+                    <span>·</span>
+                    <a href="../../pages/privacy/terms.html">이용약관</a>
+                    <span>·</span>
+                    <a href="../../pages/privacy/email.html">이메일무단수집거부</a>
+                </nav>
+                <div class="footer__partners" aria-label="협력 기관">
+                    <div class="footer__logos">
+                        <img src="../../images/common/daegu_logo.svg" alt="대구그린파워" width="98" height="22">
+                        <img src="../../images/common/motie_logo.svg" alt="산업통상부" width="89" height="23">
+                        <img src="../../images/common/kea_logo.svg" alt="한국에너지공단" width="105" height="20">
+                        <img src="../../images/common/kosea_logo.svg" alt="한국사회적기업진흥원" width="145" height="28">
+                    </div>
+                    <details class="footer__dropdown">
+                        <summary aria-controls="footer-coop-links" aria-expanded="false">협동조합 바로가기</summary>
+                        <ul id="footer-coop-links">
+                            <li><a href="#footer">달구벌시민햇빛발전협동조합</a></li>
+                            <li><a href="#footer">청라시민에너지협동조합</a></li>
+                            <li><a href="#footer">녹색소비자에너지협동조합</a></li>
+                            <li><a href="#footer">자전거시민협동조합</a></li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+            <div class="footer__info">
+                <ul class="footer__info-list">
+                    <li><strong>주소</strong> 대구광역시 남구 대명동 000</li>
+                    <li><strong>대표전화</strong> 053-000-0000</li>
+                    <li><strong>팩스</strong> 053-000-0001</li>
+                    <li><strong>이메일</strong> help@moduhaetbit.kr</li>
+                    <li><strong>사업자등록번호</strong> 000-00-00000</li>
+                </ul>
+                <p>© 2026 모두의 햇빛 플랫폼&nbsp; All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

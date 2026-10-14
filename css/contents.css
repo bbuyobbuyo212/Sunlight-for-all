@@ -73,7 +73,7 @@
     padding: 1.2rem 1.6rem;
     min-height: 4.6rem;
     border: 0;
-    border-radius: 100px;
+    border-radius: 10rem;
     background-color: var(--Grayscale-20, #E4E4E4);
     color: var(--Grayscale-60, #717171);
     font-family: inherit;
@@ -84,16 +84,25 @@
     white-space: nowrap;
     cursor: pointer;
 }
-
-.tab-group .tab-group__button {
-    border-radius: 100px !important;
-    -webkit-border-radius: 100px !important;
+.tab-group__list.general-join .tab-group__button strong {
+    font-size:2rem;
+    color: var(--Grayscale-70-Text-Detail, #555);   
 }
-
+.tab-group__list.general-join .tab-group__button {
+    padding:1.6rem 3.2rem;
+    color: var(--Grayscale-50-Text-Disabled-W, #8E8E8E);
+}
+.tab-group__list.general-join .tab-group__button svg {margin-right:1.2rem;}
 .tab-group__button[aria-pressed="true"] {
     background-color: var(--Secondary-90, #000B17);
     color: var(--Primary-0, #FFFFFF);
 }
+.tab-group__list.general-join .tab-group__button[aria-pressed="true"] {    
+    background: var(--Grayscale-90-Text-Title-Body, #1D1D1D);
+    color: var(--Grayscale-20, #E4E4E4);
+}
+.tab-group__list.general-join .tab-group__button[aria-pressed="true"] strong {color:#fff;}
+.tab-group__list.general-join .tab-group__button[aria-pressed="true"] svg {fill: #fff;}
 
 .tab-group__button:focus-visible {
     outline: 2px solid var(--point);

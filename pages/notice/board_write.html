@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="모두의 햇빛 햇빛발전소 찾기">
+    <title>햇빛시민가입 | 모두의 햇빛</title>
+    <link rel="stylesheet" href="../../fonts/pretendard.css">
+    <link rel="stylesheet" href="../../css/default.css">
+    <link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/board.css">
+    <link rel="stylesheet" href="../../css/join.css">
+    <script src="../../js/footer-dropdown.js" defer></script>
+    <script src="../../js/header-fixed.js" defer></script>
+    <script src="../../js/mobile-menu.js" defer></script>
+    <script src="../../js/sort-menu.js" defer></script>
+    <script src="../../js/join-personal.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <h1><a class="header__logo" href="../../index.html" aria-label="모두의 햇빛 홈"><img src="../../images/common/logo.svg" alt="모두의 햇빛"></a></h1>
+            <nav class="gnb" aria-label="주요 메뉴">
+                <ul class="gnb__list">
+                    <li><a class="gnb__link" href="../../pages/platform/platform.html">플랫폼 소개</a></li>
+                    <li><a class="gnb__link" href="../../pages/guide/guide.html">이용안내</a></li>
+                    <li><a class="gnb__link" href="../../pages/search/search.html">햇빛발전소 찾기</a></li>
+                    <li><a class="gnb__link" href="../../pages/setup_guide/setup_guide.html">조합·설립 가이드</a></li>
+                    <li><a class="gnb__link" href="../../pages/notice/notice.html">알림마당</a></li>
+                </ul>
+            </nav>
+            <div class="header__auth">
+                <a class="header__login" href="../../pages/member/login.html">로그인</a>
+                <a class="header__join" href="../../pages/member/join.html">햇빛시민 가입</a>
+            </div>
+            <div class="header__menu-box">
+                <button type="button" class="header__menu-btn" aria-label="메뉴 열기" aria-controls="mobile-gnb" aria-expanded="false">
+                    <span class="header__menu-btn__line"></span>
+                    <span class="header__menu-btn__line"></span>
+                    <span class="header__menu-btn__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <nav id="mobile-gnb" class="mobile-gnb" aria-label="모바일 메뉴" aria-hidden="true" inert>
+        <div class="mobile-gnb__head">
+            <button type="button" aria-label="메뉴 닫기"></button>
+        </div>
+        <div class="mobile-gnb__body">
+            <div class="mobile-gnb__utile">
+                <a href="../../pages/member/login.html" class="header__utile__link">로그인</a>
+                <a href="../../pages/member/join.html" class="header__utile__link">햇빛시민 가입</a>
+            </div>
+            <ul class="mobile-gnb__list">
+                <li class="mobile-gnb__1dpet"><a href="../../pages/platform/platform.html" class="mobile-gnb__1dpet__link">플랫폼 소개</a></li>
+                <li class="mobile-gnb__1dpet"><a href="../../pages/guide/guide.html" class="mobile-gnb__1dpet__link">이용안내</a></li>
+                <li class="mobile-gnb__1dpet"><a href="../../pages/search/search.html" class="mobile-gnb__1dpet__link" aria-current="page">햇빛발전소 찾기</a></li>
+                <li class="mobile-gnb__1dpet"><a href="../../pages/setup_guide/setup_guide.html" class="mobile-gnb__1dpet__link">조합·설립 가이드</a></li>
+                <li class="mobile-gnb__1dpet"><a href="../../pages/notice/notice.html" class="mobile-gnb__1dpet__link">알림마당</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main id="main" class="subpage">
+        <div class="subpage__inner">
+            <header class="subpage__heading">
+                <h2 class="subpage__title">알림마당</h2>
+                <p class="subpage__lead">조합소식·총회공고를 열람하는 공개 게시판</p>
+            </header>
+            <div class="tab-group" role="group" aria-label="알림마당 분류">
+                <ul class="tab-group__list">
+                    <li>
+                        <a href="./notice.html" class="tab-group__button" aria-pressed="true">공지사항</a>
+                    </li>
+                    <li>
+                        <a href="./dataroom.html" class="tab-group__button" aria-pressed="false">자료실</a>
+                    </li>
+                    <li>
+                        <a href="./qa.html" class="tab-group__button" aria-pressed="false">묻고 답하기</a>
+                    </li>
+                </ul>
+            </div>
+            
+
+            <div class="board-write">
+                <form>
+                    <div class="board-write__fields">
+                        <div class="board-write__row">
+                            <label class="board-write__label" for="board-title">
+                                제목 <span class="board-write__required" aria-hidden="true">*</span>
+                            </label>
+                            <input
+                                type="text"
+                                id="board-title"
+                                class="board-write__input"
+                                name="title"
+                                placeholder="제목 입력"
+                                required
+                            >
+                        </div>
+
+                        <div class="board-write__row board-write__row--content">
+                            <label class="board-write__label" for="board-content">
+                                내용 <span class="board-write__required" aria-hidden="true">*</span>
+                            </label>
+                            <textarea
+                                id="board-content"
+                                class="board-write__textarea"
+                                name="content"
+                                placeholder="내용 입력"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <div class="board-write__row board-write__row--captcha">
+                            <span class="board-write__label" id="captcha-label">
+                                자동입력 방지 <span class="board-write__required" aria-hidden="true">*</span>
+                            </span>
+                            <div class="board-write__captcha" role="group" aria-labelledby="captcha-label">
+                                <input
+                                    type="text"
+                                    class="board-write__input board-write__input--captcha-code"
+                                    value="29B9i"
+                                    aria-label="자동입력 방지 문자"
+                                    readonly
+                                    tabindex="-1"
+                                >
+                                <input
+                                    type="text"
+                                    class="board-write__input board-write__input--captcha"
+                                    name="captcha"
+                                    placeholder="29B9i"
+                                    aria-label="자동입력 방지 문자 입력"
+                                    required
+                                >
+                                <button type="button" class="board-write__refresh">
+                                    <span>새로고침</span>
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M12 4V1L8 5l4 4V6a6 6 0 0 1 5.3 8.8l1.46 1.46A8 8 0 0 0 12 4Zm0 14a6 6 0 0 1-5.3-8.8L5.24 7.74A8 8 0 0 0 12 20v3l4-4-4-4v3Z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="board-btnbox">
+                        <button type="button" class="board-btn">
+                            <span>목록으로</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            
+        </div>
+
+    </main>
+    <footer id="footer" class="footer">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <nav class="footer__legal" aria-label="법적 안내">
+                    <a href="../../pages/privacy/privacy.html">개인정보처리방침</a>
+                    <span>·</span>
+                    <a href="../../pages/privacy/terms.html">이용약관</a>
+                    <span>·</span>
+                    <a href="../../pages/privacy/email.html">이메일무단수집거부</a>
+                </nav>
+                <div class="footer__partners" aria-label="협력 기관">
+                    <div class="footer__logos">
+                        <img src="../../images/common/daegu_logo.svg" alt="대구그린파워" width="98" height="22">
+                        <img src="../../images/common/motie_logo.svg" alt="산업통상부" width="89" height="23">
+                        <img src="../../images/common/kea_logo.svg" alt="한국에너지공단" width="105" height="20">
+                        <img src="../../images/common/kosea_logo.svg" alt="한국사회적기업진흥원" width="145" height="28">
+                    </div>
+                    <details class="footer__dropdown">
+                        <summary aria-controls="footer-coop-links" aria-expanded="false">협동조합 바로가기</summary>
+                        <ul id="footer-coop-links">
+                            <li><a href="#footer">달구벌시민햇빛발전협동조합</a></li>
+                            <li><a href="#footer">청라시민에너지협동조합</a></li>
+                            <li><a href="#footer">녹색소비자에너지협동조합</a></li>
+                            <li><a href="#footer">자전거시민협동조합</a></li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+            <div class="footer__info">
+                <ul class="footer__info-list">
+                    <li><strong>주소</strong> 대구광역시 남구 대명동 000</li>
+                    <li><strong>대표전화</strong> 053-000-0000</li>
+                    <li><strong>팩스</strong> 053-000-0001</li>
+                    <li><strong>이메일</strong> help@moduhaetbit.kr</li>
+                    <li><strong>사업자등록번호</strong> 000-00-00000</li>
+                </ul>
+                <p>© 2026 모두의 햇빛 플랫폼&nbsp; All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
