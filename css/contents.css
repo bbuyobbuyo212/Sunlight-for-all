@@ -118,7 +118,6 @@
     }
 
     .tab-group__list {
-        justify-content: flex-start;
         width: max-content;
         min-width: 100%;
     }

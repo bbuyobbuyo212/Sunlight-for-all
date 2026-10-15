@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" class="setup-guide-page">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../../css/default.css">
     <link rel="stylesheet" href="../../css/layout.css">
     <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/setup_guide.css">
     <link rel="stylesheet" href="../../css/join.css">
     <script src="../../js/footer-dropdown.js" defer></script>
     <script src="../../js/header-fixed.js" defer></script>
@@ -82,7 +83,62 @@
                     </li>
                 </ul>
             </div>
-            
+
+            <div class="setup-guide-box">
+                <h3 class="setup-guide-box__title" id="setup-process-title">협동조합 설립 절차</h3>
+
+                <div class="setup-process" role="list" aria-labelledby="setup-process-title">
+                    <div class="setup-process__step" role="listitem">   
+                        <span class="setup-process__number">1</span>
+                        <span class="setup-process__label">발기인 구성</span>
+                    </div>
+                    <img class="setup-process__arrow" src="../../images/icon/setup-process-arrow.svg" alt="" width="20" height="14">
+                    <div class="setup-process__step" role="listitem">
+                        <span class="setup-process__number">2</span>
+                        <span class="setup-process__label">정관 작성</span>
+                    </div>
+                    <img class="setup-process__arrow" src="../../images/icon/setup-process-arrow.svg" alt="" width="20" height="14">
+                    <div class="setup-process__step" role="listitem">
+                        <span class="setup-process__number">3</span>
+                        <span class="setup-process__label">창립총회</span>
+                    </div>
+                    <img class="setup-process__arrow" src="../../images/icon/setup-process-arrow.svg" alt="" width="20" height="14">
+                    <div class="setup-process__step" role="listitem">
+                        <span class="setup-process__number">4</span>
+                        <span class="setup-process__label">설립 인가</span>
+                    </div>
+                    <img class="setup-process__arrow" src="../../images/icon/setup-process-arrow.svg" alt="" width="20" height="14">
+                    <div class="setup-process__step" role="listitem">
+                        <span class="setup-process__number">5</span>
+                        <span class="setup-process__label">설립 등기</span>
+                    </div>
+                </div>                 
+            </div>
+
+            <!-- 여기에 기록 -->
+            <div class="setup-guide-cards">
+                <section class="setup-guide-card">
+                    <div class="setup-guide-card__content">
+                        <h3 class="setup-guide-card__title">단계별 유의사항</h3>
+                        <ul class="setup-guide-card__list">
+                            <li>발기인은 5인 이상 필요합니다.</li>
+                            <li>정관은 표준정관을 참고해 작성합니다.</li>
+                            <li>창립총회 의사록·임원 명부를 준비합니다.</li>
+                            <li>설립 신고 시 서류 9종이 필요합니다.</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="setup-guide-card setup-guide-card--start" aria-labelledby="setup-start-title">
+                    <div class="setup-guide-card__content setup-guide-card__content--start">
+                        <h3 class="setup-guide-card__title" id="setup-start-title">직접 따라 해볼까요?</h3>
+                        <p class="setup-guide-card__description">6단계 위저드로 서식을 내려받아 작성하고<br>상담으로 완성할 수 있습니다.</p>
+                        <a href="#" class="setup-guide-card__button">
+                            <span>조합 설립 따라하기 시작</span>
+                            <img src="../../images/icon/setup-start-arrow.svg" alt="" width="6.86875" height="11.6667">
+                        </a>
+                    </div>
+                </section>
+            </div>
             
         </div>
         
