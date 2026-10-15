@@ -889,7 +889,8 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: var(--Spacing-16, 1.6rem) var(--Spacing-24, 2.4rem) var(--Spacing-8, 0.8rem) var(--Spacing-24, 2.4rem);
+    padding:1.6rem 2.4rem 0.8rem 2.4rem;
+    gap:1.2rem;
 }
 .tap-menu__views {
     display: flex;
@@ -921,6 +922,11 @@
     height: 1.9rem;
     margin: 0 2.4rem;
     background-color: var(--Grayscale-30, #d8d8d8);
+}
+@media (max-width: 640px) {
+    .tap-menu__divider {
+        margin: 0 1.2rem;
+    }
 }
 .tap-menu__view-button--map {
     gap: 0.8rem;
