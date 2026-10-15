@@ -84,7 +84,6 @@
 
 .guide-flow {
     margin-top:4rem;
-    height: 33.8rem;
 }
 
 .guide-flow__inner {
@@ -106,7 +105,6 @@
 
 .guide-flow__list {
     display: flex;
-    height: 22.5rem;
     gap: 2.6rem;
     margin: 0;
     padding: 2.4rem 0.4rem 0;
