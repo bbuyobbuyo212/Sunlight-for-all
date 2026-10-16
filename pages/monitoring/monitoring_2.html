@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="대구시민햇빛발전소의 발전량, 운영 상태와 환경 기여도를 확인하는 실시간 통합관제 현황판입니다.">
+    <title>세부 관제 (드릴다운) | 모두의 햇빛</title>
+    <link rel="stylesheet" href="../../fonts/pretendard.css">
+    <link rel="stylesheet" href="../../css/default.css">
+    <link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="../../css/monitoring.css">
+</head>
+<body class="monitoring">
+    <header class="monitoring-header">
+        <div class="monitoring-header__brand">
+            <a class="monitoring-header__logo" href="../../index.html" aria-label="모두의 햇빛 홈">
+                <img src="../../images/monitoring/logo-monitoring.svg" alt="모두의 햇빛" width="183" height="39">
+            </a>
+            <div class="monitoring-header__description">
+                <h1>세부 관제 (드릴다운)</h1>
+                <p>발전소별·조합별 세부 관제 · 동일 지표</p>
+            </div>
+        </div>
+        <div class="monitoring-header__information">
+            <p class="monitoring-header__reception">
+                <img src="../../images/monitoring/icon-data-reception.svg" alt="" width="22.8" height="16">
+                <span><span class="monitoring-header__reception-label">데이터 수신 :</span> <time datetime="2026-09-16T10:24:08">2026-09-16 10:24:08</time></span>
+            </p>
+            <span class="monitoring-header__divider" aria-hidden="true">
+                <img src="../../images/monitoring/header-divider.svg" alt="" width="17" height="1">
+            </span>
+            <div class="monitoring-header__refresh-wrap">
+                <button type="button" class="monitoring-header__refresh">
+                    <span>자동 갱신 60초</span>
+                    <img src="../../images/monitoring/icon-auto-refresh.svg" alt="" width="16" height="16">
+                </button>
+            </div>
+            <time class="monitoring-header__clock" datetime="2026-09-16T10:24">10 : 24</time>
+        </div>
+    </header>
+
+    <main class="monitoring-main">
+        <div class="monitoring-main__inner">
+            <div class="tab">
+                <ul class="tab__list">
+                    <li class="tab__item">
+                        <a href="#" class="tab__link active">전체</a>
+                    </li>
+                    <li class="tab__item">
+                        <a href="#" class="tab__link">달구벌</a>
+                    </li>
+                    <li class="tab__item">
+                        <a href="#" class="tab__link">녹색소비</a>
+                    </li>
+                    <li class="tab__item">
+                        <a href="#" class="tab__link">청라</a>
+                    </li>
+                    <li class="tab__item">
+                        <a href="#" class="tab__link">자전거</a>
+                    </li>
+                </ul>
+
+                <div class="monitoring-filter">
+                    <button type="button" class="monitoring-filter__trigger" aria-expanded="false" aria-controls="monitoring-status-options" aria-label="상태필터: 전체">
+                        <span class="monitoring-filter__label">상태필터</span>
+                        <span class="monitoring-filter__arrow" aria-hidden="true">
+                            <img src="../../images/monitoring/icon-status-filter-arrow.svg" alt="" width="6.86875" height="11.6667">
+                        </span>
+                    </button>
+                    <div class="monitoring-filter__panel" id="monitoring-status-options" role="group" aria-label="발전소 상태 선택" hidden>
+                        <button type="button" class="monitoring-filter__option" aria-pressed="true">전체</button>
+                        <button type="button" class="monitoring-filter__option" aria-pressed="false">정상</button>
+                        <button type="button" class="monitoring-filter__option" aria-pressed="false">효율저하</button>
+                        <button type="button" class="monitoring-filter__option" aria-pressed="false">설비이상</button>
+                        <button type="button" class="monitoring-filter__option" aria-pressed="false">통신이상</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="monitoring-power-wrap">
+                <div class="monitoring-plant-wrap">                
+                    <div class="monitoring-plant">
+                        <div class="monitoring-plant__header">
+                            <div class="plant-badge success">
+                                <div class="plant-badge__inner">
+                                    <img src="../../images/monitoring/icon-status-normal.svg" alt="" class="icon">
+                                    <span>정상</span>
+                                </div>
+                            </div>
+                            <h3 class="monitoring-plant__title">대구시민 19호기</h3>
+                        </div>
+                        <div class="monitoring-plant__content">
+                            <dl class="output">
+                                <dt class="title">현재 출력</dt>
+                                <dd class="number">
+                                    285<span class="unit">kW</span>
+                                </dd>
+                            </dl>
+                            <div class="monitoring-plant__graph">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="176" height="176" viewBox="0 0 176 176" fill="none">
+                                    <path d="M176 88C176 136.601 136.601 176 88 176C39.3989 176 0 136.601 0 88C0 39.3989 39.3989 0 88 0C136.601 0 176 39.3989 176 88ZM29.6457 88C29.6457 120.228 55.7718 146.354 88 146.354C120.228 146.354 146.354 120.228 146.354 88C146.354 55.7718 120.228 29.6457 88 29.6457C55.7718 29.6457 29.6457 55.7718 29.6457 88Z" fill-opacity="0.1"/>
+                                    <path d="M52.8242 7.33628C70.9322 -0.560258 91.1701 -2.13434 110.281 2.86753C129.392 7.86949 146.265 19.1563 158.183 34.9115L157.923 35.1078C158.931 37.1039 159.5 39.3602 159.5 41.7494C159.5 49.8956 152.896 56.4994 144.75 56.4994C140.904 56.4994 137.402 55.0277 134.776 52.6166L134.539 52.7962C126.636 42.3487 115.448 34.8641 102.775 31.5472C90.1024 28.2303 76.6816 29.2737 64.6738 34.5101C52.6661 39.7465 42.7696 48.8716 36.5771 60.4154C30.3848 71.9592 28.2564 85.2507 30.5351 98.1507C32.8139 111.051 39.3671 122.809 49.1396 131.533C58.9122 140.256 71.3361 145.438 84.4111 146.243C97.4861 147.049 110.452 143.432 121.222 135.974C131.644 128.756 139.423 118.347 143.398 106.333C144.94 99.8345 150.78 94.9994 157.75 94.9994C165.896 94.9994 172.5 101.603 172.5 109.749C172.5 111.145 172.305 112.495 171.943 113.774L172.124 113.829C166.325 132.714 154.341 149.099 138.1 160.346C121.859 171.593 102.306 177.048 82.5889 175.833C62.8712 174.618 44.1349 166.804 29.3974 153.649C14.6602 140.493 4.77829 122.762 1.34178 103.308C-2.09469 83.8541 1.11469 63.8092 10.4531 46.4007C19.7915 28.9924 34.7162 15.2329 52.8242 7.33628Z" fill="url(#paint0_linear_2311_1210)"/>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_2311_1210" x1="113" y1="11.9996" x2="152.5" y2="96.4996" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#5AEDFF"/>
+                                        <stop offset="1" stop-color="#2768FF"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <dl>
+                                    <dt class="title">효율</dt>
+                                    <dd class="number">
+                                        95<span class="unit">%</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="monitoring-plant">
+                        <div class="monitoring-plant__header">
+                            <div class="plant-badge error">
+                                <div class="plant-badge__inner">
+                                    <img src="../../images/monitoring/icon-status-equipment-error.svg" alt="" class="icon">
+                                    <span>설비이상</span>
+                                </div>
+                            </div>
+                            <h3 class="monitoring-plant__title">달구벌 햇빛 7호</h3>
+                        </div>
+                        <div class="monitoring-plant__content">
+                            <dl class="output">
+                                <dt class="title">현재 출력</dt>
+                                <dd class="number">
+                                    0<span class="unit">kW</span>
+                                </dd>
+                            </dl>
+                            <div class="monitoring-plant__graph">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="176" height="176" viewBox="0 0 176 176" fill="none">
+                                    <path d="M176 88C176 136.601 136.601 176 88 176C39.3989 176 0 136.601 0 88C0 39.3989 39.3989 0 88 0C136.601 0 176 39.3989 176 88ZM29.6457 88C29.6457 120.228 55.7718 146.354 88 146.354C120.228 146.354 146.354 120.228 146.354 88C146.354 55.7718 120.228 29.6457 88 29.6457C55.7718 29.6457 29.6457 55.7718 29.6457 88Z" fill-opacity="0.1"/>
+                                    <path d="M52.8242 7.33628C70.9322 -0.560258 91.1701 -2.13434 110.281 2.86753C129.392 7.86949 146.265 19.1563 158.183 34.9115L157.923 35.1078C158.931 37.1039 159.5 39.3602 159.5 41.7494C159.5 49.8956 152.896 56.4994 144.75 56.4994C140.904 56.4994 137.402 55.0277 134.776 52.6166L134.539 52.7962C126.636 42.3487 115.448 34.8641 102.775 31.5472C90.1024 28.2303 76.6816 29.2737 64.6738 34.5101C52.6661 39.7465 42.7696 48.8716 36.5771 60.4154C30.3848 71.9592 28.2564 85.2507 30.5351 98.1507C32.8139 111.051 39.3671 122.809 49.1396 131.533C58.9122 140.256 71.3361 145.438 84.4111 146.243C97.4861 147.049 110.452 143.432 121.222 135.974C131.644 128.756 139.423 118.347 143.398 106.333C144.94 99.8345 150.78 94.9994 157.75 94.9994C165.896 94.9994 172.5 101.603 172.5 109.749C172.5 111.145 172.305 112.495 171.943 113.774L172.124 113.829C166.325 132.714 154.341 149.099 138.1 160.346C121.859 171.593 102.306 177.048 82.5889 175.833C62.8712 174.618 44.1349 166.804 29.3974 153.649C14.6602 140.493 4.77829 122.762 1.34178 103.308C-2.09469 83.8541 1.11469 63.8092 10.4531 46.4007C19.7915 28.9924 34.7162 15.2329 52.8242 7.33628Z" fill="url(#paint0_linear_2311_1210)"/>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_2311_1210" x1="113" y1="11.9996" x2="152.5" y2="96.4996" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#5AEDFF"/>
+                                        <stop offset="1" stop-color="#2768FF"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <dl>
+                                    <dt class="title">효율</dt>
+                                    <dd class="number">
+                                        0<span class="unit">%</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="monitoring-plant">
+                        <div class="monitoring-plant__header">
+                            <div class="plant-badge success">
+                                <div class="plant-badge__inner">
+                                    <img src="../../images/monitoring/icon-status-normal.svg" alt="" class="icon">
+                                    <span>정상</span>
+                                </div>
+                            </div>
+                            <h3 class="monitoring-plant__title">녹색소비 2호</h3>
+                        </div>
+                        <div class="monitoring-plant__content">
+                            <dl class="output">
+                                <dt class="title">현재 출력</dt>
+                                <dd class="number">
+                                    182<span class="unit">kW</span>
+                                </dd>
+                            </dl>
+                            <div class="monitoring-plant__graph">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="176" height="176" viewBox="0 0 176 176" fill="none">
+                                    <path d="M176 88C176 136.601 136.601 176 88 176C39.3989 176 0 136.601 0 88C0 39.3989 39.3989 0 88 0C136.601 0 176 39.3989 176 88ZM29.6457 88C29.6457 120.228 55.7718 146.354 88 146.354C120.228 146.354 146.354 120.228 146.354 88C146.354 55.7718 120.228 29.6457 88 29.6457C55.7718 29.6457 29.6457 55.7718 29.6457 88Z" fill-opacity="0.1"/>
+                                    <path d="M52.8242 7.33628C70.9322 -0.560258 91.1701 -2.13434 110.281 2.86753C129.392 7.86949 146.265 19.1563 158.183 34.9115L157.923 35.1078C158.931 37.1039 159.5 39.3602 159.5 41.7494C159.5 49.8956 152.896 56.4994 144.75 56.4994C140.904 56.4994 137.402 55.0277 134.776 52.6166L134.539 52.7962C126.636 42.3487 115.448 34.8641 102.775 31.5472C90.1024 28.2303 76.6816 29.2737 64.6738 34.5101C52.6661 39.7465 42.7696 48.8716 36.5771 60.4154C30.3848 71.9592 28.2564 85.2507 30.5351 98.1507C32.8139 111.051 39.3671 122.809 49.1396 131.533C58.9122 140.256 71.3361 145.438 84.4111 146.243C97.4861 147.049 110.452 143.432 121.222 135.974C131.644 128.756 139.423 118.347 143.398 106.333C144.94 99.8345 150.78 94.9994 157.75 94.9994C165.896 94.9994 172.5 101.603 172.5 109.749C172.5 111.145 172.305 112.495 171.943 113.774L172.124 113.829C166.325 132.714 154.341 149.099 138.1 160.346C121.859 171.593 102.306 177.048 82.5889 175.833C62.8712 174.618 44.1349 166.804 29.3974 153.649C14.6602 140.493 4.77829 122.762 1.34178 103.308C-2.09469 83.8541 1.11469 63.8092 10.4531 46.4007C19.7915 28.9924 34.7162 15.2329 52.8242 7.33628Z" fill="url(#paint0_linear_2311_1210)"/>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_2311_1210" x1="113" y1="11.9996" x2="152.5" y2="96.4996" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#5AEDFF"/>
+                                        <stop offset="1" stop-color="#2768FF"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <dl>
+                                    <dt class="title">효율</dt>
+                                    <dd class="number">
+                                        92<span class="unit">%</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="monitoring-plant">
+                        <div class="monitoring-plant__header">
+                            <div class="plant-badge setup">
+                                <div class="plant-badge__inner">
+                                    <img src="../../images/monitoring/icon-status-setup.svg" alt="" class="icon">
+                                    <span>RTU 설치중</span>
+                                </div>
+                            </div>
+                            <h3 class="monitoring-plant__title">시민빛 4호</h3>
+                        </div>
+                        <div class="monitoring-plant__content">
+                            <dl class="output">
+                                <dt class="title">현재 출력</dt>
+                                <dd class="number">
+                                    0<span class="unit">kW</span>
+                                </dd>
+                            </dl>
+                            <div class="monitoring-plant__graph">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="176" height="176" viewBox="0 0 176 176" fill="none">
+                                    <path d="M176 88C176 136.601 136.601 176 88 176C39.3989 176 0 136.601 0 88C0 39.3989 39.3989 0 88 0C136.601 0 176 39.3989 176 88ZM29.6457 88C29.6457 120.228 55.7718 146.354 88 146.354C120.228 146.354 146.354 120.228 146.354 88C146.354 55.7718 120.228 29.6457 88 29.6457C55.7718 29.6457 29.6457 55.7718 29.6457 88Z" fill-opacity="0.1"/>
+                                    <path d="M52.8242 7.33628C70.9322 -0.560258 91.1701 -2.13434 110.281 2.86753C129.392 7.86949 146.265 19.1563 158.183 34.9115L157.923 35.1078C158.931 37.1039 159.5 39.3602 159.5 41.7494C159.5 49.8956 152.896 56.4994 144.75 56.4994C140.904 56.4994 137.402 55.0277 134.776 52.6166L134.539 52.7962C126.636 42.3487 115.448 34.8641 102.775 31.5472C90.1024 28.2303 76.6816 29.2737 64.6738 34.5101C52.6661 39.7465 42.7696 48.8716 36.5771 60.4154C30.3848 71.9592 28.2564 85.2507 30.5351 98.1507C32.8139 111.051 39.3671 122.809 49.1396 131.533C58.9122 140.256 71.3361 145.438 84.4111 146.243C97.4861 147.049 110.452 143.432 121.222 135.974C131.644 128.756 139.423 118.347 143.398 106.333C144.94 99.8345 150.78 94.9994 157.75 94.9994C165.896 94.9994 172.5 101.603 172.5 109.749C172.5 111.145 172.305 112.495 171.943 113.774L172.124 113.829C166.325 132.714 154.341 149.099 138.1 160.346C121.859 171.593 102.306 177.048 82.5889 175.833C62.8712 174.618 44.1349 166.804 29.3974 153.649C14.6602 140.493 4.77829 122.762 1.34178 103.308C-2.09469 83.8541 1.11469 63.8092 10.4531 46.4007C19.7915 28.9924 34.7162 15.2329 52.8242 7.33628Z" fill="url(#paint0_linear_2311_1210)"/>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_2311_1210" x1="113" y1="11.9996" x2="152.5" y2="96.4996" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#5AEDFF"/>
+                                        <stop offset="1" stop-color="#2768FF"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <dl>
+                                    <dt class="title">효율</dt>
+                                    <dd class="number">
+                                        0<span class="unit">%</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="monitoring-plant">
+                        <div class="monitoring-plant__header">
+                            <div class="plant-badge warning">
+                                <div class="plant-badge__inner">
+                                    <img src="../../images/monitoring/icon-status-efficiency-decline.svg" alt="" class="icon">
+                                    <span>효율저하</span>
+                                </div>
+                            </div>
+                            <h3 class="monitoring-plant__title">자전거 1호</h3>
+                        </div>
+                        <div class="monitoring-plant__content">
+                            <dl class="output">
+                                <dt class="title">현재 출력</dt>
+                                <dd class="number">
+                                    96<span class="unit">kW</span>
+                                </dd>
+                            </dl>
+                            <div class="monitoring-plant__graph">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="176" height="176" viewBox="0 0 176 176" fill="none">
+                                    <path d="M176 88C176 136.601 136.601 176 88 176C39.3989 176 0 136.601 0 88C0 39.3989 39.3989 0 88 0C136.601 0 176 39.3989 176 88ZM29.6457 88C29.6457 120.228 55.7718 146.354 88 146.354C120.228 146.354 146.354 120.228 146.354 88C146.354 55.7718 120.228 29.6457 88 29.6457C55.7718 29.6457 29.6457 55.7718 29.6457 88Z" fill-opacity="0.1"/>
+                                    <path d="M52.8242 7.33628C70.9322 -0.560258 91.1701 -2.13434 110.281 2.86753C129.392 7.86949 146.265 19.1563 158.183 34.9115L157.923 35.1078C158.931 37.1039 159.5 39.3602 159.5 41.7494C159.5 49.8956 152.896 56.4994 144.75 56.4994C140.904 56.4994 137.402 55.0277 134.776 52.6166L134.539 52.7962C126.636 42.3487 115.448 34.8641 102.775 31.5472C90.1024 28.2303 76.6816 29.2737 64.6738 34.5101C52.6661 39.7465 42.7696 48.8716 36.5771 60.4154C30.3848 71.9592 28.2564 85.2507 30.5351 98.1507C32.8139 111.051 39.3671 122.809 49.1396 131.533C58.9122 140.256 71.3361 145.438 84.4111 146.243C97.4861 147.049 110.452 143.432 121.222 135.974C131.644 128.756 139.423 118.347 143.398 106.333C144.94 99.8345 150.78 94.9994 157.75 94.9994C165.896 94.9994 172.5 101.603 172.5 109.749C172.5 111.145 172.305 112.495 171.943 113.774L172.124 113.829C166.325 132.714 154.341 149.099 138.1 160.346C121.859 171.593 102.306 177.048 82.5889 175.833C62.8712 174.618 44.1349 166.804 29.3974 153.649C14.6602 140.493 4.77829 122.762 1.34178 103.308C-2.09469 83.8541 1.11469 63.8092 10.4531 46.4007C19.7915 28.9924 34.7162 15.2329 52.8242 7.33628Z" fill="url(#paint0_linear_2311_1210)"/>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_2311_1210" x1="113" y1="11.9996" x2="152.5" y2="96.4996" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#5AEDFF"/>
+                                        <stop offset="1" stop-color="#2768FF"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <dl>
+                                    <dt class="title">효율</dt>
+                                    <dd class="number">
+                                        61<span class="unit">%</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="monitoring-plant">
+                        <div class="monitoring-plant__header">
+                            <div class="plant-badge success">
+                                <div class="plant-badge__inner">
+                                    <img src="../../images/monitoring/icon-status-normal.svg" alt="" class="icon">
+                                    <span>정상</span>
+                                </div>
+                            </div>
+                            <h3 class="monitoring-plant__title">달구벌 8호</h3>
+                        </div>
+                        <div class="monitoring-plant__content">
+                            <dl class="output">
+                                <dt class="title">현재 출력</dt>
+                                <dd class="number">
+                                    910<span class="unit">kW</span>
+                                </dd>
+                            </dl>
+                            <div class="monitoring-plant__graph">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="176" height="176" viewBox="0 0 176 176" fill="none">
+                                    <path d="M176 88C176 136.601 136.601 176 88 176C39.3989 176 0 136.601 0 88C0 39.3989 39.3989 0 88 0C136.601 0 176 39.3989 176 88ZM29.6457 88C29.6457 120.228 55.7718 146.354 88 146.354C120.228 146.354 146.354 120.228 146.354 88C146.354 55.7718 120.228 29.6457 88 29.6457C55.7718 29.6457 29.6457 55.7718 29.6457 88Z" fill-opacity="0.1"/>
+                                    <path d="M52.8242 7.33628C70.9322 -0.560258 91.1701 -2.13434 110.281 2.86753C129.392 7.86949 146.265 19.1563 158.183 34.9115L157.923 35.1078C158.931 37.1039 159.5 39.3602 159.5 41.7494C159.5 49.8956 152.896 56.4994 144.75 56.4994C140.904 56.4994 137.402 55.0277 134.776 52.6166L134.539 52.7962C126.636 42.3487 115.448 34.8641 102.775 31.5472C90.1024 28.2303 76.6816 29.2737 64.6738 34.5101C52.6661 39.7465 42.7696 48.8716 36.5771 60.4154C30.3848 71.9592 28.2564 85.2507 30.5351 98.1507C32.8139 111.051 39.3671 122.809 49.1396 131.533C58.9122 140.256 71.3361 145.438 84.4111 146.243C97.4861 147.049 110.452 143.432 121.222 135.974C131.644 128.756 139.423 118.347 143.398 106.333C144.94 99.8345 150.78 94.9994 157.75 94.9994C165.896 94.9994 172.5 101.603 172.5 109.749C172.5 111.145 172.305 112.495 171.943 113.774L172.124 113.829C166.325 132.714 154.341 149.099 138.1 160.346C121.859 171.593 102.306 177.048 82.5889 175.833C62.8712 174.618 44.1349 166.804 29.3974 153.649C14.6602 140.493 4.77829 122.762 1.34178 103.308C-2.09469 83.8541 1.11469 63.8092 10.4531 46.4007C19.7915 28.9924 34.7162 15.2329 52.8242 7.33628Z" fill="url(#paint0_linear_2311_1210)"/>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_2311_1210" x1="113" y1="11.9996" x2="152.5" y2="96.4996" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#5AEDFF"/>
+                                        <stop offset="1" stop-color="#2768FF"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <dl>
+                                    <dt class="title">효율</dt>
+                                    <dd class="number">
+                                        96<span class="unit">%</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="monitoring-plant-map">
+                    <div class="plant-map-header">
+                        <img src="../../images/monitoring/icon-search.svg" alt="검색 아이콘" class="icon">
+                        <h3 class="title">발전소 분포</h3>
+                    </div>
+                    <div class="plant-map-content">
+                        <img src="../../images/monitoring/map.png" alt="발전소 지도" class="map-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="monitoring-footer">
+        <p>© 2026 모두의 햇빛 플랫폼. All Rights Reserved.</p>
+        <p class="monitoring-footer__policies">
+            <a href="../../privacy-policy.html">개인정보처리방침</a>
+            <span class="monitoring-footer__divider" aria-hidden="true">|</span>
+            <a href="../../terms-of-service.html">이용약관</a>
+        </p>
+    </footer>
+    <script src="../../js/monitoring-status-filter.js"></script>
+      </body>
+</html>

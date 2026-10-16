@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="대구시민햇빛발전소의 발전량, 운영 상태와 환경 기여도를 확인하는 실시간 통합관제 현황판입니다.">
+    <title>실시간 통합관제 | 모두의 햇빛</title>
+    <link rel="stylesheet" href="../../fonts/pretendard.css">
+    <link rel="stylesheet" href="../../css/default.css">
+    <link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="../../css/monitoring.css">
+</head>
+<body class="monitoring">
+    <header class="monitoring-header">
+        <div class="monitoring-header__brand">
+            <a class="monitoring-header__logo" href="../../index.html" aria-label="모두의 햇빛 홈">
+                <img src="../../images/monitoring/logo-monitoring.svg" alt="모두의 햇빛" width="183" height="39">
+            </a>
+            <div class="monitoring-header__description">
+                <h1>모두의 햇빛 · 실시간 통합관제</h1>
+                <p>대구시민햇빛발전소 통합 현황판 (공개)</p>
+            </div>
+        </div>
+        <div class="monitoring-header__information">
+            <p class="monitoring-header__reception">
+                <img src="../../images/monitoring/icon-data-reception.svg" alt="" width="22.8" height="16">
+                <span><span class="monitoring-header__reception-label">데이터 수신 :</span> <time datetime="2026-09-16T10:24:08">2026-09-16 10:24:08</time></span>
+            </p>
+            <span class="monitoring-header__divider" aria-hidden="true">
+                <img src="../../images/monitoring/header-divider.svg" alt="" width="17" height="1">
+            </span>
+            <div class="monitoring-header__refresh-wrap">
+                <button type="button" class="monitoring-header__refresh">
+                    <span>자동 갱신 60초</span>
+                    <img src="../../images/monitoring/icon-auto-refresh.svg" alt="" width="16" height="16">
+                </button>
+            </div>
+            <time class="monitoring-header__clock" datetime="2026-09-16T10:24">10 : 24</time>
+        </div>
+    </header>
+
+    <main class="monitoring-main">
+        <div class="monitoring-dashboard">
+            <section aria-label="발전소 통합 현황" class="monitoring-metrics">
+                <div class="monitoring-metric monitoring-metric--center">
+                    <div class="monitoring-metric__text">
+                        <p class="monitoring-metric__label">실시간 발전량</p>
+                        <p class="monitoring-metric__value monitoring-color-blue">4,182<span class="monitoring-unit">kW</span></p>
+                    </div>
+                </div>
+                <div class="monitoring-metric">
+                    <div class="monitoring-metric__text">
+                        <p class="monitoring-metric__label">가동율</p>
+                        <p class="monitoring-metric__value monitoring-color-red">94.8<span class="monitoring-unit">%</span></p>
+                    </div>
+                </div>
+                <div class="monitoring-metric">
+                    <div class="monitoring-metric__text">
+                        <p class="monitoring-metric__label">발전소</p>
+                        <p class="monitoring-metric__value monitoring-color-orange">42<span class="monitoring-unit">개소</span></p>
+                    </div>
+                </div>
+                <div class="monitoring-metric">
+                    <div class="monitoring-metric__text">
+                        <p class="monitoring-metric__label">참여 조합 / 조합원</p>
+                        <p class="monitoring-metric__value monitoring-color-green">8 / 3,120</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="monitoring-boards">
+                <section class="monitoring-board monitoring-board--generation" aria-labelledby="generation-title">
+                    <div class="monitoring-board__header">
+                        <h2 class="monitoring-board__title" id="generation-title">
+                            <span class="monitoring-board__generation-icon">
+                                <img src="../../images/monitoring/icon-generation-trend.svg" alt="" width="32.3121" height="34.9824">
+                            </span>
+                            시간대별 발전 추이 (금일)
+                        </h2>
+                        <p class="monitoring-board__date"><time datetime="2026-10-11">2026-10-11</time> 기준</p>
+                    </div>
+                    <div class="monitoring-board__content">
+                        <div class="monitoring-chart_wrap">
+                            <img src="../../images/monitoring/value-warp.png">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="monitoring-board" aria-labelledby="operation-title">
+                    <div class="monitoring-board__header">
+                        <h2 class="monitoring-board__title" id="operation-title">
+                            <img src="../../images/monitoring/icon-operation-summary.svg" alt="" width="37" height="37">
+                            운영 상태 요약
+                        </h2>
+                    </div>
+                    <dl class="monitoring-board__content monitoring-status">
+                        <div class="monitoring-status__row">
+                            <dt><img src="../../images/monitoring/icon-status-normal.svg" alt="" width="26" height="24">정상</dt>
+                            <dd class="monitoring-color-green">36</dd>
+                        </div>
+                        <div class="monitoring-status__row">
+                            <dt><img src="../../images/monitoring/icon-status-communication-error.svg" alt="" width="26" height="24">통신이상</dt>
+                            <dd class="monitoring-color-yellow">2</dd>
+                        </div>
+                        <div class="monitoring-status__row">
+                            <dt><img src="../../images/monitoring/icon-status-equipment-error.svg" alt="" width="26" height="24">설비이상</dt>
+                            <dd class="monitoring-color-danger">1</dd>
+                        </div>
+                        <div class="monitoring-status__row">
+                            <dt><img src="../../images/monitoring/icon-status-efficiency-decline.svg" alt="" width="26" height="24">효율저하</dt>
+                            <dd class="monitoring-color-orange">1</dd>
+                        </div>
+                    </dl>
+                </section>
+
+                <section class="monitoring-board" aria-labelledby="environment-title">
+                    <div class="monitoring-board__header">
+                        <h2 class="monitoring-board__title" id="environment-title">
+                            <img src="../../images/monitoring/icon-environmental-contribution.svg" alt="" width="36" height="39">
+                            환경 기여도
+                        </h2>
+                    </div>
+                    <dl class="monitoring-board__content monitoring-environment">
+                        <div class="monitoring-environment__row">
+                            <dt>누적 온실가스 저감</dt>
+                            <dd class="monitoring-color-gray">5,675<span class="monitoring-unit">tCO₂</span></dd>
+                        </div>
+                        <div class="monitoring-environment__row monitoring-environment__row--trees">
+                            <dt>소나무 심은 효과</dt>
+                            <dd class="monitoring-color-green">86만<span class="monitoring-unit">그루</span></dd>
+                        </div>
+                        <div class="monitoring-environment__row">
+                            <dt>1일 전력 공급</dt>
+                            <dd class="monitoring-color-blue">3,480<span class="monitoring-unit">가구</span></dd>
+                        </div>
+                    </dl>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="monitoring-footer">
+        <p>© 2026 모두의 햇빛 플랫폼. All Rights Reserved.</p>
+        <p class="monitoring-footer__policies">
+            <a href="../../privacy-policy.html">개인정보처리방침</a>
+            <span class="monitoring-footer__divider" aria-hidden="true">|</span>
+            <a href="../../terms-of-service.html">이용약관</a>
+        </p>
+    </footer>
+</body>
+</html>
