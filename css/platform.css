@@ -287,69 +287,6 @@
 }
 
 
-.platform-footer {
-    display: flex;
-    padding:1.2rem 2rem;
-    margin-bottom:1.6rem;
-    justify-content: space-between;
-    align-items: center;
-    align-self: stretch;
-    border-radius:0.8rem;
-    border: 1px solid var(--System-Warning-20, #FFE2A7);
-    background: var(--System-Warning-5-Bg, #FFF8E9);
-}
-@media (max-width: 1024px) {
-    .platform-footer {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1.2rem;
-    }
-}
-.platform-footer.mt42 {margin-top:4.2rem;}
-.platform-footer__text {
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
-    color:#000;
-    font-size:1.8rem;
-    font-weight: 500;
-    line-height: 2.4rem;
-    letter-spacing: -0.1rem;
-}
-.platform-footer__icon {
-    flex:none;
-    width: 2.7028rem;
-    height: 3.1rem;
-}
-.platform-footer__links {
-    display: flex;
-    gap: 1.2rem;
-}
-@media (max-width: 1024px) {
-    .platform-footer__links {margin-left:auto;}
-}
-.platform-footer__link {
-    display: inline-flex;
-    display: flex;
-    min-width: 14.7rem;
-    padding:0.8rem 1.2rem;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    border-radius: 1rem;
-    border: 2px solid var(--Grayscale-80, #2D2D2D);
-    background: var(--Primary-0, #FFF);
-    color: var(--Grayscale-80, #2D2D2D);
-    font-size:1.8rem;
-    font-weight: 700;
-    letter-spacing:-0.1rem;
-}
-.platform-footer__link.yellow {
-    border-radius: 1rem;
-    border: 2px solid var(--Grayscale-80, #2D2D2D);
-    background: #FD3;
-    color: var(--Primary-80, #0E2B5E);
-}
 .platform-stats {
     position: relative;
     padding-top:2rem;
@@ -1341,4 +1278,562 @@
 
 .benefits-local__list li {
     list-style: disc;
+}
+
+.annual-impact {
+    width: 100%;
+    max-width: 120rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin: 2.4rem auto 0;
+    padding: 0 0.2rem 0.4rem;
+}
+
+.annual-impact__cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 2rem;
+    row-gap: 1rem;
+    width: calc(100% + 0.4rem);
+    margin-left: -0.2rem;
+    padding: 0 0.2rem 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .annual-impact__cards {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+.annual-impact__card {
+    display: grid;
+    align-content: start;
+    gap: 1.6rem;
+    min-width: 0;
+    height: 33.9rem;
+    padding: 4rem 3.2rem;
+    border-radius: 2rem;
+    background-color: var(--Primary-0, #fff);
+    box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 10%);
+}
+
+.annual-impact__card-header {
+    display: grid;
+    gap: 1.6rem;
+}
+
+.annual-impact__card-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+    color: var(--Primary-100, #000);
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    line-height: normal;
+}
+
+.annual-impact__heading-icon {
+    display: block;
+    flex: none;
+    width: 2.9rem;
+    height: 2.9rem;
+    object-fit: contain;
+}
+
+.annual-impact__card-subtitle {
+    margin: 0;
+    padding: 0 0 3.2rem 4rem;
+    color: var(--Grayscale-70-Text-Detail, #555);
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: -0.1rem;
+    line-height: 2.4rem;
+    white-space: nowrap;
+}
+
+.annual-impact__metrics {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.annual-impact__metric {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    min-width: 0;
+    padding: 0.8rem 2rem;
+    border-bottom: 0.3rem solid #33a14b;
+}
+
+.annual-impact__metric-icon {
+    display: block;
+    flex: none;
+    object-fit: contain;
+}
+
+.annual-impact__metric--generation .annual-impact__metric-icon {
+    width: 4.4rem;
+    height: 4.7rem;
+}
+
+.annual-impact__metric--emissions .annual-impact__metric-icon {
+    width: 4.7rem;
+    height: 4.3rem;
+}
+
+.annual-impact__metric--pine .annual-impact__metric-icon {
+    width: 5.1rem;
+    height: 4.5rem;
+}
+
+.annual-impact__metric--households .annual-impact__metric-icon {
+    width: 4.9rem;
+    height: 4.7rem;
+}
+
+.annual-impact__metric-copy {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.annual-impact__metric-label {
+    margin: 0;
+    color: #33a14b;
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: -0.1rem;
+    line-height: 2.4rem;
+}
+
+.annual-impact__metric-value {
+    margin: 0;
+    color: #008a1e;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.1rem;
+    line-height: 2.4rem;
+}
+
+.annual-impact__criteria {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: calc(100% + 0.4rem);
+    min-height: 26.2rem;
+    margin: 0 0 0 -0.2rem;
+    padding: 3.2rem 3.2rem 3.2rem 4rem;
+    overflow: hidden;
+    border-radius: 2rem;
+    background-color: var(--Primary-0, #fff);
+    box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 10%);
+}
+
+@media (max-width: 768px) {
+    .annual-impact__criteria {
+        flex-direction: column;
+        gap: 2.4rem;
+    }
+}
+
+.annual-impact__criteria-copy {
+    display: flex;
+    flex-direction: column;
+    width: 43.4rem;
+    max-width: 100%;
+}
+
+.annual-impact__criteria-about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.6rem;
+}
+
+.annual-impact__criteria-description {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    width: 100%;
+}
+
+.annual-impact__criteria-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+    color: #2d2d2d;
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    line-height: 2.9rem;
+}
+
+.annual-impact__criteria-list {
+    display: grid;
+    gap: 0;
+    width: 100%;
+    margin: 0;
+    padding-left: 1.6rem;
+    color: var(--Grayscale-70-Text-Detail, #555);
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: -0.1rem;
+    line-height: 2.4rem;
+}
+
+.annual-impact__criteria-list li {
+    list-style: disc;
+}
+
+.annual-impact__criteria-list strong {
+    font-weight: 600;
+}
+
+.annual-impact__linked-metrics {
+    margin: 0;
+    color: #1d1d1d;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    line-height: 3.2rem;
+    white-space: pre;
+}
+
+@media (max-width: 768px) {
+    .annual-impact__linked-metrics {
+        white-space: pre-wrap;
+    }
+}
+
+.annual-impact__carbon-neutral {
+    position: relative;
+    display: flex;
+    flex: 0 1 52rem;
+    align-items: center;
+    justify-content: center;
+    width: 52rem;
+    max-width: 100%;
+    aspect-ratio: 520 / 198;
+}
+
+@media (max-width: 768px) {
+    .annual-impact__carbon-neutral {
+        align-self: center;
+        flex-basis: auto;
+    }
+}
+
+.annual-impact__carbon-neutral-mark {
+    display: block;
+    width: 62.6923%;
+    height: 76.7677%;
+}
+
+.investment {
+    width: 100%;
+    max-width: 120rem;
+    margin: 2rem auto 0;
+}
+
+.investment__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    padding: 0 0.2rem 2rem;
+}
+
+@media (max-width: 768px) {
+    .investment__grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+.investment__card {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.6rem;
+    padding: 4rem 3.2rem;
+    overflow: clip;
+    border-radius: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 10%);
+}
+
+.investment__card--procedure,
+.investment__card--revenue {
+    height: 33.6rem;
+}
+
+@media (max-width: 768px) {
+    .investment__card--procedure,
+    .investment__card--revenue {
+        height: auto;
+        min-height: 33.6rem;
+    }
+}
+
+.investment__card--dividend,
+.investment__card--example {
+    height: 31.7rem;
+}
+
+@media (max-width: 768px) {
+    .investment__card--dividend,
+    .investment__card--example {
+        height: auto;
+        min-height: 31.7rem;
+    }
+}
+
+.investment__card--fund,
+.investment__card--refund {
+    height: 24.5rem;
+}
+
+@media (max-width: 768px) {
+    .investment__card--fund,
+    .investment__card--refund {
+        height: auto;
+        min-height: 24.5rem;
+    }
+}
+
+.investment__card-heading {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+}
+
+.investment__card-heading img {
+    display: block;
+    flex: 0 0 2.9rem;
+    width: 2.9rem;
+    height: 2.9rem;
+}
+
+.investment__card-title {
+    min-width: 0;
+    margin: 0;
+    color: #000;
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    line-height: normal;
+}
+
+.investment__card-title span {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.investment__card-content {
+    width: 100%;
+    min-width: 0;
+}
+
+.investment__steps {
+    margin: 0;
+    padding: 0;
+    color: #1d1d1d;
+    counter-reset: investment-step;
+    list-style: none;
+}
+
+.investment__steps li {
+    position: relative;
+    padding-left: 1.8rem;
+    font-size: 1.6rem;
+    letter-spacing: -0.1rem;
+    line-height: 2.4rem;
+    counter-increment: investment-step;
+}
+
+.investment__steps li::before {
+    position: absolute;
+    top: 0.6rem;
+    left: 0;
+    display: flex;
+    width: 1.2rem;
+    height: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #2d2d2d;
+    color: #fff;
+    content: counter(investment-step);
+    font-size: 0.9rem;
+    letter-spacing: 0;
+    line-height: 1;
+}
+
+.investment__notes {
+    color: #8e8e8e;
+    font-size: 1.4rem;
+    letter-spacing: -0.1rem;
+}
+
+.investment__notes p {
+    margin: 0;
+    line-height: 3.2rem;
+}
+
+.investment__notes p + p {
+    line-height: 2rem;
+}
+
+.investment__notes--compact p {
+    line-height: 2rem;
+}
+
+.investment__flow {
+    display: flex;
+    width: 100%;
+    height: 12.3rem;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+@media (max-width: 768px) {
+    .investment__flow {
+        justify-content: flex-start;
+        gap: 1rem;
+        overflow-x: auto;
+    }
+}
+
+.investment__flow-step {
+    display: flex;
+    flex: 0 0 12.3rem;
+    height: 12.3rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem 0.8rem;
+    border-radius: 50%;
+    background-color: #33a14b;
+}
+
+.investment__flow-step img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 7rem;
+    max-height: 6.5rem;
+}
+
+.investment__flow-step span {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: -0.1rem;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.investment__flow-arrow {
+    display: block;
+    flex: 0 0 0.5rem;
+    width: 0.5rem;
+    height: 1rem;
+}
+
+.investment__revenue-list {
+    width: 100%;
+    margin: 0;
+    padding-left: 2rem;
+    color: #555;
+    font-size: 1.6rem;
+    letter-spacing: -0.1rem;
+    line-height: 2.4rem;
+}
+
+.investment__revenue-list strong {
+    font-weight: 600;
+}
+
+.investment__example-copy {
+    margin-bottom: 1.6rem;
+    color: #555;
+    font-size: 1.6rem;
+    letter-spacing: -0.1rem;
+    line-height: 2.4rem;
+}
+
+.investment__example-copy p {
+    margin: 0;
+}
+
+.investment__table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #000;
+    font-size: 1.8rem;
+    letter-spacing: -0.1rem;
+    line-height: 2.1rem;
+}
+
+.investment__table tr {
+    height: 3.8rem;
+    background-color: #eff5ff;
+}
+
+.investment__table th,
+.investment__table td {
+    padding: 0.8rem 1.6rem;
+    border-bottom: 0.1rem solid #d3e1fb;
+}
+
+.investment__table th {
+    font-weight: 500;
+    text-align: left;
+}
+
+.investment__table td {
+    font-weight: 500;
+    text-align: right;
+}
+
+.investment__table tr:last-child {
+    color: #1d56bc;
+    font-weight: 700;
+}
+
+.investment__table tr:last-child th,
+.investment__table tr:last-child td {
+    font-weight: 700;
+}
+
+.investment__fund-copy {
+    width: 100%;
+    color: #555;
+    font-size: 1.6rem;
+    letter-spacing: -0.1rem;
+    line-height: 2.4rem;
+}
+
+.investment__fund-copy p {
+    margin: 0;
+}
+
+.investment__refund-copy {
+    width: 100%;
+    margin: 0;
+    color: #555;
+    font-size: 1.6rem;
+    letter-spacing: -0.1rem;
+    line-height: 2.4rem;
 }

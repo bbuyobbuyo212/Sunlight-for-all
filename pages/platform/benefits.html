@@ -141,15 +141,120 @@
                 </div>
             </section>
 
-            <section class="platform-footer">
-                <div class="platform-footer__text">
-                    <img class="platform-footer__icon" src="../../images/icon/terms-consent-notice.svg" alt="">
+            <section class="annual-impact" aria-label="연간 기여도와 산정 기준">
+                <div class="annual-impact__cards">
+                    <article class="annual-impact__card">
+                        <header class="annual-impact__card-header">
+                            <h2 class="annual-impact__card-title">
+                                <img class="annual-impact__heading-icon" src="../../images/platform/annual-impact-heading-icon.svg" alt="" aria-hidden="true">
+                                100kW 발전소 1기의 한 해 기여도
+                            </h2>
+                            <p class="annual-impact__card-subtitle">100kW 발전소 1기 기준</p>
+                        </header>
+                        <dl class="annual-impact__metrics">
+                            <div class="annual-impact__metric annual-impact__metric--generation">
+                                <img class="annual-impact__metric-icon" src="../../images/platform/annual-impact-generation.svg" alt="" aria-hidden="true">
+                                <div class="annual-impact__metric-copy">
+                                    <dt class="annual-impact__metric-label">발전량</dt>
+                                    <dd class="annual-impact__metric-value">약 13만 1,400kWh</dd>
+                                </div>
+                            </div>
+                            <div class="annual-impact__metric annual-impact__metric--emissions">
+                                <img class="annual-impact__metric-icon" src="../../images/platform/annual-impact-emissions.svg" alt="" aria-hidden="true">
+                                <div class="annual-impact__metric-copy">
+                                    <dt class="annual-impact__metric-label">온실가스 저감</dt>
+                                    <dd class="annual-impact__metric-value">CO₂ 약 60톤</dd>
+                                </div>
+                            </div>
+                            <div class="annual-impact__metric annual-impact__metric--pine">
+                                <img class="annual-impact__metric-icon" src="../../images/platform/annual-impact-pine-equivalent.svg" alt="" aria-hidden="true">
+                                <div class="annual-impact__metric-copy">
+                                    <dt class="annual-impact__metric-label">소나무 환산</dt>
+                                    <dd class="annual-impact__metric-value">약 9,000그루</dd>
+                                </div>
+                            </div>
+                            <div class="annual-impact__metric annual-impact__metric--households">
+                                <img class="annual-impact__metric-icon" src="../../images/platform/annual-impact-households.svg" alt="" aria-hidden="true">
+                                <div class="annual-impact__metric-copy">
+                                    <dt class="annual-impact__metric-label">전기 공급</dt>
+                                    <dd class="annual-impact__metric-value">약 36가구</dd>
+                                </div>
+                            </div>
+                        </dl>
+                    </article>
+                    <article class="annual-impact__card">
+                        <header class="annual-impact__card-header">
+                            <h2 class="annual-impact__card-title">
+                                <img class="annual-impact__heading-icon" src="../../images/platform/annual-impact-heading-icon.svg" alt="" aria-hidden="true">
+                                대구시민햇빛발전소 전체의 한 해 기여도
+                            </h2>
+                            <p class="annual-impact__card-subtitle">2026년 10월 기준 22개소, 2,583.88kW</p>
+                        </header>
+                        <dl class="annual-impact__metrics">
+                            <div class="annual-impact__metric annual-impact__metric--generation">
+                                <img class="annual-impact__metric-icon" src="../../images/platform/annual-impact-generation.svg" alt="" aria-hidden="true">
+                                <dl class="annual-impact__metric-copy">
+                                    <dt class="annual-impact__metric-label">발전량</dt>
+                                    <dd class="annual-impact__metric-value">약 340만kWh</dd>
+                                </dl>
+                            </div>
+                            <div class="annual-impact__metric annual-impact__metric--emissions">
+                                <img class="annual-impact__metric-icon" src="../../images/platform/annual-impact-emissions.svg" alt="" aria-hidden="true">
+                                <dl class="annual-impact__metric-copy">
+                                    <dt class="annual-impact__metric-label">온실가스 저감</dt>
+                                    <dd class="annual-impact__metric-value">CO₂ 약 1,542톤</dd>
+                                </dl>
+                            </div>
+                            <div class="annual-impact__metric annual-impact__metric--pine">
+                                <img class="annual-impact__metric-icon" src="../../images/platform/annual-impact-pine-equivalent.svg" alt="" aria-hidden="true">
+                                <dl class="annual-impact__metric-copy">
+                                    <dt class="annual-impact__metric-label">소나무 환산</dt>
+                                    <dd class="annual-impact__metric-value">약 23만 그루</dd>
+                                </dl>
+                            </div>
+                            <div class="annual-impact__metric annual-impact__metric--households">
+                                <img class="annual-impact__metric-icon" src="../../images/platform/annual-impact-households.svg" alt="" aria-hidden="true">
+                                <dl class="annual-impact__metric-copy">
+                                    <dt class="annual-impact__metric-label">전기 공급</dt>
+                                    <dd class="annual-impact__metric-value">약 943가구</dd>
+                                </dl>
+                            </div>
+                        </dl>
+                    </article>
+                </div>
+                <div class="annual-impact__criteria">
+                    <div class="annual-impact__criteria-copy">
+                        <div class="annual-impact__criteria-about">
+                            <h2 class="annual-impact__criteria-title">
+                                <img class="annual-impact__heading-icon" src="../../images/platform/annual-impact-heading-icon.svg" alt="" aria-hidden="true">
+                                산정 기준
+                            </h2>
+                            <div class="annual-impact__criteria-description">
+                                <ul class="annual-impact__criteria-list">
+                                    <li><strong>발전량:</strong> 발전용량 × 하루 3.6시간 × 365일</li>
+                                    <li><strong>온실가스 저감량:</strong> 발전량 × 전력 배출계수 0.4541kgCO₂/kWh</li>
+                                    <li><strong>소나무 환산:</strong> 온실가스 저감량(kg) ÷ 6.6kg(소나무 1그루의 연간 흡수량)</li>
+                                    <li><strong>공급 가구 수:</strong> 연간 발전량 ÷ 3,600kWh(1가구 월 300kWh 사용 기준)</li>
+                                </ul>
+                                <p class="annual-impact__linked-metrics">   [지표 연동] 누적 발전량 · 누적 CO₂ 저감량 · 소나무 환산 · 공급 가구 수</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="annual-impact__carbon-neutral">
+                        <img class="annual-impact__carbon-neutral-mark" src="../../images/platform/annual-impact-carbon-neutral.svg" alt="탄소중립">
+                    </div>
+                </div>
+            </section>
+
+            <section class="contents-footer contents-footer--mt40">
+                <div class="contents-footer__text">
+                    <img class="contents-footer__icon" src="../../images/icon/terms-consent-notice.svg" alt="">
                     <p>
                         출자 방법과 배당 구조를 확인할 수 있습니다.
                     </p>
                 </div>
-                <div class="platform-footer__links">
-                    <a href="#" class="platform-footer__link yellow">시민출자와 배당안내</a>
+                <div class="contents-footer__links">
+                    <a href="#" class="contents-footer__link contents-footer__link--highlight">시민출자와 배당안내</a>
                 </div>
             </section>
 
