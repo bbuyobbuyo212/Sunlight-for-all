@@ -109,7 +109,7 @@
     outline-offset: 3px;
 }
 
-@media (max-width: 768px) {
+@media (max-width:1024px) {
     .tab-group {
         overflow-x: auto;
         margin: 0 -1.6rem;
@@ -126,3 +126,4 @@
         display: none;
     }
 }
+

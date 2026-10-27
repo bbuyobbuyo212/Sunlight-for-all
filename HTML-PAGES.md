@@ -7,7 +7,7 @@
 | 경로 | 페이지명 | 설명 |
 |---|---|---|
 | [`index.html`](./index.html) | 모두의 햇빛 플랫폼 | 플랫폼 메인 페이지입니다. 햇빛발전소 현황, 플랫폼 소개, 시민 출자·배당 안내, 주요 서비스 진입점을 제공합니다. |
-| [`pages/platform/platform.html`](./pages/platform/platform.html) | 플랫폼 소개 | 시민이 함께 만드는 지역 에너지 전환 플랫폼의 목적과 주요 기능을 소개합니다. |
+| [`pages/platform/info.html`](./pages/platform/info.html) | 플랫폼 소개 | 시민이 함께 만드는 지역 에너지 전환 플랫폼의 목적과 주요 기능을 소개합니다. |
 | [`pages/guide/guide.html`](./pages/guide/guide.html) | 이용안내 | 가입·활동, 조합 설립·운영, 발전소, 통합관제 등 대상별 이용 방법과 서비스 흐름을 안내합니다. |
 | [`pages/monitoring/monitoring_1.html`](./pages/monitoring/monitoring_1.html) | 실시간 통합관제 | 대구시민햇빛발전소의 발전 현황, 시간대별 발전 추이, 운영 상태, 환경 기여도를 표시하는 공개 현황판의 정적 마크업입니다. |
 | [`pages/monitoring/monitoring_2.html`](./pages/monitoring/monitoring_2.html) | 세부 관제 (드릴다운) | 발전소별 출력·효율과 분포를 표시합니다. 상태필터 드롭다운은 항목 선택·키보드 이동·Esc 및 바깥 클릭 닫기를 지원하며, 실제 데이터 필터링은 연동 전입니다. |
