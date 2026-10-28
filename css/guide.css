@@ -1,3 +1,170 @@
+.seven-service {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 3rem 1.6rem;
+    padding: 0 0.2rem 2rem;
+    margin-top:2rem;
+}
+
+@media (max-width: 1024px) {
+    .seven-service {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    .seven-service {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+.seven-service__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.6rem;
+    min-width: 0;
+    padding: 1.6rem 1.6rem 2.4rem;
+    border-radius: 2rem;
+    background-color: var(--Primary-0, #FFFFFF);
+    box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 10%);
+}
+
+.seven-service__card--intro {
+    align-items: center;
+    justify-content: center;
+    background-color: #ffdd33;
+    box-shadow: none;
+}
+
+.seven-service__card > img {
+    display: block;
+    flex: none;
+}
+
+.seven-service__content {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    gap: 0.6rem;
+}
+
+.seven-service__title {
+    color: var(--Primary-100, #000000);
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    line-height: normal;
+    word-break: break-word;
+}
+
+.seven-service__description,
+.seven-service__description p,
+.seven-service__membership,
+.seven-service__membership li,
+.seven-service__membership strong,
+.seven-service__membership span {
+    color: var(--Grayscale-70-Text-Detail, #555555);
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: -0.1rem;
+    line-height: 2.4rem;
+    word-break: break-word;
+}
+
+.seven-service__membership li {
+    margin-left: 2.4rem;
+    list-style: disc;
+}
+
+.seven-service__membership strong {
+    color: var(--Grayscale-90-Text-Title-Body, #1D1D1D);
+    font-weight: 600;
+}
+
+.seven-service__membership li:first-child strong,
+.seven-service__membership li:first-child span {
+    line-height: 3.2rem;
+}
+
+.user-type {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.user-type__heading {
+    padding: 0.8rem 0 1.2rem 2rem;
+    color: var(--Primary-100, #000000);
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    line-height: normal;
+}
+
+.user-type__grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: calc(5.6rem / 3);
+    padding: 0 0.2rem 0.4rem;
+}
+
+@media (max-width: 1024px) {
+    .user-type__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    .user-type__grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+.user-type__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.6rem;
+    min-width: 0;
+    padding: 1.6rem 1.6rem 2.4rem;
+    border-radius: 2rem;
+    background-color: var(--Primary-0, #FFFFFF);
+    box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 10%);
+}
+
+.user-type__icon {
+    display: block;
+    flex: none;
+}
+
+.user-type__content {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    gap: 0.6rem;
+}
+
+.user-type__title {
+    color: var(--Primary-100, #000000);
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    line-height: normal;
+    word-break: break-word;
+}
+
+.user-type__description,
+.user-type__description p {
+    color: var(--Grayscale-70-Text-Detail, #555555);
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: -0.1rem;
+    line-height: 2.2rem;
+    word-break: break-word;
+}
+
 .guide-card-group {
     width: 100%;
     max-width: 120rem;
@@ -155,4 +322,129 @@
     font-weight: 400;
     line-height: 3.2rem;
     white-space: nowrap;
+}
+
+
+.flowchart {
+    position: relative;
+    margin-top:2rem;
+}
+.flowchart__card {
+    position: relative;
+    padding:3.2rem 3.2rem 3.2rem 4rem;
+    border-radius: 2rem;
+    background: var(--Primary-0, #FFF);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.10);
+}
+.flowchart__card + .flowchart__card {margin-top:2rem;}
+.flowchart__card__header {
+    display: flex;
+    align-items: center;
+}
+.flowchart__card__header .icon {
+    width: 2.9rem;
+    height: 2.9rem;
+    margin-right:1rem;
+}
+.flowchart__card__header .title {
+    color: var(--Grayscale-80, #2D2D2D);
+    font-size:2.4rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+}
+.flowchart__card__body {
+    position: relative;
+    margin-top:3.2rem;
+}
+
+.citizen-flow {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    align-items: center;
+    gap: 4.45rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@media (max-width: 1240px) {
+    .citizen-flow {
+        grid-template-columns: repeat(7, minmax(max(12.3rem, calc(6.4rem + 48px)), 1fr));
+        overflow-x: auto;
+        padding-bottom: 0.8rem;
+        scrollbar-width: thin;
+    }
+}
+
+.citizen-flow:focus-visible {
+    outline: 2px solid var(--point);
+    outline-offset: 3px;
+}
+
+.citizen-flow__step {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    aspect-ratio: 1;
+    padding: 1.6rem 0.8rem;
+    border-radius: 10rem;
+    background-color: var(--Secondary-5, #EDF1F5);
+}
+
+.citizen-flow__icon {
+    display: block;
+    flex: none;
+}
+
+.citizen-flow__label {
+    color: var(--Grayscale-80, #2D2D2D);
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.1rem;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.citizen-flow__label--signup {
+    letter-spacing: -0.2rem;
+}
+
+.citizen-flow__arrow {
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 1.225rem);
+    display: block;
+    transform: translateY(-50%);
+}
+
+.cooperative-flow {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 5.2rem;
+    padding-inline: max(0rem, calc((100% - 99.8rem) / 2));
+}
+
+@media (max-width: 1240px) {
+    .cooperative-flow {
+        grid-template-columns: repeat(6, minmax(max(12.3rem, calc(6.4rem + 42px)), 1fr));
+        padding-inline: 0;
+    }
+}
+
+.cooperative-flow .citizen-flow__label {
+    text-align: center;
+}
+
+.cooperative-flow .citizen-flow__arrow {
+    left: calc(100% + 1.6rem);
+}
+
+.plant-flow .citizen-flow__label {
+    text-align: center;
+}
+
+.plant-flow .citizen-flow__step:first-child {
+    gap: 0;
 }
