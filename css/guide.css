@@ -121,7 +121,7 @@
 
 .guide-activity__card--intro {
     justify-content: center;
-    padding: 0 3.2rem;
+    padding: 1.6rem 3.2rem;
     background-color: #ffdd33;
 }
 
@@ -132,7 +132,7 @@
 
 .guide-activity__intro-title img {
     display: block;
-    width: 106.07%;
+    width: 100%;
     height: auto;
 }
 
