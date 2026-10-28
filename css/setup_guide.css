@@ -217,7 +217,6 @@
     min-width: 0;
     padding: 3.2rem 4rem;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
     gap:1.2rem;
     border-radius: 2rem;
