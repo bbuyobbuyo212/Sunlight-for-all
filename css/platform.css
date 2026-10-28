@@ -981,6 +981,42 @@
     background-color: var(--Primary-5, #eff5ff);
 }
 
+.cooperative-logo {
+    padding: 3.2rem 3.2rem 4rem;
+    overflow: clip;
+    border-radius: 2rem;
+    background-color: var(--Primary-0, #fff);
+    box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 10%);
+}
+
+.cooperative-logo__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 1.2rem;
+    list-style: none;
+}
+
+.cooperative-logo__image {
+    display: block;
+    max-width: 100%;
+}
+
+.cooperative-logo__name {
+    display: block;
+    padding: 0.8rem 1.2rem;
+    border: 0.1rem solid var(--System-Success-10-Bg-border, #cee9d4);
+    border-radius: 10rem;
+    background-color: var(--System-Success-5-Bg, #eef7f0);
+    color: var(--Grayscale-90-Text-Title-Body, #1d1d1d);
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    line-height: normal;
+    white-space: nowrap;
+}
+
 .principles {
     display: flex;
     flex-direction: column;
