@@ -87,7 +87,7 @@
     line-height: 3.2rem;
 }
 
-.general-activity {
+.guide-activity {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 2rem;
@@ -96,18 +96,18 @@
 }
 
 @media (max-width: 1024px) {
-    .general-activity {
+    .guide-activity {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
 @media (max-width: 640px) {
-    .general-activity {
+    .guide-activity {
         grid-template-columns: minmax(0, 1fr);
     }
 }
 
-.general-activity__card {
+.guide-activity__card {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -119,24 +119,24 @@
     box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 10%);
 }
 
-.general-activity__card--intro {
+.guide-activity__card--intro {
     justify-content: center;
     padding: 0 3.2rem;
     background-color: #ffdd33;
 }
 
-.general-activity__intro-title {
+.guide-activity__intro-title {
     width: 100%;
     margin: 0;
 }
 
-.general-activity__intro-title img {
+.guide-activity__intro-title img {
     display: block;
     width: 106.07%;
     height: auto;
 }
 
-.general-activity__icon {
+.guide-activity__icon {
     display: block;
     flex: none;
     width: 6.2rem;
@@ -144,14 +144,14 @@
     object-fit: contain;
 }
 
-.general-activity__content {
+.guide-activity__content {
     display: flex;
     flex-direction: column;
     align-self: stretch;
     gap: 0.6rem;
 }
 
-.general-activity__title {
+.guide-activity__title {
     color: var(--Primary-100, #000);
     font-size: 2rem;
     font-weight: 600;
@@ -159,7 +159,7 @@
     line-height: 2.4rem;
 }
 
-.general-activity__description {
+.guide-activity__description {
     color: var(--Grayscale-70-Text-Detail, #555);
     font-size: 1.6rem;
     font-weight: 400;
