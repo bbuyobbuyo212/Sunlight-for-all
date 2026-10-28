@@ -87,6 +87,112 @@
     line-height: 3.2rem;
 }
 
+.general-join {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 0 0.2rem;
+}
+
+@media (max-width: 640px) {
+    .general-join {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+.general-join__card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    min-width: 0;
+    padding: 4rem 3.2rem;
+    overflow: clip;
+    border-radius: 2rem;
+    background-color: var(--Primary-0, #fff);
+    box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 10%);
+}
+
+.general-join__card-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.general-join__icon {
+    display: block;
+    flex: none;
+}
+
+.general-join__title {
+    color: var(--Primary-100, #000);
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.general-join__list {
+    color: var(--Grayscale-70-Text-Detail, #555);
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: -0.1rem;
+    line-height: 2.4rem;
+}
+
+.general-join__list li {
+    margin-left: 2.4rem;
+    list-style: disc;
+}
+
+.general-join__list strong {
+    font-weight: 600;
+}
+
+.general-join-footer {
+    padding: 0 0.2rem;
+    margin-top:2rem;
+}
+
+.general-join-footer__card {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 37.7rem;
+    padding: 4rem 3.2rem;
+    overflow: hidden;
+    border-radius: 2rem;
+    box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 10%);
+}
+
+.general-join-footer__card::before,
+.general-join-footer__card::after {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    content: "";
+}
+
+.general-join-footer__card::before {
+    background: url("../images/guide/general-join-solar-panels.png") center / cover no-repeat;
+}
+
+.general-join-footer__card::after {
+    background-color: rgb(0 0 0 / 20%);
+}
+
+.general-join-footer__message {
+    color: var(--Primary-0, #fff);
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    line-height: normal;
+    text-align: center;
+}
+
 .user-type {
     display: flex;
     flex-direction: column;
@@ -447,4 +553,233 @@
 
 .plant-flow .citizen-flow__step:first-child {
     gap: 0;
+}
+
+.ways-join {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ways-join__heading {
+    padding: 2.4rem 0 1.2rem 2rem;
+    color: var(--Primary-100, #000);
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    line-height: normal;
+}
+
+.ways-join__cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    padding: 0 0.2rem 2rem;
+}
+
+@media (max-width: 640px) {
+    .ways-join__cards {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+.ways-join__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.6rem;
+    min-width: 0;
+    padding: 1.6rem 3.2rem 2.4rem;
+    overflow: clip;
+    border-radius: 2rem;
+    background-color: var(--Primary-0, #fff);
+    box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 10%);
+}
+
+.ways-join__icon {
+    display: block;
+    flex: none;
+}
+
+.ways-join__content {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    gap: 0.6rem;
+    min-width: 0;
+}
+
+.ways-join__title {
+    color: var(--Primary-100, #000);
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    line-height: normal;
+}
+
+.ways-join__description,
+.ways-join__description p {
+    color: var(--Grayscale-70-Text-Detail, #555);
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: -0.1rem;
+    line-height: 2.4rem;
+}
+
+.ways-join-tip {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 0 0.2rem;
+}
+
+@media (max-width: 640px) {
+    .ways-join-tip {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+.ways-join-tip__card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    min-width: 0;
+    padding: 4rem 3.2rem;
+    overflow: clip;
+    border-radius: 2rem;
+    background-color: var(--Primary-0, #fff);
+    box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 10%);
+}
+
+.ways-join-tip__card--notice {
+    padding-bottom: 3.2rem;
+}
+
+.ways-join-tip__card-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.ways-join-tip__icon {
+    display: block;
+    flex: none;
+}
+
+.ways-join-tip__title {
+    color: var(--Primary-100, #000);
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    line-height: normal;
+}
+
+.ways-join-tip__steps {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    color: var(--Grayscale-90-Text-Title-Body, #1d1d1d);
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: -0.1rem;
+    line-height: 2.4rem;
+}
+
+.ways-join-tip__step {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 0;
+}
+
+.ways-join-tip__step-title {
+    display: flex;
+    flex: 0 0 9.6rem;
+    align-items: flex-start;
+    margin: 0;
+    line-height: 2.4rem;
+}
+
+.ways-join-tip__step-title--spaced {
+    line-height: 2.8rem;
+}
+
+.ways-join-tip__step-number {
+    flex: 0 0 1.8rem;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+}
+
+.ways-join-tip__step-title strong {
+    font-weight: 600;
+}
+
+.ways-join-tip__step-cont {
+    flex: 0 0 calc(100% - 9.6rem);
+    margin: 0;
+    line-height: 2.4rem;
+}
+
+.ways-join-tip__step-cont--spaced {
+    line-height: 2.8rem;
+}
+
+.ways-join-tip__substeps {
+    margin-left: 9.6rem;
+    list-style: none;
+    color: var(--Grayscale-70-Text-Detail, #555);
+    line-height: 2.4rem;
+}
+
+.ways-join-tip__substeps ul {
+    list-style: none;
+}
+
+.ways-join-tip__substeps li {
+    margin: 0;
+}
+
+.ways-join-tip__substeps li::before {
+    content: "→";
+}
+
+.ways-join-tip__notice-list {
+    margin-left: 2.4rem;
+    color: var(--Grayscale-70-Text-Detail, #555);
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: -0.1rem;
+    line-height: 2.4rem;
+    list-style: disc;
+}
+
+.ways-join-tip__preview {
+    position: relative;
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+    border: 0.1rem solid var(--Grayscale-20, #e4e4e4);
+    border-radius: 1rem;
+}
+
+.ways-join-tip__preview-image {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+@media (max-width: 640px) {
+    .ways-join-tip__preview {
+        flex: none;
+    }
+
+    .ways-join-tip__preview-image {
+        position: static;
+        height: auto;
+    }
 }
