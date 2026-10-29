@@ -4,25 +4,94 @@
 
 ## 페이지 목록
 
-| 경로 | 페이지명 | 설명 |
+저장소의 HTML 파일을 업무 영역별로 나열합니다. 경로 링크는 저장소 루트 기준이며, 파일에 작성된 화면과 동작을 요약합니다. 정적 시안 또는 샘플 데이터인 경우 해당 사실을 함께 표시했습니다.
+
+### 홈
+
+| 경로 | 화면 | 주요 내용 |
 |---|---|---|
-| [`index.html`](./index.html) | 모두의 햇빛 플랫폼 | 플랫폼 메인 페이지입니다. 햇빛발전소 현황, 플랫폼 소개, 시민 출자·배당 안내, 주요 서비스 진입점을 제공합니다. |
-| [`pages/platform/info.html`](./pages/platform/info.html) | 플랫폼 소개 | 시민이 함께 만드는 지역 에너지 전환 플랫폼의 목적과 주요 기능을 소개합니다. |
-| [`pages/guide/services.html`](./pages/guide/services.html) | 이용안내 | 가입·활동, 조합 설립·운영, 발전소, 통합관제 등 대상별 이용 방법과 서비스 흐름을 안내합니다. |
-| [`pages/monitoring/monitoring_1.html`](./pages/monitoring/monitoring_1.html) | 실시간 통합관제 | 대구시민햇빛발전소의 발전 현황, 시간대별 발전 추이, 운영 상태, 환경 기여도를 표시하는 공개 현황판의 정적 마크업입니다. |
-| [`pages/monitoring/monitoring_2.html`](./pages/monitoring/monitoring_2.html) | 세부 관제 (드릴다운) | 발전소별 출력·효율과 분포를 표시합니다. 상태필터 드롭다운은 항목 선택·키보드 이동·Esc 및 바깥 클릭 닫기를 지원하며, 실제 데이터 필터링은 연동 전입니다. |
-| [`pages/monitoring/monitoring_3.html`](./pages/monitoring/monitoring_3.html) | 표출 설정·순환 화면 미리보기 | 전체화면·자동 순환 설정 토글과 네 화면의 미리보기 정적 마크업입니다. 설정 저장 및 실제 모니터 표출·화면 순환은 연동 전입니다. |
-| [`pages/search/search.html`](./pages/search/search.html) | 햇빛발전소 찾기 | 출자 모집 중 또는 운영 중인 햇빛발전소를 카드 목록으로 조회하고 모집률과 발전소 정보를 확인합니다. |
-| [`pages/search/search_map.html`](./pages/search/search_map.html) | 햇빛발전소 지도 찾기 | 햇빛발전소를 지도 기반으로 탐색하고 지역 및 운영 상태별 위치 정보를 확인합니다. |
-| [`pages/faq/faq.html`](./pages/faq/faq.html) | 자주 묻는 질문(FAQ) | 가입, 출자·증자, 배당, 펀드, 조합 설립·운영과 관련된 자주 묻는 질문과 답변을 제공합니다. |
-| [`pages/notice/notice.html`](./pages/notice/notice.html) | 알림마당 | 모두의 햇빛 플랫폼의 공지사항과 새 소식을 목록 형태로 안내합니다. |
-| [`pages/member/login.html`](./pages/member/login.html) | 로그인 | 아이디·비밀번호 로그인, 자동 로그인, 소셜 로그인 진입, 아이디·비밀번호 찾기 및 햇빛시민 가입 연결을 제공합니다. |
-| [`pages/member/find_id.html`](./pages/member/find_id.html) | 아이디 찾기 | 이름, 휴대전화, 인증번호를 입력해 본인확인 후 아이디를 찾는 화면입니다. |
-| [`pages/member/find_pw.html`](./pages/member/find_pw.html) | 비밀번호 재설정 | 이름, 아이디, 휴대전화, 인증번호를 입력해 본인확인 후 비밀번호를 재설정하는 화면입니다. |
-| [`pages/member/join.html`](./pages/member/join.html) | 햇빛시민 가입 약관 동의 | 햇빛시민 가입 절차의 첫 단계입니다. 서비스 이용약관, 개인정보 처리, 조합 관련 약관을 확인하고 동의합니다. |
-| [`pages/member/join2.html`](./pages/member/join2.html) | 햇빛시민 가입 개인정보 입력 | 가입 아이디, 비밀번호, 이름, 휴대전화, 주소, 추천인 등 회원 개인정보를 입력하는 두 번째 단계입니다. |
-| [`pages/member/join3.html`](./pages/member/join3.html) | 조합원 가입·출자 신청 | 가입 조합과 발전소를 선택하고, 조합원 가입·정관 동의·출자 구좌·배당 계좌 정보를 입력하는 세 번째 단계입니다. |
-| [`pages/member/join4.html`](./pages/member/join4.html) | 신청 확인 | 조합원 가입·출자 신청 접수번호, 가입 조합, 가입 상태, 입금 계좌·금액, 승인 상태를 확인하는 마지막 단계입니다. |
+| [`index.html`](./index.html) | 모두의 햇빛 홈 | 메인 배너, 플랫폼 소개 카드, 발전소 운영 현황 수치, 이용안내·플랫폼·관제 등 주요 화면으로 이동하는 진입점입니다. 표시 수치와 콘텐츠는 현재 HTML에 포함된 값입니다. |
+
+### 플랫폼 소개
+
+| 경로 | 화면 | 주요 내용 |
+|---|---|---|
+| [`pages/platform/info.html`](./pages/platform/info.html) | 모두의 햇빛이란 | 플랫폼을 만든 이유와 목적, 시민·조합원·협동조합·일반 방문자별 기능, 대구시민햇빛발전소 현황을 소개합니다. |
+| [`pages/platform/service.html`](./pages/platform/service.html) | 이런 서비스를 제공해요 | 시민 참여·조합 운영·발전소 운영·통합관제의 네 가지 서비스와 공통 기능을 설명합니다. |
+| [`pages/platform/story.html`](./pages/platform/story.html) | 대구시민햇빛발전소 이야기 | 이름의 의미, 주요 연혁, 발전소 현황과 목표, 발전소 설립 절차 및 관련 사진·지도를 보여줍니다. |
+| [`pages/platform/cooperative.html`](./pages/platform/cooperative.html) | 시민에너지협동조합 이야기 | 협동조합의 의미와 역할, 운영 원칙, 운영 공개 및 조합별 정보 보호 등을 소개합니다. |
+| [`pages/platform/benefits.html`](./pages/platform/benefits.html) | 함께하면 좋은 점 | 시민 참여의 개인·지역·환경 측면의 기대 효과를 설명합니다. |
+| [`pages/platform/investment.html`](./pages/platform/investment.html) | 시민출자와 배당 안내 | 출자 절차, 발전 수익과 배당 구조, 예시 계산 및 유의사항을 안내합니다. 예시 금액은 확정 수익을 뜻하지 않습니다. |
+
+### 이용안내
+
+| 경로 | 화면 | 주요 내용 |
+|---|---|---|
+| [`pages/guide/services.html`](./pages/guide/services.html) | 이용안내·서비스 안내 | 발전소 찾기, 햇빛시민 가입, 조합원 서비스, 조합 설립 지원 등 이용 대상별 서비스와 진입 방법을 소개합니다. |
+| [`pages/guide/usage_flow.html`](./pages/guide/usage_flow.html) | 이용 흐름 | 시민 참여, 협동조합 설립, 발전소 설립·운영의 주요 흐름을 단계별 도식으로 보여줍니다. |
+| [`pages/guide/guide.html`](./pages/guide/guide.html) | 이용안내 개요 | 가입·활동, 조합 설립·운영, 발전소, 통합관제 영역별 안내 카드와 이용 흐름을 제공합니다. |
+| [`pages/guide/guide_bak.html`](./pages/guide/guide_bak.html) | 이용안내 개요 백업 | `guide.html`과 유사한 이용안내 개요 화면의 별도 HTML 파일입니다. 보존 목적이나 현재 연결 여부는 코드만으로 확정하지 않았습니다. |
+| [`pages/guide/general_public.html`](./pages/guide/general_public.html) | 일반 시민 안내 | 로그인 전 이용 가능한 기능과 가입 후 이용 가능한 기능을 구분해 안내합니다. |
+| [`pages/guide/general_public_join.html`](./pages/guide/general_public_join.html) | 일반 시민 가입 안내 | 조합원 가입 방법, 가입 4단계 및 신청 전 알아둘 내용을 설명합니다. |
+| [`pages/guide/general_public_activity.html`](./pages/guide/general_public_activity.html) | 일반 시민·조합원 활동 안내 | 가입 후 ‘나의 햇빛’에서 이용하는 기능을 설명하고 대시보드 이미지 영역을 제공합니다. 일부 이미지 자리는 안내용 문구로 표시되어 있습니다. |
+| [`pages/guide/cooperative_join.html`](./pages/guide/cooperative_join.html) | 협동조합 설립 안내 | 협동조합 설립 6단계와 진행 방법을 설명합니다. |
+| [`pages/guide/cooperative_operations.html`](./pages/guide/cooperative_operations.html) | 협동조합 운영·조합원 안내 | 조합원이 되는 방법을 안내하는 화면입니다. |
+| [`pages/guide/cooperative_activity.html`](./pages/guide/cooperative_activity.html) | 협동조합 관리자 활동 안내 | 조합관리자가 처리하는 업무와 운영 콘솔 대시보드 이미지 영역을 소개합니다. 일부 이미지 자리는 안내용 문구로 표시되어 있습니다. |
+| [`pages/guide/power_plant_join.html`](./pages/guide/power_plant_join.html) | 발전소 설립 안내 | 발전소 설립 과정에서 플랫폼이 제공하는 기능과 플랫폼의 제공 범위를 설명합니다. |
+| [`pages/guide/power_plant_operations.html`](./pages/guide/power_plant_operations.html) | 발전소 운영 안내 | 발전소 운영 단계에서 플랫폼이 제공하는 기능 및 제공하지 않는 업무 범위를 안내합니다. |
+| [`pages/guide/power_plant_activity.html`](./pages/guide/power_plant_activity.html) | 발전소 활동 단계 안내 | 발전소의 건설 단계와 가동 단계에서 수행하는 활동을 안내합니다. |
+| [`pages/guide/integrated_control_service.html`](./pages/guide/integrated_control_service.html) | 통합관제 정보 안내 | 관제 화면에 표시하는 정보, 환경 기여도 계산 방법, 데이터 출처와 공개 범위를 설명합니다. |
+| [`pages/guide/integrated_control_service_guide.html`](./pages/guide/integrated_control_service_guide.html) | 통합관제 이용 방법 | 통합관제 화면의 이용 순서와 알아둘 사항을 안내합니다. |
+
+### 햇빛발전소 찾기
+
+| 경로 | 화면 | 주요 내용 |
+|---|---|---|
+| [`pages/search/search.html`](./pages/search/search.html) | 햇빛발전소 목록 찾기 | 발전소 카드, 출자 모집률, 운영 정보 등 목록형 탐색 화면을 제공합니다. 현재 화면 데이터가 실제 서비스 데이터와 연동되는지는 별도 확인이 필요합니다. |
+| [`pages/search/search_map.html`](./pages/search/search_map.html) | 햇빛발전소 지도 찾기 | 지도 이미지와 지도형 탐색 화면을 표시합니다. 지도 이미지 자체는 정적 리소스이며 실시간 지도 서비스 연동을 의미하지 않습니다. |
+
+### 실시간 통합관제
+
+| 경로 | 화면 | 주요 내용 |
+|---|---|---|
+| [`pages/monitoring/monitoring_1.html`](./pages/monitoring/monitoring_1.html) | 공개 통합 현황판 | 발전 현황 지표, 시간대별 발전 추이, 운영 상태 및 환경 기여도를 보여주는 관제 화면입니다. 표시 값은 정적 예시이며 실데이터 연동 여부와 구분해야 합니다. |
+| [`pages/monitoring/monitoring_2.html`](./pages/monitoring/monitoring_2.html) | 발전소별 세부 관제 | 발전소별 발전 지표와 분포를 보여줍니다. 상태 필터 UI는 선택·키보드 이동·Esc·바깥 클릭 동작을 지원하지만, 데이터 필터링은 연동 전입니다. |
+| [`pages/monitoring/monitoring_3.html`](./pages/monitoring/monitoring_3.html) | 표출 설정·순환 화면 미리보기 | 화면 표출 설정 UI와 현황판·세부관제·환경 기여도·지역 지도 미리보기를 제공합니다. 설정 저장, 실제 대형 모니터 적용 및 자동 순환은 연동 전입니다. |
+
+### 알림마당·문의
+
+| 경로 | 화면 | 주요 내용 |
+|---|---|---|
+| [`pages/notice/notice.html`](./pages/notice/notice.html) | 공지사항 목록 | 공지사항 목록과 게시물 진입 화면입니다. |
+| [`pages/notice/notice-detail.html`](./pages/notice/notice-detail.html) | 공지사항 상세 | 공지 제목과 본문, 목록 이동 등 게시물 상세 화면을 제공합니다. 본문은 현재 HTML에 작성된 예시 게시물입니다. |
+| [`pages/notice/dataroom.html`](./pages/notice/dataroom.html) | 자료실 | 첨부 자료의 목록과 다운로드 UI를 제공합니다. |
+| [`pages/notice/qa.html`](./pages/notice/qa.html) | 문의·질문 목록 | 질문 게시물 목록으로 이동하고 문의를 작성하는 화면의 진입점을 제공합니다. |
+| [`pages/notice/qa_detail.html`](./pages/notice/qa_detail.html) | 문의 상세 | 질문과 답변 본문을 보여주는 상세 화면입니다. 게시물 내용은 HTML에 포함된 예시입니다. |
+| [`pages/notice/board_write.html`](./pages/notice/board_write.html) | 게시물 작성 | 알림마당 영역의 게시물 작성 폼 화면입니다. 실제 등록·저장 처리는 서버 기능 연동이 필요합니다. |
+| [`pages/faq/faq.html`](./pages/faq/faq.html) | 자주 묻는 질문 | 출자금, 배당, 증자, 펀드, 조합 가입·운영 등에 대한 질문과 답변을 제공합니다. |
+
+### 회원·가입
+
+| 경로 | 화면 | 주요 내용 |
+|---|---|---|
+| [`pages/member/login.html`](./pages/member/login.html) | 로그인 | 아이디·비밀번호 입력, 자동 로그인 UI, 소셜 로그인 진입점, 아이디·비밀번호 찾기와 가입 화면 링크를 제공합니다. 실제 인증은 별도 연동이 필요합니다. |
+| [`pages/member/find_id.html`](./pages/member/find_id.html) | 아이디 찾기 | 이름·휴대전화·인증번호 입력을 통한 본인 확인 및 아이디 찾기 UI입니다. 실제 본인 인증은 별도 연동이 필요합니다. |
+| [`pages/member/find_pw.html`](./pages/member/find_pw.html) | 비밀번호 재설정 | 이름·아이디·휴대전화·인증번호 입력을 통한 본인 확인 및 비밀번호 재설정 UI입니다. |
+| [`pages/member/join.html`](./pages/member/join.html) | 가입 약관 동의 | 햇빛시민 가입의 첫 단계로 약관을 확인하고 동의합니다. |
+| [`pages/member/join2.html`](./pages/member/join2.html) | 가입 개인정보 입력 | 계정 정보와 이름·연락처·주소 등 가입 정보를 입력하는 단계입니다. |
+| [`pages/member/join3.html`](./pages/member/join3.html) | 조합원 가입·출자 신청 | 조합·발전소 선택, 조합원 가입, 정관 동의, 출자 및 배당 계좌 정보를 입력합니다. |
+| [`pages/member/join4.html`](./pages/member/join4.html) | 신청 접수 확인 | 조합원 가입·출자 신청 접수 완료와 신청 상태·납부 관련 정보를 확인하는 화면입니다. |
+| [`pages/member/join_general.html`](./pages/member/join_general.html) | 가입 화면 예시 | 약관 예시와 가입 입력 UI가 포함된 별도 가입 HTML입니다. 페이지 안의 약관은 예시임을 명시하고 있으므로 실제 약관으로 사용하면 안 됩니다. |
+
+### 조합·설립 가이드
+
+| 경로 | 화면 | 주요 내용 |
+|---|---|---|
+| [`pages/setup_guide/setup_guide.html`](./pages/setup_guide/setup_guide.html) | 협동조합 설립 안내 | 협동조합 설립 절차, 단계별 유의사항 및 설립 따라하기 진입점을 제공합니다. |
+| [`pages/setup_guide/step_guide.html`](./pages/setup_guide/step_guide.html) | 협동조합 설립 따라하기 | 조합 설립 진행 단계와 설립 신고 서류 안내를 제공합니다. |
+| [`pages/setup_guide/step_guide2.html`](./pages/setup_guide/step_guide2.html) | 발전소 설립 따라하기 | 조합관리자 전용 발전소 설립 진행 단계와 발전사업 허가 서류 안내를 제공합니다. |
+
+**현재 파일 수:** 루트 홈 1개와 `pages/` 아래 44개로, 총 45개의 HTML 파일이 있습니다. 이 목록은 저장소 파일 기준이며, 모든 페이지가 현재 메뉴에 연결되거나 백엔드 기능과 연동되었음을 뜻하지 않습니다.
 
 ## 회원가입 단계
 
@@ -109,10 +178,3 @@
 - 단계 사이의 화살표는 가로 방향을 유지합니다. 단계 내부와 반응형 항목 사이의 간격은 `gap` 대신 `margin-left`로 지정합니다.
 - 스크롤 영역에는 키보드 접근을 위한 `tabindex="0"`과 포커스 표시를 제공합니다.
 
-## 참고
-
-- 모든 페이지는 공통 헤더와 푸터를 사용합니다.
-- 회원 관련 페이지의 공통 스타일은 [`css/join.css`](./css/join.css)에 정의되어 있습니다.
-- 모니터링용 공통 헤더·푸터와 본문 스타일은 [`css/monitoring.css`](./css/monitoring.css)에 정의되어 있습니다. 수치·시각은 Figma 시안의 예시이며, 실제 데이터 수신 및 자동 갱신은 연동 전입니다.
-- 모니터링 3개 페이지의 주요 반응형 배치 전환은 1024px 이하에서 시작합니다. 데스크톱은 1920px 시안 비율에 맞춰 글자·그래프를 축소하며, 태블릿·모바일은 공통 rem 배율을 유지하면서 글자·도넛 그래프 크기를 추가 조정합니다. 세부 미디어쿼리는 해당 클래스 아래에 정의합니다.
-- 페이지 경로는 저장소 루트 기준의 상대 경로로 작성했습니다.
