@@ -10,11 +10,14 @@
     align-items: center;
     justify-content: center;
     align-self: stretch;
-    gap: 4rem;
     padding: 3.2rem 4rem;
     border-radius: 2rem;
     background: var(--Primary-0, #FFF);
     box-shadow: 0 0.2rem 0.6rem 0 rgba(0, 0, 0, 0.10);
+}
+
+.setup-guide-box > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 4rem;
 }
 .setup-guide-box__title {
     width: 100%;
@@ -99,6 +102,11 @@
     .setup-guide-cards {
         flex-direction: column;
         align-items: stretch;
+        gap: 0;
+    }
+
+    .setup-guide-cards > :not([hidden]) ~ :not([hidden]) {
+        margin-top: 2rem;
     }
 }
 .setup-guide-card {
@@ -108,11 +116,14 @@
     align-items: flex-start;
     justify-content: center;
     min-width: 0;
-    gap: 4rem;
     padding: 3.2rem 4rem;
     border-radius: 2rem;
     background: var(--Primary-0, #FFF);
     box-shadow: 0 0.2rem 0.6rem 0 rgba(0, 0, 0, 0.10);
+}
+
+.setup-guide-card > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 4rem;
 }
 .setup-guide-card--start {
     align-self: stretch;
@@ -124,9 +135,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 2rem;
     width: 28rem;
     max-width: 100%;
+}
+
+.setup-guide-card__content > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 2rem;
 }
 .setup-guide-card__content--start {
     align-items: center;
@@ -206,11 +220,14 @@
     padding: 3.2rem 4rem;
     flex-direction: column;
     align-items: flex-start;
-    gap: 2rem;
     align-self: stretch;
     border-radius: 2rem;
     background: var(--Primary-0, #FFF);
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.10);
+}
+
+.step-guide__left > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 2rem;
 }
 .step-guide__right {
     display: flex;
@@ -218,10 +235,13 @@
     padding: 3.2rem 4rem;
     flex-direction: column;
     align-items: flex-start;
-    gap:1.2rem;
     border-radius: 2rem;
     background: var(--Primary-0, #FFF);
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.10);    
+}
+
+.step-guide__right > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1.2rem;
 }
 @media (max-width:960px) {
     .step-guide {
@@ -233,8 +253,11 @@
     padding-bottom:2rem;
     flex-direction: column;
     align-items: flex-start;
-    gap: 2.4rem;
     align-self: stretch;
+}
+
+.setup-progress > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 2.4rem;
 }
 .setup-progress__title {
     color: var(--Grayscale-80, #2D2D2D);
@@ -263,14 +286,20 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    gap:2rem;
+}
+
+.step-guide__step > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 2rem;
 }
 .step-guide__step .step-guide__list {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap:2rem;
     align-self: stretch;
+}
+
+.step-guide__step .step-guide__list > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 2rem;
 }
 .step-guide__step .step-guide__item {
     display: flex;
@@ -343,7 +372,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
     border-radius: 10rem;
     background: var(--System-Warning, #FFB724);
     color: var(--Primary-0, #FFF);
@@ -351,13 +379,20 @@
     font-weight: 600;
     letter-spacing: -0.1rem;
 }
+
+.step-guide__header .number > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1rem;
+}
 .step-guide__header .cont {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap:0.8rem;
     flex: 1 0 0;
+}
+
+.step-guide__header .cont > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 0.8rem;
 }
 .step-guide__header .title {
     color: var(--Grayscale-80, #2D2D2D);
@@ -379,7 +414,10 @@
     flex-direction: column;
     position: relative;
     width:100%;
-    gap:1.2rem;
+}
+
+.setup-steps > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1.2rem;
 }
 .setup-steps__item {
     display: flex;
@@ -393,7 +431,11 @@
     .setup-steps__item {
         flex-direction: column;
         align-items: flex-start;
-        gap:1.2rem;
+        gap: 0;
+    }
+
+    .setup-steps__item > :not([hidden]) ~ :not([hidden]) {
+        margin-top: 1.2rem;
     }
 }
 .setup-steps__item .check {
@@ -491,8 +533,12 @@
 @media (max-width:720px) {
     .setup-steps__btnbox  {
         flex-direction: column;
-        gap: 1.2rem;
+        gap: 0;
         align-items: flex-start;
+    }
+
+    .setup-steps__btnbox > :not([hidden]) ~ :not([hidden]) {
+        margin-top: 1.2rem;
     }
 }
 .setup-steps__btnbox .btn {
@@ -533,9 +579,13 @@
 @media (max-width:475px) {
     .setup-steps__btnbox .right  {
         flex-direction: column;
-        gap: 1.2rem;
+        gap: 0;
         align-items: flex-start;
         margin-left:0;
+    }
+
+    .setup-steps__btnbox .right > :not([hidden]) ~ :not([hidden]) {
+        margin-top: 1.2rem;
     }
 }
 .setup-steps__btnbox .btn.black {

@@ -210,7 +210,11 @@
         align-items: flex-start;
         flex-direction: column;
         height: auto;
-        gap: 1.4rem;
+        gap: 0;
+    }
+
+    .footer__top > :not([hidden]) ~ :not([hidden]) {
+        margin-top: 1.4rem;
     }
 }
 
@@ -400,6 +404,11 @@
     .footer__info-list {
         flex-direction: column;
         margin-bottom: 0.8rem;
+        gap: 0;
+    }
+
+    .footer__info-list > :not([hidden]) ~ :not([hidden]) {
+        margin-top: 0.8rem;
     }
 }
 .footer__info-list li::before {

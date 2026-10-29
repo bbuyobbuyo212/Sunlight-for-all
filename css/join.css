@@ -116,6 +116,10 @@
     .terms-group--general .terms-group__header {
         flex-direction: column;
         align-items: stretch;
+        gap: 0;
+    }
+    .terms-group--general .terms-group__header > :not([hidden]) ~ :not([hidden]) {
+        margin-top: 1.2rem;
     }
     .terms-group--general .terms-group__toggle {
         align-self: flex-end;
@@ -522,7 +526,12 @@
 .cooperative-item {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    /* Reset the gap supplied by the shared .personal-group grid. */
+    gap: 0;
+}
+
+.cooperative-item > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 4rem;
 }
 .cooperative-item + .cooperative-item {
     margin-top: 2rem;
@@ -564,7 +573,10 @@
 .cooperative-item__body {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+}
+
+.cooperative-item__body > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 4rem;
 }
 .personal-form__label.cooperative-item__label {
     display: flex;
@@ -701,7 +713,6 @@
     max-height: 18rem;
     overflow-y: auto;
     overscroll-behavior: contain;
-    margin-top: -2rem;
     padding: 2rem;
     border: 1px solid var(--Grayscale-20, #e4e4e4);
     border-radius: 0.8rem;
@@ -714,6 +725,10 @@
 }
 .cooperative-item__terms-content[hidden] {
     display: none;
+}
+.cooperative-item__body > .cooperative-item__terms-content:not([hidden]) {
+    /* Preserve the original stack spacing minus the terms panel offset. */
+    margin-top: 2rem;
 }
 .cooperative-item__terms-content strong {
     display: block;
@@ -752,8 +767,9 @@
     }
 }
 @media (max-width: 640px) {
-    .cooperative-item {
-        gap: 2.4rem;
+
+    .cooperative-item > :not([hidden]) ~ :not([hidden]) {
+        margin-top: 2.4rem;
     }
     .cooperative-item__heading {
         height: auto;
@@ -774,8 +790,12 @@
         font-size: 1.6rem;
         line-height: 2.4rem;
     }
-    .cooperative-item__body {
-        gap: 2.4rem;
+
+    .cooperative-item__body > :not([hidden]) ~ :not([hidden]) {
+        margin-top: 2.4rem;
+    }
+    .cooperative-item__body > .cooperative-item__terms-content:not([hidden]) {
+        margin-top: 0.4rem;
     }
     .cooperative-item__agreement {
         gap: 1.2rem;
@@ -789,11 +809,14 @@
 .join-result {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
     padding: 3.2rem 4rem;
     border-radius: 2rem;
     background-color: var(--Primary-0, #fff);
     box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 10%);
+}
+
+.join-result > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 4rem;
 }
 .join-result__intro {
     display: flex;
@@ -869,10 +892,13 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 1.6rem;
     width: 100%;
     max-width:54rem;
     margin: 0 auto;
+}
+
+.mb-form__inner > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1.6rem;
 }
 
 .login-form__field {
@@ -986,8 +1012,11 @@
 .login-form__actions {
     display: flex;
     flex-direction: column;
-    gap: 1.6rem;
     height: 50.2rem;
+}
+
+.login-form__actions > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1.6rem;
 }
 .login-form__button {
     display: flex;
@@ -1150,8 +1179,11 @@
 .find-id-form__actions {
     display: flex;
     flex-direction: column;
-    gap: 1.6rem;
     height: 9rem;
+}
+
+.find-id-form__actions > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1.6rem;
 }
 .find-id-form__submit {
     width: 54rem;

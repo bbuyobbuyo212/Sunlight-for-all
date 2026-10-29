@@ -31,6 +31,25 @@
 3. [`join3.html`](./pages/member/join3.html) — 조합원 가입·출자 신청
 4. [`join4.html`](./pages/member/join4.html) — 신청 확인
 
+## 구형 iOS의 세로 Flex 간격
+
+- `flex-direction: column`인 영역의 세로 간격은 Flex `gap` 대신 직접 자식 사이의 `margin-top`으로 지정합니다.
+- 첫 번째 자식에는 간격을 추가하지 않습니다. 자식에 원래 있던 여백, 숨김 요소와 절대 위치 요소가 있으면 별도로 확인합니다.
+- 반응형에서 가로 Flex가 세로로 바뀌는 경우 해당 미디어쿼리 안에서 `gap: 0`으로 중복 간격을 막고 자식 여백을 지정합니다.
+- 역순 세로 배치(`column-reverse`)에는 `margin-bottom`을 사용합니다.
+- Grid의 `gap`과 가로 Flex의 `gap`은 이번 교체 대상이 아닙니다. 이 변경만으로 구형 iOS의 모든 CSS 기능 호환성을 보장하는 것은 아닙니다.
+
+```css
+.example-stack {
+    display: flex;
+    flex-direction: column;
+}
+
+.example-stack > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1.6rem;
+}
+```
+
 ## 공통 그리드와 카드
 
 같은 형태의 2열 배치와 세로형 카드는 [`css/contents.css`](./css/contents.css)의 공통 클래스를 조합합니다.

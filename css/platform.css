@@ -24,9 +24,12 @@
     display: flex;
     flex: 0 0 54.1rem;
     flex-direction: column;
-    gap: 3.2rem;
     width: 54.1rem;
     height: 46.6rem;
+}
+
+.platform-why__content > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 3.2rem;
 }
 
 @media (max-width: 640px) {
@@ -40,7 +43,10 @@
 .platform-why__section {
     display: flex;
     flex-direction: column;
-    gap: 1.6rem;
+}
+
+.platform-why__section > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1.6rem;
 }
 
 .platform-why__description {
@@ -160,8 +166,11 @@
 .platform-what {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
     margin-top: 2rem;
+}
+
+.platform-what > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1rem;
 }
 
 .platform-what__heading {
@@ -198,12 +207,15 @@
 .platform-what__card {
     display: flex;
     flex-direction: column;
-    gap: 1.6rem;
     padding: 1.6rem 1.6rem 2.4rem;
     overflow: clip;
     border-radius: 2rem;
     background-color: var(--Primary-0, #fff);
     box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 10%);
+}
+
+.platform-what__card > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1.6rem;
 }
 
 .platform-what__icon {
@@ -218,8 +230,11 @@
 .platform-what__card-content {
     display: flex;
     flex-direction: column;
-    gap: 0.6rem;
     letter-spacing: -0.1rem;
+}
+
+.platform-what__card-content > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 0.6rem;
 }
 
 .platform-what__card-title {
@@ -332,8 +347,11 @@
 .platform-services {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
     margin-top: 2rem;
+}
+
+.platform-services > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1rem;
 }
 
 .platform-services__heading {
@@ -356,11 +374,14 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.6rem;
     padding: 1.6rem 1.6rem 2.4rem 2.4rem;
     border-radius: 2rem;
     background-color: var(--Primary-0, #fff);
     box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 10%);
+}
+
+.platform-services__card > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1.6rem;
 }
 
 .platform-services__icon {
@@ -373,8 +394,11 @@
 .platform-services__content {
     display: flex;
     flex-direction: column;
-    gap: 0.6rem;
     align-self: stretch;
+}
+
+.platform-services__content > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 0.6rem;
 }
 
 .platform-services__card-title {
@@ -424,12 +448,15 @@
 .platform-shared {
     display: flex;
     flex-direction: column;
-    gap: 1.6rem;
     margin-top: 2rem;
     padding: 3.2rem 4rem;
     border-radius: 2rem;
     background-color: var(--Primary-0, #fff);
     box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 10%);
+}
+
+.platform-shared > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1.6rem;
 }
 
 .platform-shared__list {
@@ -460,15 +487,22 @@
     .platform-story {
         flex-direction: column;
         align-items: stretch;
-        gap:1.2rem;
+        gap: 0;
+    }
+
+    .platform-story > :not([hidden]) ~ :not([hidden]) {
+        margin-top: 1.2rem;
     }
 }
 
 .platform-story__content {
     display: flex;
     flex-direction: column;
-    gap: 1.6rem;
     min-width: 0;
+}
+
+.platform-story__content > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1.6rem;
 }
 
 .platform-story__description {
@@ -499,9 +533,12 @@
 .platform-history {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
     margin: 2rem -0.2rem 0;
     padding: 0 0.2rem 2rem;
+}
+
+.platform-history > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1rem;
 }
 
 .platform-history__heading {
@@ -519,10 +556,13 @@
 .platform-history__card {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
     border-radius: 2rem;
     background-color: var(--Primary-0, #fff);
     filter: drop-shadow(0 0.2rem 0.3rem rgb(0 0 0 / 10%));
+}
+
+.platform-history__card > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 2rem;
 }
 
 .platform-history__timeline {
@@ -555,9 +595,12 @@
     display: flex;
     flex: 1 1 0;
     flex-direction: column;
-    gap: 0.6rem;
     min-width: 0;
     color: var(--System-Warning-60-Text, #98690a);
+}
+
+.platform-history__item > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 0.6rem;
 }
 
 .platform-history__item:nth-child(even) {
@@ -784,10 +827,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1.2rem;
     padding: 4.5rem 0;
     border-radius: 2rem;
     background-color: var(--Secondary-10, #cdd7e4);
+}
+
+.plant-development__step > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1.2rem;
 }
 
 .plant-development__step:not(:last-child)::after {
@@ -848,8 +894,11 @@
 .cooperative__content {
     display: flex;
     flex-direction: column;
-    gap: 1.6rem;
     min-width: 0;
+}
+
+.cooperative__content > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1.6rem;
 }
 
 .cooperative__description {
@@ -911,8 +960,11 @@
 .principles {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
     margin-top: 2rem;
+}
+
+.principles > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1rem;
 }
 
 .principles__heading {
@@ -956,11 +1008,14 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.6rem;
     padding: 1.6rem 1.6rem 2.4rem;
     border-radius: 2rem;
     background-color: var(--Primary-0, #fff);
     box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 10%);
+}
+
+.principles__card > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1.6rem;
 }
 
 .principles__icon {
@@ -974,7 +1029,10 @@
     display: flex;
     flex-direction: column;
     align-self: stretch;
-    gap: 0.6rem;
+}
+
+.principles__content > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 0.6rem;
 }
 
 .principles__card-title {
@@ -1082,7 +1140,10 @@
     border-radius: 2rem;
     background-color: var(--Primary-0, #fff);
     box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 10%);
-    gap: 1.6rem;
+}
+
+.benefits-local__card > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1.6rem;
 }
 
 .benefits-local__visual {
@@ -1093,11 +1154,14 @@
     align-items: center;
     justify-content: center;
     align-self: stretch;
-    gap: 0.6rem;
     height: 10rem;
     overflow: hidden;
     border-radius: 1rem;
     background-color: var(--Grayscale-70-Text-Detail, #555);
+}
+
+.benefits-local__visual > :not(img):not([hidden]) ~ :not(img):not([hidden]) {
+    margin-top: 0.6rem;
 }
 
 .benefits-local__visual::after {
@@ -1132,7 +1196,6 @@
     flex-direction: column;
     align-items: flex-start;
     align-self: stretch;
-    gap: 0;
     padding-left: 1.8rem;
     color: var(--Grayscale-70-Text-Detail, #555);
     font-size: 1.6rem;
@@ -1151,9 +1214,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1rem;
     margin: 2.4rem auto 0;
     padding: 0 0.2rem 0.4rem;
+}
+
+.annual-impact > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1rem;
 }
 
 .annual-impact__cards {
@@ -1304,7 +1370,11 @@
 @media (max-width: 768px) {
     .annual-impact__criteria {
         flex-direction: column;
-        gap: 2.4rem;
+        gap: 0;
+    }
+
+    .annual-impact__criteria > :not([hidden]) ~ :not([hidden]) {
+        margin-top: 2.4rem;
     }
 }
 
@@ -1319,14 +1389,20 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.6rem;
+}
+
+.annual-impact__criteria-about > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1.6rem;
 }
 
 .annual-impact__criteria-description {
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
     width: 100%;
+}
+
+.annual-impact__criteria-description > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 0.4rem;
 }
 
 .annual-impact__criteria-title {

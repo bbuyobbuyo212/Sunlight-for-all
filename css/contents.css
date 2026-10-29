@@ -314,12 +314,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1.6rem;
     padding: 3.2rem;
     overflow: clip;
     border-radius: 2rem;
     background-color: var(--Primary-0, #fff);
     box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 10%);
+}
+
+.contents-image-box > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1.6rem;
 }
 
 .contents-image-box__frame {
@@ -419,7 +422,11 @@
     .contents-footer {
         flex-direction: column;
         align-items: flex-start;
-        gap: 1.2rem;
+        gap: 0;
+    }
+
+    .contents-footer > :not([hidden]) ~ :not([hidden]) {
+        margin-top: 1.2rem;
     }
 
     .contents-footer__links {
