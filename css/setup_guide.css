@@ -36,29 +36,37 @@
 }
 @media (max-width: 1199px) {
     .setup-process {
-        display: grid;
-        grid-template-columns: max-content;
-        grid-auto-rows: minmax(2rem, auto);
-        justify-content: center;
-        justify-items: center;
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 1.2rem;
+        -webkit-overflow-scrolling: touch;
     }
+
+    .setup-process > :not([hidden]) ~ :not([hidden]) {
+        margin-left: 1.2rem;
+    }
+}
+.setup-process:focus-visible {
+    outline: 2px solid var(--point);
+    outline-offset: 3px;
 }
 .setup-process__step {
     display: flex;
     flex: 0 0 auto;
     align-items: center;
     justify-content: center;
-    gap: 1.2rem;
     padding: 0.8rem 2.4rem 0.8rem 0.8rem;
     border: 0.3rem solid var(--System-Success-40, #33A14B);
     border-radius: 10rem;
+}
+.setup-process__step > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 1.2rem;
 }
 .setup-process__number {
     display: flex;
     flex: 0 0 4.7rem;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
     width: 4.7rem;
     height: 4.7rem;
     padding: 0.4rem 1.6rem;
@@ -86,23 +94,23 @@
     width: 2rem;
     height: 1.4rem;
 }
-@media (max-width: 1199px) {
-    .setup-process__arrow {
-        transform: rotate(90deg);
-    }
-}
-
 .setup-guide-cards {
     display: flex;
     align-items: flex-start;
-    gap: 2rem;
     margin-top: 2rem;
+}
+
+.setup-guide-cards > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 2rem;
 }
 @media (max-width: 800px) {
     .setup-guide-cards {
         flex-direction: column;
         align-items: stretch;
         gap: 0;
+    }
+    .setup-guide-cards > :not([hidden]) ~ :not([hidden]) {
+        margin-left: 0;
     }
 
     .setup-guide-cards > :not([hidden]) ~ :not([hidden]) {
@@ -183,7 +191,6 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 1.2rem;
     max-width: 100%;
     padding: 1.6rem 4.8rem;
     border: 0;
@@ -197,6 +204,10 @@
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0;
+}
+
+.setup-guide-card__button > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 1.2rem;
 }
 .setup-guide-card__button > span {
     width: 16.9rem;
@@ -305,7 +316,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.2rem;
+}
+
+.step-guide__step .step-guide__item > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 1.2rem;
 }
 .step-guide__step .icon {
     width:4rem;
@@ -318,13 +332,16 @@
     padding: var(--Spacing-4, 0.4rem) var(--Spacing-16, 1.6rem);
     justify-content: center;
     align-items: center;
-    gap: 1rem;
     border-radius: 10rem;
     background: var(--Grayscale-40, #C6C6C6);
     color: var(--Primary-0, #FFF);
     font-size: 2rem;
     font-weight: 600;
     letter-spacing: -0.1rem;
+}
+
+.step-guide__step .step-guide__number > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 1rem;
 }
 .step-guide__step .step-guide__number.active {
     background: var(--System-Warning, #FFB724);
@@ -356,9 +373,12 @@
     display: flex;
     padding-bottom:2.4rem;
     align-items: center;
-    gap:1.6rem;
     align-self: stretch;
     border-bottom: 2px solid var(--Grayscale-90-Text-Title-Body, #1D1D1D);
+}
+
+.step-guide__header > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 1.6rem;
 }
 @media screen and (max-width:720px) {
     .step-guide__header {align-items: flex-start;}
@@ -441,7 +461,10 @@
 .setup-steps__item .check {
     display: flex;
     align-items: center;
-    gap: 1rem;
+}
+
+.setup-steps__item .check > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 1rem;
 }
 .setup-steps__item .check svg {
     width: 2rem;
@@ -458,7 +481,10 @@
 }
 .setup-steps__item .btns {
     display: flex;
-    gap: 1rem;
+}
+
+.setup-steps__item .btns > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 1rem;
 }
 @media (max-width:720px) {
     .setup-steps__item .btns {
@@ -470,11 +496,14 @@
     min-width:9.1rem;
     padding:0.8rem 0.8rem 0.8rem 1.2rem;
     align-items: center;
-    gap: 0.8rem;
     border-radius: 10rem !important;    
     font-size:1.6rem;
     font-weight: 600;
     line-height: normal;
+}
+
+.setup-steps__item .btns .btn > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 0.8rem;
 }
 .setup-steps__item .btns .btn.doc {
     border: 2px solid var(--System-Success, #008A1E);
@@ -503,10 +532,13 @@
     display: flex;
     padding:1.2rem 2rem;
     align-self: stretch;
-    gap:1.2rem;
     border-radius:0.8rem;
     border: 1px solid var(--System-Warning-20, #FFE2A7);
     background: var(--System-Warning-5-Bg, #FFF8E9);
+}
+
+.setup-steps-guide > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 1.2rem;
 }
 .setup-steps-guide__icon {
     flex:none;
@@ -547,13 +579,16 @@
     padding:1.6rem 4.8rem;
     justify-content: center;
     align-items: center;
-    gap:1.2rem;
     border-radius: 10rem !important;
     color: var(--Primary-100, #000);
     font-size:1.8rem;
     font-weight: 600;
     line-height: normal;
     background: var(--Grayscale-10, #F0F0F0);
+}
+
+.setup-steps__btnbox .btn > .arr {
+    margin-left: 1.2rem;
 }
 @media (max-width:475px) {
     .setup-steps__btnbox .btn {
@@ -571,7 +606,10 @@
 .setup-steps__btnbox .right {
     display: flex;
     align-items: center;
-    gap: 1.6rem;
+}
+
+.setup-steps__btnbox .right > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 1.6rem;
 }
 @media (max-width:720px) {
     .setup-steps__btnbox .right {margin-left:auto;}
@@ -582,6 +620,9 @@
         gap: 0;
         align-items: flex-start;
         margin-left:0;
+    }
+    .setup-steps__btnbox .right > :not([hidden]) ~ :not([hidden]) {
+        margin-left: 0;
     }
 
     .setup-steps__btnbox .right > :not([hidden]) ~ :not([hidden]) {

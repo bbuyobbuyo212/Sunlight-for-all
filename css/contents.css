@@ -1,5 +1,5 @@
 .subpage {
-    padding:8rem 0 6.4rem;
+    padding:8rem 0 8rem;
     background-color: var(--Grayscale-5, #F8F8F8);
 }
 
@@ -58,7 +58,10 @@
     display: flex;
     justify-content: center;
     list-style: none;
-    gap: 1rem;
+}
+
+.tab-group__list > :not([hidden]) ~ :not([hidden]) {
+    margin-left:1rem;
 }
 
 .tab-group__list > li {
@@ -224,9 +227,12 @@
 .contents-section-heading {
     display: flex;
     align-items: center;
-    gap: 1rem;
     min-width: 0;
     max-width: 100%;
+}
+
+.contents-section-heading::before {
+    margin-right:1rem;
 }
 
 .contents-section-heading--top {
@@ -264,13 +270,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.2rem;
     width: 100%;
     margin: 0 auto;
     padding: 2rem 4rem;
     border-radius: 2rem;
     background-color: var(--Primary-0, #fff);
     box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 10%);
+}
+
+.contents-highlight > :not([hidden]) ~ :not([hidden]) {
+    margin-left:1.2rem;
 }
 
 .contents-highlight__icon {
@@ -376,12 +385,15 @@
 .contents-footer__text {
     display: flex;
     align-items: center;
-    gap: 1.2rem;
     color: #000;
     font-size: 1.8rem;
     font-weight: 500;
     letter-spacing: -0.1rem;
     line-height: 2.4rem;
+}
+
+.contents-footer__text > :not([hidden]) ~ :not([hidden]) {
+    margin-left:1.2rem;
 }
 
 .contents-footer__icon {
@@ -392,8 +404,15 @@
 
 .contents-footer__links {
     display: flex;
-    gap: 1.2rem;
     flex-wrap:wrap;
+    margin-top: -1.2rem;
+}
+
+.contents-footer__links > :not([hidden]) {
+    margin-top: 1.2rem;
+}
+.contents-footer__links > :not([hidden]):not(:last-child) {
+    margin-right: 1.2rem;
 }
 
 .contents-footer__link {
@@ -401,7 +420,6 @@
     min-width: 14.7rem;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
     padding: 0.8rem 1.2rem;
     border: 0.2rem solid var(--Grayscale-80, #2d2d2d);
     border-radius: 1rem;
@@ -410,6 +428,10 @@
     font-size: 1.8rem;
     font-weight: 700;
     letter-spacing: -0.1rem;
+}
+
+.contents-footer__link > :not([hidden]) ~ :not([hidden]) {
+    margin-left:1rem;
 }
 
 .contents-footer__link--highlight {
@@ -431,5 +453,8 @@
 
     .contents-footer__links {
         margin-left: auto;
+    }
+    .contents-footer > .contents-footer__links:not([hidden]) {
+        margin-top: 0;
     }
 }

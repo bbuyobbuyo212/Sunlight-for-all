@@ -34,21 +34,40 @@
 .monitoring-header {
     min-height: 10.2rem;
     padding: calc(2.4 * var(--monitoring-size)) calc(4 * var(--monitoring-size));
-    gap: calc(2.4 * var(--monitoring-size));
+}
+
+.monitoring-header > :not([hidden]) ~ :not([hidden]){
+    margin-left: calc(2.4 * var(--monitoring-size));
 }
 @media (max-width: 1024px) {
     .monitoring-header {
         flex-wrap: wrap;
+        padding-top: 0;
+    }
+    .monitoring-header > :not([hidden]) {
+        margin-top: calc(2.4 * var(--monitoring-size));
+    }
+    .monitoring-header > :not([hidden]) ~ :not([hidden]) {
+        margin-left: 0;
+    }
+    .monitoring-header__brand {
+        margin-right: calc(2.4 * var(--monitoring-size));
     }
 }
-.monitoring-header__brand {
+.monitoring-header > .monitoring-header__brand {
     display: flex;
     align-items: center;
 }
 @media (max-width: 600px) {
-    .monitoring-header__brand {
+    .monitoring-header > .monitoring-header__brand {
         flex-wrap: wrap;
-        gap: 1.2rem;
+        margin-top: calc(2.4 * var(--monitoring-size) - 1.2rem);
+        margin-right: calc(2.4 * var(--monitoring-size) - 1.2rem);
+    }
+
+    .monitoring-header__brand > :not([hidden]) {
+        margin-top: 1.2rem;
+        margin-right: 1.2rem;
     }
 }
 
@@ -88,23 +107,38 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: calc(0.8 * var(--monitoring-size));
+}
+
+.monitoring-header__information > :not([hidden]) ~ :not([hidden]){
+    margin-left: calc(0.8 * var(--monitoring-size));
 }
 @media (max-width: 600px) {
-    .monitoring-header__information {
+    .monitoring-header > .monitoring-header__information {
         flex-wrap: wrap;
         justify-content: flex-start;
+        margin-top: calc(1.6 * var(--monitoring-size));
+        margin-right: calc(-0.8 * var(--monitoring-size));
+    }
+    .monitoring-header__information > :not([hidden]) {
+        margin-top: calc(0.8 * var(--monitoring-size));
+        margin-right: calc(0.8 * var(--monitoring-size));
+    }
+    .monitoring-header__information > :not([hidden]) ~ :not([hidden]) {
+        margin-left: 0;
     }
 }
 
 .monitoring-header__reception {
     display: flex;
     align-items: center;
-    gap: calc(0.8 * var(--monitoring-size));
     font-size: calc(1.8 * var(--monitoring-size));
     font-weight: 600;
     line-height: 2.4rem;
     white-space: nowrap;
+}
+
+.monitoring-header__reception > :not([hidden]) ~ :not([hidden]){
+    margin-left: calc(0.8 * var(--monitoring-size));
 }
 
 .monitoring-header__reception > img {
@@ -153,7 +187,6 @@
     isolation: isolate;
     display: flex;
     align-items: center;
-    gap: calc(0.8 * var(--monitoring-size));
     height: 3.6rem;
     width: calc(14.9 * var(--monitoring-size));
     padding: 0.4rem calc(2 * var(--monitoring-size));
@@ -164,6 +197,10 @@
     font-weight: 500;
     line-height: 2.2rem;
     white-space: nowrap;
+}
+
+.monitoring-header__refresh > img{
+    margin-left: calc(0.8 * var(--monitoring-size));
 }
 
 .monitoring-header__refresh::before {
@@ -374,14 +411,20 @@
     .monitoring-board__header {
         flex-wrap: wrap;
         flex-basis: auto;
-        gap: 0.8rem;
+        margin-top: -0.8rem;
+    }
+
+    .monitoring-board__header > :not([hidden]) {
+        margin-top: 0.8rem;
+    }
+    .monitoring-board__header > .monitoring-board__title {
+        margin-right: 0.8rem;
     }
 }
 
 .monitoring-board__title {
     display: flex;
     align-items: center;
-    gap: calc(1.2 * var(--monitoring-size));
     min-height: calc(3.9 * var(--monitoring-size));
     padding: 0 calc(1 * var(--monitoring-size));
     color: #d8d8d8;
@@ -390,6 +433,11 @@
     font-feature-settings: "liga" off, "clig" off;
     line-height: 2rem;
     white-space: nowrap;
+}
+
+.monitoring-board__title > span,
+.monitoring-board__title > img {
+    margin-right: calc(1.2 * var(--monitoring-size));
 }
 @media (max-width: 600px) {
     .monitoring-board__title {
@@ -529,12 +577,15 @@
 .monitoring-status dt {
     display: flex;
     align-items: center;
-    gap: calc(1 * var(--monitoring-size));
     color: #d8d8d8;
     font-size: calc(2.4 * var(--monitoring-size));
     font-weight: 700;
     line-height: calc(6.4 * var(--monitoring-size));
     white-space: nowrap;
+}
+
+.monitoring-status dt > img{
+    margin-right: calc(1 * var(--monitoring-size));
 }
 
 .monitoring-status dt img {
@@ -579,7 +630,6 @@
 .monitoring-color-gray { color: #8e8e8e; }
 
 .monitoring-footer {
-    gap: 1.6rem;
     min-height: 4.8rem;
     padding: 0.8rem 3.2rem 2rem;
     color: #c6c6c6;
@@ -587,11 +637,18 @@
     font-weight: 500;
     line-height: 2rem;
 }
+
+.monitoring-footer > :not([hidden]) ~ :not([hidden]){
+    margin-left: 1.6rem;
+}
 @media (max-width: 800px) {
     .monitoring-footer {
         flex-wrap: wrap;
         flex-direction: column-reverse;
         gap: 0;
+    }
+    .monitoring-footer > :not([hidden]) ~ :not([hidden]){
+        margin-left: 0;
     }
 
     .monitoring-footer > :not([hidden]) ~ :not([hidden]) {
@@ -601,8 +658,11 @@
 
 .monitoring-footer__policies {
     display: flex;
-    gap: 0.8rem;
     white-space: nowrap;
+}
+
+.monitoring-footer__policies > :not([hidden]) ~ :not([hidden]){
+    margin-left: 0.8rem;
 }
 .monitoring-footer__policies a {color: #c6c6c6;}
 
@@ -620,15 +680,22 @@
 @media (max-width: 800px) {
     .tab {
         flex-wrap: wrap;
-        gap: 1.6rem;
+        padding-top: 1.6rem;
+    }
+
+    .tab > :not([hidden]) {
+        margin-top: 1.6rem;
     }
 }
 .tab__list {
     display:flex;
     flex:1;
-    gap: 1.6rem;
     justify-content:center;
     padding-right:1.6rem;
+}
+
+.tab__list > :not([hidden]) ~ :not([hidden]){
+    margin-left: 1.6rem;
 }
 @media (max-width: 800px) {
     .tab__list {
@@ -806,11 +873,24 @@
 .monitoring-plant__header {
     display: flex;
     align-items: center;
-    gap:calc(1.6 * var(--monitoring-size));
+}
+
+.monitoring-plant__header > :not([hidden]) ~ :not([hidden]){
+    margin-left: calc(1.6 * var(--monitoring-size));
 }
 @media (max-width: 1024px) {
     .monitoring-plant__header {
         flex-wrap: wrap;
+        margin-top: calc(-1.6 * var(--monitoring-size));
+    }
+    .monitoring-plant__header > :not([hidden]) {
+        margin-top: calc(1.6 * var(--monitoring-size));
+    }
+    .monitoring-plant__header > :not([hidden]) ~ :not([hidden]) {
+        margin-left: 0;
+    }
+    .monitoring-plant__header > .plant-badge {
+        margin-right: calc(1.6 * var(--monitoring-size));
     }
 }
 .monitoring-plant__title {
@@ -823,9 +903,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: calc(1.2 * var(--monitoring-size));
     padding-top:calc(2 * var(--monitoring-size));
     padding-right:calc(2 * var(--monitoring-size));
+}
+
+.monitoring-plant__content > :not([hidden]) ~ :not([hidden]){
+    margin-left: calc(1.2 * var(--monitoring-size));
 }
 .monitoring-plant__content .output {text-align: center;}
 .monitoring-plant__content .output .title {
@@ -927,12 +1010,15 @@
     display: flex;
     padding:calc(0.8 * var(--monitoring-size)) calc(1.6 * var(--monitoring-size));
     align-items: center;
-    gap:calc(0.4 * var(--monitoring-size));
     border-radius: 10rem;    
     font-size:calc(1.8 * var(--monitoring-size));
     font-weight:700;
     line-height: 0; /* 0% */
     background-color:#060910;
+}
+
+.plant-badge__inner > :not([hidden]) ~ :not([hidden]){
+    margin-left: calc(0.4 * var(--monitoring-size));
 }
 .plant-badge__inner .icon {
     width: calc(1.8 * var(--monitoring-size));
@@ -963,8 +1049,11 @@
     display: flex;
     padding:calc(0.8 * var(--monitoring-size)) calc(1 * var(--monitoring-size));
     align-items: center;
-    gap:calc(1.2 * var(--monitoring-size));
     align-self: stretch;
+}
+
+.plant-map-header > :not([hidden]) ~ :not([hidden]){
+    margin-left: calc(1.2 * var(--monitoring-size));
 }
 .plant-map-header .icon {
     width: calc(3.6 * var(--monitoring-size));
@@ -1202,8 +1291,11 @@
 .monitoring-display__preview-title {
     display: flex;
     align-items: center;
-    gap: calc(1.2 * var(--monitoring-size));
     padding: calc(0.8 * var(--monitoring-size)) calc(1 * var(--monitoring-size));
+}
+
+.monitoring-display__preview-title > :not([hidden]) ~ :not([hidden]){
+    margin-left: calc(1.2 * var(--monitoring-size));
 }
 
 .monitoring-display__preview-title > img {

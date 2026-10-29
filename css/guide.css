@@ -186,7 +186,10 @@
 .general-join__card-heading {
     display: flex;
     align-items: flex-start;
-    gap: 1rem;
+}
+
+.general-join__card-heading > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 1rem;
 }
 
 .general-join__icon {
@@ -462,10 +465,13 @@
 
 .guide-flow__list {
     display: flex;
-    gap: 2.6rem;
     margin: 0;
     padding: 2.4rem 0.4rem 0;
     list-style: none;
+}
+
+.guide-flow__list > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 2.6rem;
 }
 
 .guide-flow__item {
@@ -626,6 +632,7 @@
 .ways-join {
     display: flex;
     flex-direction: column;
+    margin-top:2rem;
 }
 
 .ways-join > :not([hidden]) ~ :not([hidden]) {
@@ -733,7 +740,10 @@
 .ways-join-tip__card-heading {
     display: flex;
     align-items: flex-start;
-    gap: 1rem;
+}
+
+.ways-join-tip__card-heading > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 1rem;
 }
 
 .ways-join-tip__icon {
@@ -752,7 +762,6 @@
 .ways-join-tip__steps {
     display: flex;
     flex-direction: column;
-    margin: 0;
     color: var(--Grayscale-90-Text-Title-Body, #1d1d1d);
     font-size: 1.6rem;
     font-weight: 400;
@@ -764,13 +773,12 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    margin: 0;
 }
 
 .ways-join-tip__step-title {
     display: flex;
-    flex: 0 0 9.6rem;
-    align-items: flex-start;
+    flex: 0 0 9rem;
+    align-items: baseline;
     margin: 0;
     line-height: 2.4rem;
 }
@@ -779,10 +787,10 @@
     line-height: 2.8rem;
 }
 
-.ways-join-tip__step-number {
-    flex: 0 0 1.8rem;
+.ways-join-tip__step-number {    
     font-size: 1.8rem;
     line-height: 2.4rem;
+    margin-right:0.5rem;
 }
 
 .ways-join-tip__step-title strong {
@@ -890,10 +898,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5.2rem;
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.cooperative-join__steps-list > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 5.2rem;
 }
 
 @media (max-width: 1240px) {
@@ -1123,13 +1134,19 @@
     display: flex;
     align-items: flex-start;
     align-self: stretch;
-    gap: 0.6rem;
+}
+
+.plant-unsupported__body > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 0.6rem;
 }
 
 @media (max-width: 640px) {
     .plant-unsupported__body {
         flex-direction: column;
         gap: 0;
+    }
+    .plant-unsupported__body > :not([hidden]) ~ :not([hidden]) {
+        margin-left: 0;
     }
 
     .plant-unsupported__body > :not([hidden]) ~ :not([hidden]) {
@@ -1239,17 +1256,8 @@
     object-fit: cover;
     object-position: center;
 }
-
-.control-guide {
-    margin-top:2rem;
-}
-
-.control-guide__steps {
-    align-self: stretch;
-    margin: 0;
-    padding: 0;
-}
-
+.control-guide {margin-top:2rem;}
+.control-guide__steps {align-self: stretch;}
 .control-guide__steps li {
     color: var(--Grayscale-90-Text-Title-Body, #1d1d1d);
     font-size: 1.6rem;

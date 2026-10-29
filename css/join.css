@@ -8,14 +8,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
     padding: 0 4rem 3.2rem;
+}
+
+.flow-group > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 2rem;
 }
 @media (max-width: 1023px) {
     .flow-group {
         display: grid;
         grid-template-columns: repeat(2, max-content);
         justify-items: start;
+        gap: 2rem;
+    }
+    .flow-group > :not([hidden]) ~ :not([hidden]) {
+        margin-left: 0;
     }
 }
 @media (max-width: 640px) {
@@ -28,7 +35,10 @@
     flex: 0 0 auto;
     align-items: center;
     justify-content: center;
-    gap: 1.2rem;
+}
+
+.flow-group__step > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 1.2rem;
 }
 .flow-group__number {
     display: inline-flex;
@@ -101,7 +111,10 @@
     border-radius: 0.8rem;
 }
 .terms-group--general .terms-group__agreement {
-    gap: 0.8rem;
+}
+
+.terms-group--general .terms-group__agreement > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 0.8rem;
 }
 .terms-group--general .terms-group__badge {
     display: inline-flex;
@@ -128,10 +141,13 @@
 .terms-group--notice {
     display: flex;
     align-items: center;
-    gap: 1.2rem;
     border: 1px solid var(--System-Warning-20, #ffe2a7);
     background-color: var(--System-Warning-5-Bg, #fff8e9);
     box-shadow: none;
+}
+
+.terms-group--notice > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 1.2rem;
 }
 .terms-group__notice-icon {
     display: block;
@@ -155,22 +171,59 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1.2rem;
+}
+
+.terms-group__header > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 1.2rem;
 }
 @media (max-width: 640px) {
     .terms-group__header {
         flex-wrap: wrap;
     }
+    .terms-group:not(.terms-group--general) .terms-group__header {
+        margin-top: -1.2rem;
+    }
+    .terms-group:not(.terms-group--general) .terms-group__header > :not([hidden]) {
+        margin-top: 1.2rem;
+        margin-left: 0;
+    }
+    .terms-group:not(.terms-group--general) .terms-group__header > .terms-group__agreement {
+        margin-top: 0;
+        margin-right: 0;
+    }
 }
 .terms-group__agreement {
     display: flex;
     align-items: center;
-    gap: 1.2rem;
     cursor: pointer;
+}
+
+.terms-group__agreement > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 1.2rem;
 }
 @media (max-width: 640px) {
     .terms-group__agreement {
         flex-wrap: wrap;
+        margin-top: -1.2rem;
+        margin-right: -1.2rem;
+    }
+    .terms-group__agreement > :not([hidden]) {
+        margin-top: 1.2rem;
+        margin-right: 1.2rem;
+    }
+    .terms-group__agreement > :not([hidden]) ~ :not([hidden]) {
+        margin-left: 0;
+    }
+    .terms-group--general .terms-group__agreement {
+        margin-top: -0.8rem;
+        margin-right: -0.8rem;
+    }
+    .terms-group--general .terms-group__agreement > :not([hidden]) {
+        margin-top: 0.8rem;
+        margin-right: 0.8rem;
+    }
+    .terms-group--general .terms-group__agreement > :not([hidden]) ~ :not([hidden]) {
+        margin-left: 0;
     }
 }
 .terms-group__checkbox {
@@ -226,7 +279,6 @@
     display: inline-flex;
     flex: 0 0 auto;
     align-items: center;
-    gap: 1.2rem;
     padding: 0;
     border: 0;
     background: transparent;
@@ -237,6 +289,10 @@
     line-height: 1.9rem;
     letter-spacing: -0.1rem;
     cursor: pointer;
+}
+
+.terms-group__toggle > span {
+    margin-right: 1.2rem;
 }
 .terms-group__toggle span {
     letter-spacing: inherit;
@@ -290,7 +346,10 @@
     margin-top:2rem;
 }
 .join-personal .join-actions {
-    gap: 1.6rem;
+}
+
+.join-personal .join-actions > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 1.6rem;
 }
 .join-actions__next,
 .join-actions__previous {
@@ -306,7 +365,6 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 1.2rem;
     padding: 1.6rem 4.8rem;
     border-radius: 1rem;
     background-color: var(--Grayscale-20, #e4e4e4);
@@ -316,6 +374,10 @@
     font-weight: 600;
     line-height: normal;
     letter-spacing: normal;
+}
+
+.join-actions__previous > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 1.2rem;
 }
 .join-actions__previous span {
     letter-spacing: inherit;
@@ -333,13 +395,21 @@
 @media (max-width: 640px) {
     .join-personal .join-actions {
         flex-wrap: wrap;
+        padding-top: 1.6rem;
+        margin-right: -1.6rem;
+    }
+    .join-personal .join-actions > :not([hidden]) {
+        margin-top: 1.6rem;
+        margin-right: 1.6rem;
+    }
+    .join-personal .join-actions > :not([hidden]) ~ :not([hidden]) {
+        margin-left: 0;
     }
 }
 .join-actions__next {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 1.2rem;
     padding: 1.6rem 4.8rem;
     border: 0;
     border-radius: 1rem !important;
@@ -352,6 +422,10 @@
     line-height: normal;
     letter-spacing: normal;
     cursor: pointer;
+}
+
+.join-actions__next > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 1.2rem;
 }
 .join-actions__next span {
     letter-spacing: inherit;
@@ -404,8 +478,11 @@
 .general-join-notice__content {
     display: flex;
     align-items: center;
-    gap: 1.2rem;
     min-width: 0;
+}
+
+.general-join-notice__content > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 1.2rem;
 }
 .personal-form {
     min-width: 0;
@@ -426,12 +503,15 @@
 .personal-form__field {
     display: flex;
     align-items: center;
-    gap: 1.2rem;
     height: 4.6rem;
     padding-right: 0.8rem;
     border: 1px solid var(--Grayscale-30, #d8d8d8);
     border-radius: 0.8rem;
     background-color: var(--Primary-0, #fff);
+}
+
+.personal-form__field > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 1.2rem;
 }
 .personal-form__field .personal-form__input {
     flex: 1 1 0;
@@ -539,8 +619,11 @@
 .cooperative-item__heading {
     display: flex;
     align-items: center;
-    gap: 1.6rem;
     height: 7.7rem;
+}
+
+.cooperative-item__heading > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 1.6rem;
 }
 .cooperative-item__number {
     display: inline-flex;
@@ -581,11 +664,14 @@
 .personal-form__label.cooperative-item__label {
     display: flex;
     align-items: center;
-    gap: 0.4rem;
     min-height: 2.4rem;
     margin-bottom: 1.2rem;
     font-size: 2rem;
     line-height: 2.4rem;
+}
+
+.personal-form__label.cooperative-item__label > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 0.4rem;
 }
 .cooperative-item__label-note {
     color: var(--System-Warning-60-Text, #98690a);
@@ -612,7 +698,6 @@
 .cooperative-item__notice {
     display: flex;
     align-items: center;
-    gap: 1.2rem;
     min-height: 5.7rem;
     padding: 1.2rem 2rem;
     border: 1px solid var(--System-Warning-20, #ffe2a7);
@@ -623,6 +708,10 @@
     font-weight: 400;
     line-height: 2.1rem;
     letter-spacing: -0.1rem;
+}
+
+.cooperative-item__notice > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 1.2rem;
 }
 .cooperative-item__notice img {
     display: block;
@@ -653,12 +742,15 @@
 .cooperative-item__agreement-label {
     display: flex;
     align-items: center;
-    gap: 0.8rem;
     color: var(--Primary-100, #000);
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 2.4rem;
     cursor: pointer;
+}
+
+.cooperative-item__agreement-label > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 0.8rem;
 }
 .cooperative-item__checkbox {
     flex: 0 0 2rem;
@@ -691,7 +783,6 @@
 .cooperative-item__terms-toggle {
     display: inline-flex;
     align-items: center;
-    gap: 1.2rem;
     padding: 0;
     border: 0;
     background: transparent;
@@ -701,6 +792,10 @@
     font-weight: 600;
     line-height: 1.9rem;
     cursor: pointer;
+}
+
+.cooperative-item__terms-toggle > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 1.2rem;
 }
 .cooperative-item__terms-toggle img {
     display: block;
@@ -761,6 +856,15 @@
 @media (max-width: 1023px) {
     .personal-form__label.cooperative-item__label {
         flex-wrap: wrap;
+        margin-top: -0.4rem;
+        margin-right: -0.4rem;
+    }
+    .personal-form__label.cooperative-item__label > :not([hidden]) {
+        margin-top: 0.4rem;
+        margin-right: 0.4rem;
+    }
+    .personal-form__label.cooperative-item__label > :not([hidden]) ~ :not([hidden]) {
+        margin-left: 0;
     }
     .cooperative-item__verify-field {
         width: 100%;
@@ -798,11 +902,23 @@
         margin-top: 0.4rem;
     }
     .cooperative-item__agreement {
-        gap: 1.2rem;
+    }
+
+    .cooperative-item__agreement > :not([hidden]) ~ :not([hidden]) {
+        margin-left: 1.2rem;
     }
     .cooperative-item__agreement-label {
         flex-wrap: wrap;
         font-size: 1.6rem;
+        margin-top: -0.8rem;
+        margin-right: -0.8rem;
+    }
+    .cooperative-item__agreement-label > :not([hidden]) {
+        margin-top: 0.8rem;
+        margin-right: 0.8rem;
+    }
+    .cooperative-item__agreement-label > :not([hidden]) ~ :not([hidden]) {
+        margin-left: 0;
     }
 }
 
@@ -821,9 +937,12 @@
 .join-result__intro {
     display: flex;
     align-items: flex-start;
-    gap: 1.6rem;
     padding-bottom:2.4rem;
     border-bottom: 1px dashed var(--Grayscale-50-Text-Disabled-W, #8e8e8e);
+}
+
+.join-result__intro > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 1.6rem;
 }
 .join-result__icon {
     display: block;
@@ -948,13 +1067,16 @@
 .login-form__auto {
     display: inline-flex;
     align-items: center;
-    gap: 0.8rem;
     color: var(--Grayscale-70-Text-Detail, #555);
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 2.1rem;
     letter-spacing: -0.1rem;
     cursor: pointer;
+}
+
+.login-form__auto > .login-form__checkmark + span {
+    margin-left: 0.8rem;
 }
 .login-form__auto input {
     position: absolute;
@@ -1047,12 +1169,19 @@
 .login-form__divider {
     display: flex;
     align-items: center;
-    gap: 1.6rem;
     height: 4.3rem;
     color: var(--Grayscale-80, #2d2d2d);
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.9rem;
+}
+
+.login-form__divider::before {
+    margin-right: 1.6rem;
+}
+
+.login-form__divider::after {
+    margin-left: 1.6rem;
 }
 .login-form__divider::before,
 .login-form__divider::after,
@@ -1089,13 +1218,20 @@
 .login-form__join-divider {
     display: flex;
     align-items: center;
-    gap: 2.6rem;
     height: 5.5rem;
     color: var(--Grayscale-80, #2d2d2d);
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.9rem;
     white-space: nowrap;
+}
+
+.login-form__join-divider::before {
+    margin-right: 2.6rem;
+}
+
+.login-form__join-divider::after {
+    margin-left: 2.6rem;
 }
 .login-form__button--join {
     height: 5.7rem;
