@@ -507,10 +507,14 @@
 .personal-form__message[hidden] {
     display: none;
 }
-@media (max-width: 640px) {
+@media (max-width: 768px) {
     .personal-group {
         grid-template-columns: minmax(0, 1fr);
         gap: 2.4rem;
+    }
+}
+@media (max-width: 640px) {
+    .personal-group {
         padding: 2.4rem;
     }
 }
@@ -733,11 +737,13 @@
     background-color: var(--System-Danger-5-Bg, #feecf0);
     color: var(--System-Danger-60-Text, #d50136);
 }
-@media (max-width: 1023px) {
+@media (max-width: 768px) {
     .cooperative-item__fields {
         grid-template-columns: minmax(0, 1fr);
         gap: 2.4rem;
     }
+}
+@media (max-width: 1023px) {
     .personal-form__label.cooperative-item__label {
         flex-wrap: wrap;
     }
@@ -848,7 +854,7 @@
     line-height: 2.1rem;
     letter-spacing: -0.1rem;
 }
-@media (max-width: 640px) {
+@media (max-width: 768px) {
     .join-result__details {
         grid-template-columns: minmax(0, 1fr);
     }

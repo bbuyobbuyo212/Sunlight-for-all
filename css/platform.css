@@ -706,7 +706,7 @@
     padding: 0 0.2rem;
 }
 
-@media (max-width: 1240px) {
+@media (max-width:1024px) {
     .platform-vision {
         grid-template-columns: minmax(0, 1fr);
     }
@@ -1383,22 +1383,22 @@
 }
 
 .annual-impact__metric--generation .annual-impact__metric-icon {
-    width: 4.4rem;
+    width: 5rem;
     height: 4.7rem;
 }
 
 .annual-impact__metric--emissions .annual-impact__metric-icon {
-    width: 4.7rem;
+    width: 5rem;
     height: 4.3rem;
 }
 
 .annual-impact__metric--pine .annual-impact__metric-icon {
-    width: 5.1rem;
+    width: 5rem;
     height: 4.5rem;
 }
 
 .annual-impact__metric--households .annual-impact__metric-icon {
-    width: 4.9rem;
+    width: 5rem;
     height: 4.7rem;
 }
 
@@ -1573,8 +1573,7 @@
     box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 10%);
 }
 
-.investment__card--procedure,
-.investment__card--revenue {
+.investment__card--procedure {
     height: 33.6rem;
 }
 

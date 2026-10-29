@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="모두의 햇빛 이용 방법과 조합 설립 안내를 확인하세요.">
+    <title>이용안내 | 모두의 햇빛</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../fonts/pretendard.css">
+    <link rel="stylesheet" href="../../css/default.css">
+    <link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/guide.css">
+    <link rel="stylesheet" href="../../css/board.css">
+    <script src="../../js/footer-dropdown.js" defer></script> 
+    <script src="../../js/header-fixed.js" defer></script>
+    <script src="../../js/mobile-menu.js" defer></script>
+    <script src="../../js/tab-group.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <h1><a class="header__logo" href="../../index.html" aria-label="모두의 햇빛 홈"><img src="../../images/common/logo.svg" alt="모두의 햇빛"></a></h1>
+            <nav class="gnb" aria-label="주요 메뉴">
+                <ul class="gnb__list">
+                    <li><a class="gnb__link" href="../../pages/platform/info.html">플랫폼 소개</a></li>
+                    <li><a class="gnb__link gnb__link--active" href="../../pages/guide/services.html" aria-current="page">이용안내</a></li>
+                    <li><a class="gnb__link" href="../../pages/search/search.html">햇빛발전소 찾기</a></li>
+                    <li><a class="gnb__link" href="../../pages/setup_guide/setup_guide.html">조합·설립 가이드</a></li>
+                    <li><a class="gnb__link" href="../../pages/notice/notice.html">알림마당</a></li>
+                </ul>
+            </nav>
+            <div class="header__auth">
+                <a class="header__login" href="../../pages/member/login.html">로그인</a>
+                <a class="header__join" href="../../pages/member/join.html">햇빛시민 가입</a>
+            </div>
+            <div class="header__menu-box">
+                <button type="button" class="header__menu-btn" aria-label="메뉴 열기" aria-controls="mobile-gnb" aria-expanded="false">
+                    <span class="header__menu-btn__line"></span><span class="header__menu-btn__line"></span><span class="header__menu-btn__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <nav id="mobile-gnb" class="mobile-gnb" aria-label="모바일 메뉴" aria-hidden="true" inert>
+        <div class="mobile-gnb__head"><button type="button" aria-label="메뉴 닫기"></button></div>
+        <div class="mobile-gnb__body">
+            <div class="mobile-gnb__utile"><a href="../../pages/member/login.html" class="header__utile__link">로그인</a><a href="../../pages/member/join.html" class="header__utile__link">햇빛시민 가입</a></div>
+            <ul class="mobile-gnb__list">
+                <li class="mobile-gnb__1dpet"><a href="../../pages/platform/info.html" class="mobile-gnb__1dpet__link">플랫폼 소개</a></li>
+                <li class="mobile-gnb__1dpet"><a href="../../pages/guide/services.html" class="mobile-gnb__1dpet__link" aria-current="page">이용안내</a></li>
+                <li class="mobile-gnb__1dpet"><a href="../../pages/search/search.html" class="mobile-gnb__1dpet__link">햇빛발전소 찾기</a></li>
+                <li class="mobile-gnb__1dpet"><a href="../../pages/setup_guide/setup_guide.html" class="mobile-gnb__1dpet__link">조합·설립 가이드</a></li>
+                <li class="mobile-gnb__1dpet"><a href="../../pages/notice/notice.html" class="mobile-gnb__1dpet__link">알림마당</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main id="main" class="subpage">
+        <div class="subpage__inner">
+            <header class="subpage__heading subpage__heading--with-tabs">
+                <h2 class="subpage__title">이용안내</h2>
+                <p class="subpage__lead">대상별 서비스 이용법을 탭으로 안내합니다</p>
+            </header>
+            <div class="tab-group" role="group" aria-label="이용안내 분류">
+                <ul class="tab-group__list">
+                    <li>
+                        <a href="./services.html" class="tab-group__button" aria-pressed="false">전체 서비스 안내</a>
+                    </li>
+                    <li>
+                        <a href="./general_public.html" class="tab-group__button" aria-pressed="false">일반시민</a>
+                    </li>
+                    <li>
+                        <a href="./cooperative_operations.html" class="tab-group__button" aria-pressed="false">협동조합운영</a>
+                    </li>
+                    <li>
+                        <a href="./power_plant_operations.html" class="tab-group__button" aria-pressed="false">발전소운영</a>
+                    </li>
+                    <li>
+                        <a href="./integrated_control_service.html" class="tab-group__button" aria-pressed="true">통합관제서비스</a>
+                    </li>                    
+                </ul>
+            </div>
+
+            <div class="sub-tab">
+                <ul class="sub-tab__list">
+                    <li>
+                        <a href="./integrated_control_service.html" class="sub-tab__btn" aria-pressed="false">서비스 안내</a>
+                    </li>
+                    <li>
+                        <a href="./integrated_control_service_guide.html" class="sub-tab__btn" aria-pressed="true">이용안내</a>
+                    </li>                                         
+                </ul>
+            </div>
+
+            <section class="contents-highlight">
+                <img class="contents-highlight__icon" src="../../images/icon/contents-highlight-target.svg" alt="" aria-hidden="true">
+                <p class="contents-highlight__text">통합관제는 대구시민햇빛발전소 전체의 발전 현황을 한 화면에 보여 주는 서비스입니다. 로그인 없이 누구나 볼 수 있습니다.</p>
+            </section>
+
+            <section class="control-guide" aria-label="통합관제 이용안내">
+                <article class="control-guide__card">
+                    <h3 class="control-guide__heading">
+                        <img src="../../images/icon/contents-section-arrow.svg" alt="" aria-hidden="true">
+                        이용 순서
+                    </h3>
+                    <ol class="control-guide__steps">
+                        <li>❶  메뉴에서 통합관제를 누릅니다. 로그인은 필요하지 않습니다.</li>
+                        <li>❷  화면 위쪽에서 전체 운영 현황과 상태 요약을 확인합니다.</li>
+                        <li>❸  상태 탭(정상·통신 이상·설비 이상·효율 저하)을 눌러 해당 발전소만 골라 봅니다.</li>
+                        <li>❹  발전소나 조합을 누르면 세부 현황으로 이동합니다.</li>
+                        <li>❺  화면에 표시된 데이터 수신 시각으로 마지막 갱신 시점을 확인합니다.</li>
+                    </ol>
+                    <div class="control-guide__preview">
+                        <img src="../../images/guide/integrated-control-dashboard-preview.png" alt="발전소별 발전 출력과 효율, 발전소 분포 지도를 보여 주는 통합관제 화면">
+                    </div>
+                </article>
+                <article class="control-guide__card">
+                    <h3 class="control-guide__heading">
+                        <img src="../../images/icon/contents-section-arrow.svg" alt="" aria-hidden="true">
+                        알아 두세요
+                    </h3>
+                    <ul class="control-guide__notes">
+                        <li>화면은 정해진 주기마다 자동으로 갱신합니다.</li>
+                        <li>데이터 연동에 장애가 생기면 마지막으로 받은 값과 수신 시각을 표시합니다.</li>
+                        <li>관공서 등의 대형 모니터에서는 화면이 자동으로 순환하는 모드를 사용할 수 있습니다.</li>
+                    </ul>
+                    <div class="control-guide__illustration">
+                        <img src="../../images/guide/integrated-control-network-illustration.svg" alt="" aria-hidden="true">
+                    </div>
+                </article>
+            </section>
+             
+
+            <section class="contents-footer contents-footer--mt40">
+                <div class="contents-footer__text">
+                    <img class="contents-footer__icon" src="../../images/icon/terms-consent-notice.svg" alt="">
+                    <p>
+                        지금 대구시민햇빛발전소의 발전 현황을 볼 수 있습니다.
+                    </p>
+                </div>
+                <div class="contents-footer__links">
+                    <a href="#" class="contents-footer__link contents-footer__link--highlight">통합관제 바로가기</a>                    
+                </div>
+            </section>
+            
+        </div>
+
+    </main>
+    <footer id="footer" class="footer">        
+        <div class="footer__inner">
+            <div class="footer__top">
+                <nav class="footer__legal" aria-label="법적 안내">
+                    <a href="../../pages/privacy/privacy.html">개인정보처리방침</a>
+                    <span>·</span>
+                    <a href="../../pages/privacy/terms.html">이용약관</a>
+                    <span>·</span>
+                    <a href="../../pages/privacy/email.html">이메일무단수집거부</a>
+                </nav>
+                <div class="footer__partners" aria-label="협력 기관">
+                    <div class="footer__logos">
+                        <img src="../../images/common/daegu_logo.svg" alt="대구그린파워" width="98" height="22">
+                        <img src="../../images/common/motie_logo.svg" alt="산업통상부" width="89" height="23">
+                        <img src="../../images/common/kea_logo.svg" alt="한국에너지공단" width="105" height="20">
+                        <img src="../../images/common/kosea_logo.svg" alt="한국사회적기업진흥원" width="145" height="28">
+                    </div>
+                    <details class="footer__dropdown">
+                        <summary aria-controls="footer-coop-links" aria-expanded="false">협동조합 바로가기</summary>
+                        <ul id="footer-coop-links">
+                            <li><a href="#footer">달구벌시민햇빛발전협동조합</a></li>
+                            <li><a href="#footer">청라시민에너지협동조합</a></li>
+                            <li><a href="#footer">녹색소비자에너지협동조합</a></li>
+                            <li><a href="#footer">자전거시민협동조합</a></li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+            <div class="footer__info">
+                <ul class="footer__info-list">
+                    <li><strong>주소</strong> 대구광역시 남구 대명동 000</li>
+                    <li><strong>대표전화</strong> 053-000-0000</li>
+                    <li><strong>팩스</strong> 053-000-0001</li>
+                    <li><strong>이메일</strong> help@moduhaetbit.kr</li>
+                    <li><strong>사업자등록번호</strong> 000-00-00000</li>
+                </ul>
+                <p>© 2026 모두의 햇빛 플랫폼&nbsp; All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
