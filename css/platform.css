@@ -43,24 +43,6 @@
     gap: 1.6rem;
 }
 
-.platform-why__heading {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    color: var(--Grayscale-80, #2d2d2d);
-    font-size: 2.4rem;
-    font-weight: 600;
-    letter-spacing: -0.1rem;
-    line-height: normal;
-}
-
-.platform-why__heading img {
-    display: block;
-    flex: 0 0 2.9rem;
-    width: 2.9rem;
-    height: 2.9rem;
-}
-
 .platform-why__description {
     width: 54.1rem;
     color: var(--Grayscale-70-Text-Detail, #555);
@@ -367,16 +349,7 @@
 }
 
 .platform-services__cards {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 2rem;
-    padding: 0 0.2rem 2rem;
-}
-
-@media (max-width: 768px) {
-    .platform-services__cards {
-        grid-template-columns: minmax(0, 1fr);
-    }
+    padding-bottom: 2rem;
 }
 
 .platform-services__card {
@@ -459,24 +432,6 @@
     box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 10%);
 }
 
-.platform-shared__heading {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    color: var(--Grayscale-80, #2d2d2d);
-    font-size: 2.4rem;
-    font-weight: 600;
-    letter-spacing: -0.1rem;
-    line-height: normal;
-}
-
-.platform-shared__icon {
-    display: block;
-    flex: none;
-    width: 2.9rem;
-    height: auto;
-}
-
 .platform-shared__list {
     padding-left: 2.4rem;
     color: var(--Grayscale-70-Text-Detail, #555);
@@ -514,24 +469,6 @@
     flex-direction: column;
     gap: 1.6rem;
     min-width: 0;
-}
-
-.platform-story__heading {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    color: var(--Grayscale-80, #2d2d2d);
-    font-size: 2.4rem;
-    font-weight: 600;
-    letter-spacing: -0.1rem;
-    line-height: normal;
-}
-
-.platform-story__icon {
-    display: block;
-    flex: none;
-    width: 2.9rem;
-    height: auto;
 }
 
 .platform-story__description {
@@ -706,42 +643,14 @@
     padding: 0 0.2rem;
 }
 
-@media (max-width:1024px) {
+@media (max-width:1024        px) {
     .platform-vision {
         grid-template-columns: minmax(0, 1fr);
     }
 }
 
 .platform-vision__card {
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
-    min-width: 0;
-    padding: 4rem 3.2rem;
-    border-radius: 2rem;
-    background-color: var(--Primary-0, #fff);
-    box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 10%);
-}
-
-.platform-vision__heading {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-}
-
-.platform-vision__icon {
-    display: block;
-    flex: none;
-    width: 2.9rem;
-    height: auto;
-}
-
-.platform-vision__title {
-    color: var(--Primary-100, #000);
-    font-size: 2.4rem;
-    font-weight: 600;
-    letter-spacing: -0.1rem;
-    line-height: normal;
+    overflow: visible;
 }
 
 .platform-vision__description {
@@ -943,24 +852,6 @@
     min-width: 0;
 }
 
-.cooperative__heading {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    color: var(--Grayscale-80, #2d2d2d);
-    font-size: 2.4rem;
-    font-weight: 600;
-    letter-spacing: -0.1rem;
-    line-height: normal;
-}
-
-.cooperative__icon {
-    display: block;
-    flex: none;
-    width: 2.9rem;
-    height: auto;
-}
-
 .cooperative__description {
     color: var(--Grayscale-70-Text-Detail, #555);
     font-size: 1.6rem;
@@ -1108,16 +999,7 @@
 }
 
 .principles-list {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 2rem;
-    padding: 0 0.2rem 2rem;
-}
-
-@media (max-width: 768px) {
-    .principles-list {
-        grid-template-columns: minmax(0, 1fr);
-    }
+    padding-bottom: 2rem;
 }
 
 .principles-list__card {
@@ -1129,27 +1011,6 @@
     border-radius: 2rem;
     background-color: var(--Primary-0, #fff);
     box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 10%);
-}
-
-.principles-list__heading {
-    display: grid;
-    grid-template-columns: 2.9rem minmax(0, 1fr);
-    align-items: start;
-    gap: 1rem;
-}
-
-.principles-list__icon {
-    display: block;
-    width: 2.9rem;
-    height: auto;
-}
-
-.principles-list__title {
-    color: var(--Primary-100, #000);
-    font-size: 2.4rem;
-    font-weight: 600;
-    letter-spacing: -0.1rem;
-    line-height: normal;
 }
 
 .principles-list__description {
@@ -1548,29 +1409,7 @@
 }
 
 .investment__grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 2rem;
-    padding: 0 0.2rem 2rem;
-}
-
-@media (max-width: 768px) {
-    .investment__grid {
-        grid-template-columns: minmax(0, 1fr);
-    }
-}
-
-.investment__card {
-    display: flex;
-    min-width: 0;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.6rem;
-    padding: 4rem 3.2rem;
-    overflow: clip;
-    border-radius: 2rem;
-    background-color: #fff;
-    box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 10%);
+    padding-bottom: 2rem;
 }
 
 .investment__card--procedure {

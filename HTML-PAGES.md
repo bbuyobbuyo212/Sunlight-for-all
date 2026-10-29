@@ -31,6 +31,59 @@
 3. [`join3.html`](./pages/member/join3.html) — 조합원 가입·출자 신청
 4. [`join4.html`](./pages/member/join4.html) — 신청 확인
 
+## 공통 그리드와 카드
+
+같은 형태의 2열 배치와 세로형 카드는 [`css/contents.css`](./css/contents.css)의 공통 클래스를 조합합니다.
+
+```html
+<section class="contents-grid contents-grid--2" aria-label="이용안내">
+    <article class="contents-card">
+        <header class="contents-section-heading">
+            <h3 class="contents-section-heading__title">이용 순서</h3>
+        </header>
+        <!-- 페이지별 내용 -->
+    </article>
+    <article class="contents-card">다른 안내 내용</article>
+</section>
+```
+
+- `contents-grid`: 그리드 배치, 간격 `2rem`, 좌우 패딩 `0.2rem`을 공통으로 관리합니다.
+- `contents-grid--2`: 기본 2열이며, 화면 너비 `768px` 이하에서는 1열로 바뀝니다.
+- `contents-card`: 세로 배치, 내부 간격 `1.6rem`, 패딩 `4rem 3.2rem 3.2rem`, 흰 배경, 둥근 모서리와 그림자를 공통으로 관리합니다. 그리드 없이 단독으로도 사용할 수 있습니다.
+- `contents-card--roomy`: 하단 패딩을 `4rem`으로 늘립니다.
+- `contents-card--stretch`: 내부 요소를 카드의 가로 폭에 맞춰 늘립니다.
+- 페이지별 클래스는 바깥 여백, 개별 카드 높이, 이미지·목록 등 내용 스타일에 사용합니다. 기존 변형 클래스가 지정한 하단 패딩은 그대로 유지됩니다.
+- 내부 배치나 패딩이 다른 소형 카드, 가로형 박스, 그리드형 카드 및 반응형 전환 기준이 다른 그리드는 이번 공통화 대상에서 제외했습니다.
+
+## 공통 화살표 제목
+
+화살표가 붙는 본문 제목은 [`css/contents.css`](./css/contents.css)의 공통 클래스를 사용합니다.
+
+```html
+<header class="contents-section-heading">
+    <h3 class="contents-section-heading__title">시민 참여 흐름</h3>
+</header>
+```
+
+- 장식 화살표는 CSS의 `::before`로 표시하므로 별도의 이미지 마크업이 필요하지 않습니다.
+- 아이콘, 간격, 제목 색상·크기·굵기는 공통 CSS에서 수정합니다. 제목 색상은 `Grayscale-80`으로 통일합니다.
+- 여러 줄 제목에서 화살표를 위쪽에 맞추려면 헤더에 `contents-section-heading--top`을 추가합니다.
+- 제목 단계는 문서 구조에 맞게 선택하고, `aria-labelledby`에서 참조하는 `id`는 제목 요소에 둡니다.
+- 페이지별 바깥 여백과 카드 배치는 해당 페이지의 CSS에서 관리합니다.
+
+## 공통 본문 텍스트
+
+본문 설명에는 [`css/contents.css`](./css/contents.css)의 `contents-text`를 사용합니다.
+
+```html
+<p class="contents-text">서비스 이용 방법을 안내합니다.</p>
+```
+
+- 기본값은 색상 `Grayscale-70`, 크기 `1.6rem`, 굵기 `400`, 줄 높이 `2.4rem`, 자간 `-0.1rem`입니다.
+- 글꼴 토큰이 없으면 기본 글꼴 설정을 상속합니다.
+- 여러 문단을 감싸는 영역에도 적용할 수 있습니다. 자식 요소에 명시된 글자 스타일은 상속보다 우선합니다.
+- 여백, 목록 기호, 줄바꿈 방식은 페이지 전용 클래스에서 관리합니다.
+
 ## 참고
 
 - 모든 페이지는 공통 헤더와 푸터를 사용합니다.

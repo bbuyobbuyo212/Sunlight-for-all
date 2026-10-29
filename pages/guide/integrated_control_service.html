@@ -98,6 +98,64 @@
                 <p class="contents-highlight__text">통합관제는 대구시민햇빛발전소 전체의 발전 현황을 한 화면에 보여 주는 서비스입니다. 로그인 없이 누구나 볼 수 있습니다.</p>
             </section>
 
+            <section class="contents-grid contents-grid--2 control-guide">
+                <article class="contents-card">
+                    <header class="contents-section-heading">
+                        <h3 class="contents-section-heading__title">보여 주는 정보</h3>
+                    </header>
+                    <ul class="control-guide__notes">
+                        <li><strong>운영 현황</strong> : 총 발전량, 발전소 수, 발전용량, 가동률, 협동조합 수, 조합원 수</li>
+                        <li><strong>상태 요약</strong> : 전체, 정상, 통신 이상, 설비 이상, 효율 저하 발전소 수</li>
+                        <li><strong>환경 기여도</strong> : 온실가스 저감량, 소나무 환산, 공급 가구 수</li>
+                        <li><strong>세부 현황</strong> : 발전소별, 조합별 발전 현황</li>
+                    </ul>
+                </article>
+                <article class="contents-card">
+                    <header class="contents-section-heading">
+                        <h3 class="contents-section-heading__title">환경 기여도 계산 방법</h3>
+                    </header>
+                    <div class="calculation">
+                        <div class="calculation__item">
+                            <img class="calculation__item__icon " src="../../images/icon/icon-platform-annual-impact-generation.svg" alt="" aria-hidden="true">
+                            <p class="calculation__item__text">온실가스 저감량(kgCO₂) = 발전량(kWh) × 0.4541</p>
+                        </div>
+                        <div class="calculation__item">
+                            <img class="calculation__item__icon " src="../../images/icon/icon-platform-annual-impact-pine-equivalent.svg" alt="" aria-hidden="true">
+                            <p class="calculation__item__text">소나무 환산(그루) = 온실가스 저감량(kg) ÷ 6.6</p>
+                        </div>
+                        <div class="calculation__item">
+                            <img class="calculation__item__icon " src="../../images/icon/icon-platform-annual-impact-households.svg" alt="" aria-hidden="true">
+                            <p class="calculation__item__text">소나무 환산(그루) = 온실가스 저감량(kg) ÷ 6.6</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="contents-text__lead">※ 기준값의 근거는 다음과 같습니다.</p>
+                        <ul class="contents-text contents-list">
+                            <li><strong>0.4541kgCO₂/kWh :</strong> 국가 전력배출계수(2020~2022년 평균)</li>
+                            <li><strong>6.6kg :</strong> 소나무 1그루가 한 해에 흡수하는 CO₂ 양</li>
+                            <li><strong>3,600kWh :</strong> 1가구의 한 달 전력 사용량 300kWh × 12개월</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="contents-card">
+                    <header class="contents-section-heading">
+                        <h3 class="contents-section-heading__title">데이터 출처</h3>
+                    </header>
+                    <div class="contents-text">
+                        발전 데이터는 라씨(LASEE) 등 각 발전소가 쓰는 모니터링 서비스에서 받아옵니다.<br>
+                        연동되지 않은 발전소는 조합이 입력한 실적을 표시합니다.
+                    </div>
+                </article>
+                <article class="contents-card">
+                    <header class="contents-section-heading">
+                        <h3 class="contents-section-heading__title">공개 범위</h3>
+                    </header>
+                    <div class="contents-text">
+                        조합이 공개하기로 설정한 정보만 표시합니다.<br>
+                        개인정보와 조합의 재무 정보는 표시하지 않습니다.
+                    </div>
+                </article>
+            </section>
             
             
         </div>

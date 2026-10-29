@@ -168,29 +168,7 @@
 }
 
 .general-join {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 2rem;
     margin-top: 2rem;
-    padding: 0 0.2rem;
-}
-
-@media (max-width: 768px) {
-    .general-join {
-        grid-template-columns: minmax(0, 1fr);
-    }
-}
-
-.general-join__card {
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
-    min-width: 0;
-    padding: 4rem 3.2rem;
-    overflow: clip;
-    border-radius: 2rem;
-    background-color: var(--Primary-0, #fff);
-    box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 10%);
 }
 
 .general-join__card-heading {
@@ -525,21 +503,6 @@
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.10);
 }
 .flowchart__card + .flowchart__card {margin-top:2rem;}
-.flowchart__card__header {
-    display: flex;
-    align-items: center;
-}
-.flowchart__card__header .icon {
-    width: 2.9rem;
-    height: 2.9rem;
-    margin-right:1rem;
-}
-.flowchart__card__header .title {
-    color: var(--Grayscale-80, #2D2D2D);
-    font-size:2.4rem;
-    font-weight: 600;
-    letter-spacing: -0.1rem;
-}
 .flowchart__card__body {
     position: relative;
     margin-top:3.2rem;
@@ -653,16 +616,7 @@
 }
 
 .ways-join__cards {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 2rem;
-    padding: 0 0.2rem 2rem;
-}
-
-@media (max-width: 768px) {
-    .ways-join__cards {
-        grid-template-columns: minmax(0, 1fr);
-    }
+    padding-bottom: 2rem;
 }
 
 .ways-join__card {
@@ -737,29 +691,7 @@
 
 
 .ways-join-tip {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 2rem;
     margin-top: 2rem;
-    padding: 0 0.2rem;
-}
-
-@media (max-width: 768px) {
-    .ways-join-tip {
-        grid-template-columns: minmax(0, 1fr);
-    }
-}
-
-.ways-join-tip__card {
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
-    min-width: 0;
-    padding: 4rem 3.2rem;
-    overflow: clip;
-    border-radius: 2rem;
-    background-color: var(--Primary-0, #fff);
-    box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 10%);
 }
 
 .ways-join-tip__card--notice {
@@ -914,22 +846,6 @@
     flex-direction: column;
     gap: 3.2rem;
     padding: 4rem 3.2rem;
-}
-
-.cooperative-join__heading {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    color: var(--Primary-100, #000);
-    font-size: 2.4rem;
-    font-weight: 600;
-    letter-spacing: -0.1rem;
-    line-height: normal;
-}
-
-.cooperative-join__heading img {
-    display: block;
-    flex: none;
 }
 
 .cooperative-join__steps-list {
@@ -1147,33 +1063,7 @@
 }
 
 .plant-unsupported {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.6rem;
     margin: 0 0.2rem;
-    padding: 4rem 3.2rem;
-    overflow: clip;
-    border-radius: 2rem;
-    background-color: var(--Primary-0, #fff);
-    box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 10%);
-}
-
-.plant-unsupported__heading {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    color: var(--Primary-100, #000);
-    font-size: 2.4rem;
-    font-weight: 600;
-    letter-spacing: -0.1rem;
-    line-height: normal;
-    word-break: break-word;
-}
-
-.plant-unsupported__heading img {
-    display: block;
-    flex: none;
 }
 
 .plant-unsupported__body {
@@ -1235,52 +1125,11 @@
 }
 
 .plant-activity {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    align-items: stretch;
-    gap: 2rem;
-    padding: 0 0.2rem;
     margin-top:2rem;
-}
-
-@media (max-width: 768px) {
-    .plant-activity {
-        grid-template-columns: minmax(0, 1fr);
-    }
-}
-
-.plant-activity__card {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.6rem;
-    min-width: 0;
-    padding: 4rem 3.2rem;
-    overflow: clip;
-    border-radius: 2rem;
-    background-color: var(--Primary-0, #fff);
-    box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 10%);
 }
 
 .plant-activity__card--construction {
     padding-bottom: 3.2rem;
-}
-
-.plant-activity__heading {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    color: var(--Primary-100, #000);
-    font-size: 2.4rem;
-    font-weight: 600;
-    letter-spacing: -0.1rem;
-    line-height: normal;
-    word-break: break-word;
-}
-
-.plant-activity__heading img {
-    display: block;
-    flex: none;
 }
 
 .plant-activity__list {
@@ -1334,48 +1183,7 @@
 }
 
 .control-guide {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    align-items: stretch;
-    gap: 2rem;
-    padding: 0 0.2rem;
     margin-top:2rem;
-}
-
-@media (max-width: 768px) {
-    .control-guide {
-        grid-template-columns: minmax(0, 1fr);
-    }
-}
-
-.control-guide__card {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.6rem;
-    min-width: 0;
-    padding: 4rem 3.2rem 3.2rem;
-    overflow: clip;
-    border-radius: 2rem;
-    background-color: var(--Primary-0, #fff);
-    box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 10%);
-}
-
-.control-guide__heading {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    color: var(--Primary-100, #000);
-    font-size: 2.4rem;
-    font-weight: 600;
-    letter-spacing: -0.1rem;
-    line-height: normal;
-    word-break: break-word;
-}
-
-.control-guide__heading img {
-    display: block;
-    flex: none;
 }
 
 .control-guide__steps {
@@ -1412,8 +1220,6 @@
 
 .control-guide__notes {
     align-self: stretch;
-    margin: 0;
-    padding: 0;
 }
 
 .control-guide__notes li {
@@ -1426,6 +1232,10 @@
     list-style: disc outside;
     word-break: break-word;
 }
+.control-guide__notes li strong {
+    color: #1d1d1d;
+    font-weight: 600;
+}
 
 .control-guide__illustration {
     display: flex;
@@ -1437,8 +1247,37 @@
     min-height: 0.1rem;
     border-radius: 1rem;
 }
-
+@media (max-width: 768px) {
+    .control-guide__illustration {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex:none;
+    }
+}
 .control-guide__illustration img {
     display: block;
     flex: none;
+}
+
+.calculation {position: relative;}
+.calculation__item {
+    display: flex;
+    padding:0.8rem 2rem;
+    align-items:baseline;
+    flex-shrink: 0;
+    border-bottom: 3px solid var(--System-Success-40, #33A14B);
+}
+.calculation__item > * + * {margin-left:2rem;}
+.calculation__item__icon {
+    flex:none;
+    width:5rem;
+    height:auto;
+}
+.calculation__item__text {
+    color: var(--System-Success-50-Base, #008A1E);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height:2.4rem;
+    letter-spacing: -0.1rem;
 }
