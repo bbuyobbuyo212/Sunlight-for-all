@@ -1209,8 +1209,6 @@
 
 .plant-activity__list {
     align-self: stretch;
-    margin: 0;
-    padding: 0;
 }
 
 .plant-activity__list li {
@@ -1256,6 +1254,135 @@
     object-fit: cover;
     object-position: center;
 }
+
+.plant-establishment {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.plant-establishment__heading {
+    padding: 2.4rem 0 1.2rem 2rem;
+    color: var(--Primary-100, #000);
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    line-height: 2.9rem;
+}
+.plant-establishment__box {
+    padding:3.2rem 4rem;
+    border-radius: 2rem;
+    background-color: var(--Primary-0, #fff);
+    box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 10%);    
+}
+.plant-establishment__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    border-top: 0.2rem solid var(--Grayscale-80, #2d2d2d);
+    padding-top: 1.2rem;
+}
+.plant-establishment__row {
+    display: grid;
+    grid-template-columns: 20rem minmax(0, 1fr) max-content;
+    align-items: center;
+    padding: 0 2rem 1.2rem 2rem;
+    border-bottom: 0.1rem solid var(--Grayscale-20, #e4e4e4);
+    margin-bottom: 1.2rem;
+}
+
+@media (max-width: 640px) {
+    .plant-establishment__row {
+        grid-template-columns: minmax(0, 1fr) max-content;
+    }
+}
+
+.plant-establishment__row:last-child {
+    margin-bottom: 0;
+}
+
+.plant-establishment__label-group {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+}
+
+.plant-establishment__label-group > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 2rem;
+}
+
+.plant-establishment__number {
+    display: inline-flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--System-Warning-50-Base, #ffb724);
+    color: var(--Primary-0, #fff);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+    aspect-ratio: 1;
+    min-width: 2rem;
+}
+
+.plant-establishment__label {
+    color: var(--Grayscale-90-Text-Title-Body, #1d1d1d);
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    line-height: 3.2rem;
+}
+
+.plant-establishment__description {
+    color: var(--Grayscale-70-Text-Detail, #555);
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: -0.1rem;
+    line-height: 3.2rem;
+}
+
+@media (max-width: 640px) {
+    .plant-establishment__description {
+        grid-column: 1;
+        grid-row: 2;
+    }
+}
+
+.plant-establishment__status {
+    display: inline-flex;
+    align-items: center;
+    color: var(--Primary-100, #000);
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+    .plant-establishment__status {
+        grid-column: 2;
+        grid-row: 1;
+    }
+}
+
+.plant-establishment__status--accent {
+    color: var(--Primary-100, #000);
+}
+
+.plant-establishment__status-icon {
+    display: block;
+    flex: none;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    color: var(--Grayscale-50-Text-Disabled-W, #8e8e8e);
+}
+
+.plant-establishment__status--accent .plant-establishment__status-icon {
+    color: var(--point, #ff7904);
+}
+
 .control-guide {margin-top:2rem;}
 .control-guide__steps {align-self: stretch;}
 .control-guide__steps li {
@@ -1346,4 +1473,47 @@
     font-weight: 700;
     line-height:2.4rem;
     letter-spacing: -0.1rem;
+}
+
+.number-list {
+    color: #555;
+    counter-reset: investment-step;
+    list-style: none;
+}
+.number-list  li {
+    position: relative;
+    padding-left: 1.8rem;
+    font-size: 1.6rem;
+    letter-spacing: -0.1rem;
+    line-height: 2.4rem;
+    counter-increment: investment-step;
+}
+
+.number-list li::before {
+    position: absolute;
+    top: 0.6rem;
+    left: 0;
+    display: flex;
+    width: 1.2rem;
+    height: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #555;
+    color: #fff;
+    content: counter(investment-step);
+    font-size: 0.9rem;
+    letter-spacing: 0;
+    line-height: 1;
+}
+
+.number-nocounter-list {
+    color: #555;
+    list-style: none;
+}
+.number-nocounter-list  li {
+    position: relative;
+    font-size: 1.6rem;
+    letter-spacing: -0.1rem;
+    line-height: 2.4rem;
 }
