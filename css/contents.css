@@ -225,6 +225,7 @@
 }
 
 .contents-section-heading {
+    position: relative;
     display: flex;
     align-items: center;
     min-width: 0;
@@ -245,6 +246,19 @@
     width: 2.9rem;
     height: 2.9rem;
     background: url("../images/icon/contents-section-arrow.svg") center / contain no-repeat;
+}
+.contents-section-heading.no-icon {
+    display: flex;
+    padding:1.6rem 24px 0.8rem 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+.contents-section-heading.no-icon::before {display: none;}
+@media (max-width: 768px) {
+    .contents-section-heading.no-icon {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .contents-section-heading__title {

@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+.mypage-topbar__selector-wrap {
+    position: relative;
+    display: block;
+    flex: 0 0 20.4rem;
+    width: 20.4rem;
+    margin-left: auto;
+}
+
+.mypage-topbar__selector {
+    display: block;
+    width: 100%;
+    padding: 0.8rem 1.2rem 0.8rem 1.3rem;
+    border: 0.1rem solid var(--Grayscale-40, #c6c6c6);
+    border-radius: 0.6rem;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: var(--Primary-0, #fff);
+    color: var(--Grayscale-90-Text-Title-Body, #1d1d1d);
+    font-family: Pretendard, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    text-align: left;
+    cursor: pointer;
+    background: url("../../images/icon/icon_down.svg") no-repeat right 1.2rem center;
+
+    background-size: 1.4rem 1.4rem;
+}
+
+.mypage-topbar__selector-icon {
+    position: absolute;
+    top: 50%;
+    right: 1.2rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    transform: translateY(-50%) rotate(180deg);
+    pointer-events: none;
+}
+
+.mypage-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 2rem 0;
+    padding: 0 0.2rem 0.8rem;
+    list-style: none;
+}
+
+.mypage-stats__card {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.6rem;
+    overflow: clip;
+    padding: 3.2rem 1.6rem;
+    border: 0.1rem solid;
+    border-radius: 2rem;
+}
+
+.mypage-stats__card--success {
+    border-color: var(--System-Success-10-Bg-border, #cee9d4);
+    background-color: var(--System-Success-5-Bg, #eef7f0);
+}
+
+.mypage-stats__card--primary {
+    border-color: var(--Primary-10, #d3e1fb);
+    background-color: var(--Primary-5, #eff5ff);
+}
+
+.mypage-stats__card--secondary {
+    border-color: var(--Primary-10, #d3e1fb);
+    background-color: var(--Secondary-5, #edf1f5);
+}
+
+.mypage-stats__value,
+.mypage-stats__label {
+    align-self: stretch;
+    margin: 0;
+    text-align: center;
+    letter-spacing: -0.1rem;
+}
+
+.mypage-stats__value {
+    color: var(--Primary-100, #000);
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.mypage-stats__value strong {
+    font-weight: 700;
+}
+
+.mypage-stats__unit {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.mypage-stats__label {
+    color: var(--Grayscale-70-Text-Detail, #555);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+}
+
+.mypage-stats__label strong {
+    color: var(--Grayscale-90-Text-Title-Body, #1d1d1d);
+    font-weight: 600;
+}
