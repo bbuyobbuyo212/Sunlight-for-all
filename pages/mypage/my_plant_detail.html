@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="대구시민 19호기의 운영 지표, 생애주기와 현장사진·문서를 확인하세요.">
+    <title>내 발전소 상세 | 모두의 햇빛</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../fonts/pretendard.css">
+    <link rel="stylesheet" href="../../css/default.css">
+    <link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/guide.css">
+    <link rel="stylesheet" href="../../css/board.css">
+    <link rel="stylesheet" href="../../css/mypage.css">
+    <script src="../../js/footer-dropdown.js" defer></script> 
+    <script src="../../js/header-fixed.js" defer></script>
+    <script src="../../js/mobile-menu.js" defer></script>
+    <script src="../../js/tab-group.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__inner">
+            <h1><a class="header__logo" href="../../index.html"><img src="../../images/common/logo.svg" alt="모두의 햇빛"></a></h1>
+            <nav class="gnb">
+                <ul class="gnb__list">
+                    <li><a class="gnb__link" href="../../pages/platform/info.html">플랫폼 소개</a></li>
+                    <li><a class="gnb__link" href="../../pages/guide/services.html" aria-current="page">이용안내</a></li>
+                    <li><a class="gnb__link" href="../../pages/search/search.html">햇빛발전소 찾기</a></li>
+                    <li><a class="gnb__link" href="../../pages/setup_guide/setup_guide.html">조합·설립 가이드</a></li>
+                    <li><a class="gnb__link" href="../../pages/notice/notice.html">알림마당</a></li>
+                </ul>
+            </nav>
+            <div class="header__auth">
+                <a class="header__login" href="../../pages/member/login.html">로그인</a>
+                <a class="header__join" href="../../pages/mypage/dashboard.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <path d="M6.22222 0V5.13333L2.60556 1.49722L1.49722 2.60555L5.13333 6.22222H0V7.77778H5.13333L1.49722 11.3944L2.60556 12.5028L6.22222 8.86667V14H7.77778V8.86667L11.3944 12.5028L12.5028 11.3944L8.86667 7.77778H14V6.22222H8.86667L12.5028 2.60555L11.3944 1.49722L7.77778 5.13333V0H6.22222Z" fill="#fff"/>
+                    </svg>
+                    나의 햇빛
+                </a>
+            </div>
+            <div class="header__menu-box">
+                <button type="button" class="header__menu-btn" aria-controls="mobile-gnb" aria-expanded="false">
+                    <span class="header__menu-btn__line"></span><span class="header__menu-btn__line"></span><span class="header__menu-btn__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <nav id="mobile-gnb" class="mobile-gnb" aria-hidden="true" inert>
+        <div class="mobile-gnb__head"><button type="button"></button></div>
+        <div class="mobile-gnb__body">
+            <div class="mobile-gnb__utile"><a href="../../pages/member/login.html" class="header__utile__link">로그인</a><a href="../../pages/member/join.html" class="header__utile__link">햇빛시민 가입</a></div>
+            <ul class="mobile-gnb__list">
+                <li class="mobile-gnb__1dpet"><a href="../../pages/platform/info.html" class="mobile-gnb__1dpet__link">플랫폼 소개</a></li>
+                <li class="mobile-gnb__1dpet"><a href="../../pages/guide/services.html" class="mobile-gnb__1dpet__link" aria-current="page">이용안내</a></li>
+                <li class="mobile-gnb__1dpet"><a href="../../pages/search/search.html" class="mobile-gnb__1dpet__link">햇빛발전소 찾기</a></li>
+                <li class="mobile-gnb__1dpet"><a href="../../pages/setup_guide/setup_guide.html" class="mobile-gnb__1dpet__link">조합·설립 가이드</a></li>
+                <li class="mobile-gnb__1dpet"><a href="../../pages/notice/notice.html" class="mobile-gnb__1dpet__link">알림마당</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main" class="subpage">
+        <div class="subpage__inner">
+            <header class="subpage__heading subpage__heading--with-tabs">
+                <h2 class="subpage__title">나의 햇빛</h2>
+                <p class="subpage__lead">가입한 협동조합의 출자·배당 현황과 참여 발전소 정보를 한곳에서 관리하세요</p>
+            </header>
+            <div class="tab-group" role="group">
+                <ul class="tab-group__list">
+                    <li>
+                        <a href="./dashboard.html" class="tab-group__button" aria-pressed="false">나의 햇빛 대시보드</a>
+                    </li>
+                    <li>
+                        <a href="./dividend.html" class="tab-group__button" aria-pressed="false">출자 · 배당 현황 </a>
+                    </li>
+                    <li>
+                        <a href="./fund.html" class="tab-group__button" aria-pressed="false">펀드관리</a>
+                    </li>
+                    <li>
+                        <a href="./cooperative.html" class="tab-group__button" aria-pressed="false">소속 조합 조회</a>
+                    </li>
+                    <li>
+                        <a href="./my_plant.html" class="tab-group__button" aria-pressed="true">내 발전소</a>
+                    </li>   
+                    <li>
+                        <a href="./progress.html" class="tab-group__button" aria-pressed="false">내 설립 진행</a>
+                    </li> 
+                    <li>
+                        <a href="./board.html" class="tab-group__button" aria-pressed="false">소통창구</a>
+                    </li>  
+                    <li>
+                        <a href="./my_info.html" class="tab-group__button" aria-pressed="false">내 정보 관리</a>
+                    </li>            
+                </ul>
+            </div>
+            
+            <section class="mypage">
+
+                <!-- 내 발전소 상세 -->
+                <section class="plant-detail">
+                    <header class="plant-detail__heading">
+                        <div class="plant-detail__name">
+                            <span class="contents-badge contents-badge--active contents-badge--icon"><img src="../../images/icon/icon_plant_status_normal.svg" alt=""><span>정상</span></span>
+                            <h3 class="contents-section-heading__title" id="plant-detail-title">대구시민 19호기</h3>
+                        </div>
+                        <div class="contents-card__meta"><img src="../../images/icon/icon_fund_cooperative.svg" alt=""><p>소유(운영) 협동조합 · 달구벌시민햇빛발전협동조합</p></div>
+                    </header>
+                    <ul class="mypage-stats mypage-stats--4">
+                        <li class="mypage-stats__card mypage-stats__card--success"><div class="plant-detail__stat"><p class="mypage-stats__value"><strong>300</strong> <span class="mypage-stats__unit plant-detail__capacity-unit">kW</span></p><p class="mypage-stats__label">설비용량</p></div></li>
+                        <li class="mypage-stats__card mypage-stats__card--primary"><div class="plant-detail__stat"><p class="mypage-stats__value"><strong>2024-06</strong></p><p class="mypage-stats__label">발전 개시</p></div></li>
+                        <li class="mypage-stats__card mypage-stats__card--success"><div class="plant-detail__stat"><p class="mypage-stats__value"><strong>4,960</strong><span class="mypage-stats__unit"> MWh</span></p><p class="mypage-stats__label">누적 발전량</p></div></li>
+                        <li class="mypage-stats__card mypage-stats__card--secondary"><div class="plant-detail__stat"><p class="mypage-stats__value"><strong>285</strong><span class="mypage-stats__unit"> kW</span></p><p class="mypage-stats__label">현재 발전 실시간</p></div></li>
+                    </ul>
+                    <section class="contents-timeline" style="--timeline-image: url('../../images/mypage/plant_timeline.png')">
+                        <h4 class="contents-timeline__title" id="plant-timeline-title"><img src="../../images/icon/icon_timeline_clock.svg" alt="">생애주기 타임라인</h4>
+                        <div class="contents-timeline__scroll" tabindex="0" role="region">
+                            <ol class="contents-timeline__steps">
+                                <li><img src="../../images/icon/icon_timeline_complete.svg" alt="완료"><span>부지</span><img src="../../images/icon/icon_timeline_arrow.svg" alt=""></li>
+                                <li><img src="../../images/icon/icon_timeline_complete.svg" alt="완료"><span>인허가</span><img src="../../images/icon/icon_timeline_arrow.svg" alt=""></li>
+                                <li><img src="../../images/icon/icon_timeline_complete.svg" alt="완료"><span>착공</span><img src="../../images/icon/icon_timeline_arrow.svg" alt=""></li>
+                                <li><img src="../../images/icon/icon_timeline_complete.svg" alt="완료"><span>준공</span><img src="../../images/icon/icon_timeline_arrow.svg" alt=""></li>
+                                <li aria-current="step"><span class="contents-timeline__number">5</span><span>운영</span></li>
+                            </ol>
+                        </div>
+                    </section>
+                    <div class="contents-grid contents-grid--2 plant-detail__cards">
+                        <section class="contents-card contents-card--roomy contents-card--stretch">
+                            <header class="contents-section-heading"><h4 class="contents-section-heading__title" id="plant-dividend-title">다음 배당 · 지급 일정 (조합별)</h4></header>
+                            <div class="contents-graph" role="img">
+                                <img src="../../images/mypage/card_graph.svg" alt="배당·지급 일정 그래프">
+                            </div>
+                        </section>
+                        <section class="contents-card contents-card--roomy contents-card--stretch">
+                            <header class="contents-card-toolbar">
+                                <div class="contents-section-heading"><h4 class="contents-section-heading__title" id="plant-media-title">현장사진 · 문서</h4></div>
+                                <a href="#" class="contents-more">더보기<img src="../../images/icon/icon_more_add.svg" alt=""></a>
+                            </header>
+                            <div class="contents-gallery">
+                                <img src="../../images/mypage/plant_site_01.png" alt="발전소 현장사진 1">
+                                <img src="../../images/mypage/plant_site_02.png" alt="발전소 현장사진 2">
+                                <img src="../../images/mypage/plant_site_03.png" alt="발전소 현장사진 3">
+                            </div>
+                            <ul class="contents-documents">
+                                <li>
+                                    <a href="#">
+                                        <img src="../../images/icon/icon_document_gray.svg" alt=""><span>조합원 가입 신청서 양식</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../../images/icon/icon_document_gray.svg" alt=""><span>2026 사업보고서</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../../images/icon/icon_document_gray.svg" alt=""><span>상반기 발전성과 자료</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </section>
+
+            </section>
+            
+        </div>
+
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <nav class="footer__legal">
+                    <a href="../../pages/privacy/privacy.html">개인정보처리방침</a><span>·</span>
+                    <a href="../../pages/privacy/terms.html">이용약관</a><span>·</span>
+                    <a href="../../pages/privacy/email.html">이메일무단수집거부</a>
+                </nav>
+                <div class="footer__partners">
+                    <div class="footer__logos">
+                        <img src="../../images/common/daegu_logo.svg" alt="대구그린파워" width="98" height="22">
+                        <img src="../../images/common/motie_logo.svg" alt="산업통상부" width="89" height="23">
+                        <img src="../../images/common/kea_logo.svg" alt="한국에너지공단" width="105" height="20">
+                        <img src="../../images/common/kosea_logo.svg" alt="한국사회적기업진흥원" width="145" height="28">
+                    </div>
+                    <details class="footer__dropdown">
+                        <summary aria-controls="footer-coop-links" aria-expanded="false">협동조합 바로가기</summary>
+                        <ul id="footer-coop-links">
+                            <li><a href="#footer">달구벌시민햇빛발전협동조합</a></li>
+                            <li><a href="#footer">청라시민에너지협동조합</a></li>
+                            <li><a href="#footer">녹색소비자에너지협동조합</a></li>
+                            <li><a href="#footer">자전거시민협동조합</a></li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+            <div class="footer__info">
+                <ul class="footer__info-list">
+                    <li><strong>주소</strong> 대구광역시 남구 대명동 000</li>
+                    <li><strong>대표전화</strong> 053-000-0000</li>
+                    <li><strong>팩스</strong> 053-000-0001</li>
+                    <li><strong>이메일</strong> help@moduhaetbit.kr</li>
+                    <li><strong>사업자등록번호</strong> 000-00-00000</li>
+                </ul>
+                <p>© 2026 모두의 햇빛 플랫폼&nbsp; All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

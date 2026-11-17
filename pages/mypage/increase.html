@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="모두의 햇빛 이용 방법과 조합 설립 안내를 확인하세요.">
+    <title>이용안내 | 모두의 햇빛</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../fonts/pretendard.css">
+    <link rel="stylesheet" href="../../css/default.css">
+    <link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="../../css/join.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/guide.css">
+    <link rel="stylesheet" href="../../css/board.css">
+    <link rel="stylesheet" href="../../css/mypage.css">
+    <script src="../../js/footer-dropdown.js" defer></script> 
+    <script src="../../js/header-fixed.js" defer></script>
+    <script src="../../js/mobile-menu.js" defer></script>
+    <script src="../../js/tab-group.js" defer></script>
+    <script src="../../js/increase-form.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__inner">
+            <h1><a class="header__logo" href="../../index.html"><img src="../../images/common/logo.svg" alt="모두의 햇빛"></a></h1>
+            <nav class="gnb">
+                <ul class="gnb__list">
+                    <li><a class="gnb__link" href="../../pages/platform/info.html">플랫폼 소개</a></li>
+                    <li><a class="gnb__link" href="../../pages/guide/services.html" aria-current="page">이용안내</a></li>
+                    <li><a class="gnb__link" href="../../pages/search/search.html">햇빛발전소 찾기</a></li>
+                    <li><a class="gnb__link" href="../../pages/setup_guide/setup_guide.html">조합·설립 가이드</a></li>
+                    <li><a class="gnb__link" href="../../pages/notice/notice.html">알림마당</a></li>
+                </ul>
+            </nav>
+            <div class="header__auth">
+                <a class="header__login" href="../../pages/member/login.html">로그인</a>
+                <a class="header__join" href="../../pages/mypage/dashboard.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <path d="M6.22222 0V5.13333L2.60556 1.49722L1.49722 2.60555L5.13333 6.22222H0V7.77778H5.13333L1.49722 11.3944L2.60556 12.5028L6.22222 8.86667V14H7.77778V8.86667L11.3944 12.5028L12.5028 11.3944L8.86667 7.77778H14V6.22222H8.86667L12.5028 2.60555L11.3944 1.49722L7.77778 5.13333V0H6.22222Z" fill="#fff"/>
+                    </svg>
+                    나의 햇빛
+                </a>
+            </div>
+            <div class="header__menu-box">
+                <button type="button" class="header__menu-btn" aria-controls="mobile-gnb" aria-expanded="false">
+                    <span class="header__menu-btn__line"></span><span class="header__menu-btn__line"></span><span class="header__menu-btn__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <nav id="mobile-gnb" class="mobile-gnb" aria-hidden="true" inert>
+        <div class="mobile-gnb__head"><button type="button"></button></div>
+        <div class="mobile-gnb__body">
+            <div class="mobile-gnb__utile"><a href="../../pages/member/login.html" class="header__utile__link">로그인</a><a href="../../pages/member/join.html" class="header__utile__link">햇빛시민 가입</a></div>
+            <ul class="mobile-gnb__list">
+                <li class="mobile-gnb__1dpet"><a href="../../pages/platform/info.html" class="mobile-gnb__1dpet__link">플랫폼 소개</a></li>
+                <li class="mobile-gnb__1dpet"><a href="../../pages/guide/services.html" class="mobile-gnb__1dpet__link" aria-current="page">이용안내</a></li>
+                <li class="mobile-gnb__1dpet"><a href="../../pages/search/search.html" class="mobile-gnb__1dpet__link">햇빛발전소 찾기</a></li>
+                <li class="mobile-gnb__1dpet"><a href="../../pages/setup_guide/setup_guide.html" class="mobile-gnb__1dpet__link">조합·설립 가이드</a></li>
+                <li class="mobile-gnb__1dpet"><a href="../../pages/notice/notice.html" class="mobile-gnb__1dpet__link">알림마당</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main" class="subpage">
+        <div class="subpage__inner">
+            <header class="subpage__heading subpage__heading--with-tabs">
+                <h2 class="subpage__title">나의 햇빛</h2>
+                <p class="subpage__lead">가입한 협동조합의 출자·배당 현황과 참여 발전소 정보를 한곳에서 관리하세요</p>
+            </header>
+            <div class="tab-group" role="group">
+                <ul class="tab-group__list">
+                    <li>
+                        <a href="./dashboard.html" class="tab-group__button" aria-pressed="false">나의 햇빛 대시보드</a>
+                    </li>
+                    <li>
+                        <a href="./dividend.html" class="tab-group__button" aria-pressed="true">출자 · 배당 현황 </a>
+                    </li>
+                    <li>
+                        <a href="./fund.html" class="tab-group__button" aria-pressed="false">펀드관리</a>
+                    </li>
+                    <li>
+                        <a href="./cooperative.html" class="tab-group__button" aria-pressed="false">소속 조합 조회</a>
+                    </li>
+                    <li>
+                        <a href="./my_plant.html" class="tab-group__button" aria-pressed="false">내 발전소</a>
+                    </li>   
+                    <li>
+                        <a href="./progress.html" class="tab-group__button" aria-pressed="false">내 설립 진행</a>
+                    </li> 
+                    <li>
+                        <a href="./board.html" class="tab-group__button" aria-pressed="false">소통창구</a>
+                    </li>  
+                    <li>
+                        <a href="./my_info.html" class="tab-group__button" aria-pressed="false">내 정보 관리</a>
+                    </li>            
+                </ul>
+            </div>
+            
+            <section class="mypage">
+                <header class="contents-section-heading no-icon">
+                    <h3 class="contents-section-heading__title">출자 늘리기 (증자 신청)</h3>
+                </header>
+
+                <form class="increase-form">
+                    <div class="increase-form__steps">
+                        <fieldset class="contents-card mt20 contents-card--stretch contents-card--form increase-step">
+                            <div class="cooperative-item__heading">
+                                <span class="cooperative-item__number" aria-hidden="true">#1</span>
+                                <h4 class="cooperative-item__title" id="increase-cooperative-title">증자 대상 조합 선택</h4>
+                            </div>
+                            <div class="increase-step__body">
+                                <div class="cooperative-item__fields">
+                                    <div class="personal-form">
+                                        <label class="personal-form__label" for="increase-cooperative">증자 대상 조합 <span class="personal-form__required">*</span></label>
+                                        <div class="personal-form__field increase-field">
+                                            <select class="personal-form__input increase-select" id="increase-cooperative" name="cooperative" required aria-describedby="increase-cooperative-notice">
+                                                <option value="dalgubeol" selected>달구벌시민햇빛발전협동조합</option>
+                                            </select>
+                                            <img class="increase-select-arrow" src="../../images/icon/icon_increase_select_arrow.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contents-footer contents-footer--embedded contents-footer--compact" id="increase-cooperative-notice">
+                                    <div class="contents-footer__text">
+                                        <img class="contents-footer__icon" src="../../images/icon/terms-consent-notice.svg" alt="">
+                                        <p>가입한 조합만 선택할 수 있습니다. 미가입 조합 출자는 신규 가입(조합 가입)으로 안내됩니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="contents-card contents-card--stretch contents-card--form increase-step">
+                            <div class="cooperative-item__heading">
+                                <span class="cooperative-item__number" aria-hidden="true">#2</span>
+                                <h4 class="cooperative-item__title" id="increase-type-title">증자 유형 선택</h4>
+                            </div>
+                            <div class="increase-choices">
+                                <label class="increase-choice">
+                                    <input class="screen_out" type="radio" name="increase_type" value="plant" checked>
+                                    <span class="increase-choice__body">
+                                        <img class="increase-choice__icon increase-choice__icon--on" src="../../images/icon/icon_increase_choice_selected.svg" alt="">
+                                        <img class="increase-choice__icon increase-choice__icon--off" src="../../images/icon/icon_increase_choice_unselected.svg" alt="">
+                                        <span class="increase-choice__text">
+                                            <strong class="increase-choice__title">발전소 지정 증자</strong>
+                                            <span class="increase-choice__description">특정 발전소 건설자금으로 증자. 대상 발전소를 지정합니다<span class="increase-choice__period">.</span></span>
+                                        </span>
+                                    </span>
+                                </label>
+                                <label class="increase-choice">
+                                    <input class="screen_out" type="radio" name="increase_type" value="general">
+                                    <span class="increase-choice__body">
+                                        <img class="increase-choice__icon increase-choice__icon--on" src="../../images/icon/icon_increase_choice_selected.svg" alt="">
+                                        <img class="increase-choice__icon increase-choice__icon--off" src="../../images/icon/icon_increase_choice_unselected.svg" alt="">
+                                        <span class="increase-choice__text">
+                                            <strong class="increase-choice__title">일반 증자</strong>
+                                            <span class="increase-choice__description">조합 출자금(출자 구좌) 증좌</span>
+                                        </span>
+                                    </span>
+                                </label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="contents-card contents-card--stretch contents-card--form increase-step">
+                            <div class="cooperative-item__heading">
+                                <span class="cooperative-item__number" aria-hidden="true">#3</span>
+                                <h4 class="cooperative-item__title" id="increase-information-title">신청 정보</h4>
+                            </div>
+                            <div class="cooperative-item__fields">
+                                <div class="personal-form">
+                                    <label class="personal-form__label" for="increase-plant">대상 발전소</label>
+                                    <div class="personal-form__field increase-field increase-field--readonly">
+                                        <select class="personal-form__input increase-select" id="increase-plant" name="plant">
+                                            <option value="daegu-19" selected>대구시민 19호기</option>
+                                        </select>
+                                        <img class="increase-select-arrow" src="../../images/icon/icon_increase_select_arrow.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="personal-form">
+                                    <label class="personal-form__label" for="increase-units">증자 구좌</label>
+                                    <div class="personal-form__field increase-field">
+                                        <input class="personal-form__input" id="increase-units" name="units" type="text" inputmode="numeric" placeholder="구좌 수 입력 (1구좌 20만원)">
+                                    </div>
+                                </div>
+                                <div class="personal-form">
+                                    <label class="personal-form__label" for="increase-amount">증자 금액</label>
+                                    <div class="personal-form__field increase-field increase-field--readonly">
+                                        <input class="personal-form__input" id="increase-amount" name="amount" value="1,000,000원" readonly>
+                                    </div>
+                                </div>
+                                <div class="personal-form">
+                                    <label class="personal-form__label" for="increase-account">배당 계좌</label>
+                                    <div class="personal-form__field increase-field increase-field--readonly">
+                                        <input class="personal-form__input" id="increase-account" name="account" value="신한 ***-**-1234" readonly>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="increase-notices">
+                                <div class="contents-footer contents-footer--embedded contents-footer--compact contents-footer--success">
+                                    <div class="contents-footer__text">
+                                        <img class="increase-notice-icon" src="../../images/icon/icon_increase_limit.svg" alt="">
+                                        <p>1인 누적 출자 한도(2억원) 이내입니다. 현재 누적 5,000,000원 → <strong class="contents-footer__emphasis">신청 후 6,000,000원</strong></p>
+                                    </div>
+                                </div>
+                                <div class="contents-footer contents-footer--embedded contents-footer--compact">
+                                    <div class="contents-footer__text">
+                                        <img class="contents-footer__icon" src="../../images/icon/terms-consent-notice.svg" alt="">
+                                        <p>접수 후 안내 계좌로 입금 → 관리자 입금확인·승인 시 증자 완료</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="join-actions increase-actions">
+                        <button class="join-actions__previous" type="button">
+                            <img class="increase-actions__previous-icon" src="../../images/icon/icon_increase_cancel_arrow.svg" alt="">
+                            <span>취소</span>
+                        </button>
+                        <button class="join-actions__next" type="submit">
+                            <span>증자 신청 접수</span>
+                            <img src="../../images/icon/join-next-arrow.svg" alt="">
+                        </button>
+                    </div>
+                </form>
+                
+
+            </section>
+            
+        </div>
+
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <nav class="footer__legal">
+                    <a href="../../pages/privacy/privacy.html">개인정보처리방침</a><span>·</span>
+                    <a href="../../pages/privacy/terms.html">이용약관</a><span>·</span>
+                    <a href="../../pages/privacy/email.html">이메일무단수집거부</a>
+                </nav>
+                <div class="footer__partners">
+                    <div class="footer__logos">
+                        <img src="../../images/common/daegu_logo.svg" alt="대구그린파워" width="98" height="22">
+                        <img src="../../images/common/motie_logo.svg" alt="산업통상부" width="89" height="23">
+                        <img src="../../images/common/kea_logo.svg" alt="한국에너지공단" width="105" height="20">
+                        <img src="../../images/common/kosea_logo.svg" alt="한국사회적기업진흥원" width="145" height="28">
+                    </div>
+                    <details class="footer__dropdown">
+                        <summary aria-controls="footer-coop-links" aria-expanded="false">협동조합 바로가기</summary>
+                        <ul id="footer-coop-links">
+                            <li><a href="#footer">달구벌시민햇빛발전협동조합</a></li>
+                            <li><a href="#footer">청라시민에너지협동조합</a></li>
+                            <li><a href="#footer">녹색소비자에너지협동조합</a></li>
+                            <li><a href="#footer">자전거시민협동조합</a></li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+            <div class="footer__info">
+                <ul class="footer__info-list">
+                    <li><strong>주소</strong> 대구광역시 남구 대명동 000</li>
+                    <li><strong>대표전화</strong> 053-000-0000</li>
+                    <li><strong>팩스</strong> 053-000-0001</li>
+                    <li><strong>이메일</strong> help@moduhaetbit.kr</li>
+                    <li><strong>사업자등록번호</strong> 000-00-00000</li>
+                </ul>
+                <p>© 2026 모두의 햇빛 플랫폼&nbsp; All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

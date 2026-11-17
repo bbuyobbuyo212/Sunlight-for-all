@@ -18,8 +18,8 @@
 <body>
     <header class="header">
         <div class="header__inner">
-            <h1><a class="header__logo" href="../../index.html" aria-label="모두의 햇빛 홈"><img src="../../images/common/logo.svg" alt="모두의 햇빛"></a></h1>
-            <nav class="gnb" aria-label="주요 메뉴">
+            <h1><a class="header__logo" href="../../index.html"><img src="../../images/common/logo.svg" alt="모두의 햇빛"></a></h1>
+            <nav class="gnb">
                 <ul class="gnb__list">
                     <li><a class="gnb__link" href="../../pages/platform/info.html">플랫폼 소개</a></li>
                     <li><a class="gnb__link gnb__link--active" href="../../pages/guide/services.html" aria-current="page">이용안내</a></li>
@@ -29,11 +29,11 @@
                 </ul>
             </nav>
             <div class="header__auth"><a class="header__login" href="../../pages/member/login.html">로그인</a><a class="header__join" href="../../pages/member/join.html">햇빛시민 가입</a></div>
-            <div class="header__menu-box"><button type="button" class="header__menu-btn" aria-label="메뉴 열기" aria-controls="mobile-gnb" aria-expanded="false"><span class="header__menu-btn__line"></span><span class="header__menu-btn__line"></span><span class="header__menu-btn__line"></span></button></div>
+            <div class="header__menu-box"><button type="button" class="header__menu-btn" aria-controls="mobile-gnb" aria-expanded="false"><span class="header__menu-btn__line"></span><span class="header__menu-btn__line"></span><span class="header__menu-btn__line"></span></button></div>
         </div>
     </header>
-    <nav id="mobile-gnb" class="mobile-gnb" aria-label="모바일 메뉴" aria-hidden="true" inert>
-        <div class="mobile-gnb__head"><button type="button" aria-label="메뉴 닫기"></button></div>
+    <nav id="mobile-gnb" class="mobile-gnb" aria-hidden="true" inert>
+        <div class="mobile-gnb__head"><button type="button"></button></div>
         <div class="mobile-gnb__body">
             <div class="mobile-gnb__utile">
                 <a href="../../pages/member/login.html" class="header__utile__link">로그인</a>
@@ -63,7 +63,7 @@
                 <h2 class="subpage__title">자주 묻는 질문_FAQ</h2>
                 <p class="subpage__lead">가입·출자·배당·펀드·설립·운영 관련 자주 묻는 질문</p>
             </header>
-            <div class="tab-group" role="group" aria-label="자주 묻는 질문 분류">
+            <div class="tab-group" role="group">
                 <ul class="tab-group__list">
                     <li><button class="tab-group__button" type="button" aria-pressed="true">전체</button></li>
                     <li><button class="tab-group__button" type="button" aria-pressed="false">가입</button></li>
@@ -74,16 +74,16 @@
                 </ul>
             </div>
 
-            <section class="search-group" aria-label="자주 묻는 질문 검색">
+            <section class="search-group">
                 <form class="search-group__form" role="search">
                     <label class="screen_hide" for="faq-keyword">궁금한 내용 검색</label>
                     <input class="search-group__input" id="faq-keyword" name="keyword" type="search" placeholder="궁금한 내용을 검색하세요">
-                    <button class="search-group__button" type="submit" aria-label="검색">
+                    <button class="search-group__button" type="submit">
                         <img src="../../images/icon/icon-search.svg" alt="">
                     </button>
                 </form>
             </section>
-            <section class="search-faq" aria-label="자주 묻는 질문">
+            <section class="search-faq">
                 <ul class="search-faq__list">
                     <li class="search-faq__item is-expanded" data-category="출자 · 증자">
                         <h3 class="search-faq__question">
@@ -154,7 +154,7 @@
                 </ul>
                 <p class="search-faq__empty" role="status" hidden>검색 결과가 없습니다.</p>
                 <div class="search-faq__more-group">
-                    <button class="search-faq__more" type="button" aria-label="더보기 5 / 10">
+                    <button class="search-faq__more" type="button">
                         <span>더보기</span>
                         <span class="search-faq__more-current">5</span>
                         <span class="search-faq__more-total">/ 10</span>
@@ -167,14 +167,14 @@
     <footer id="footer" class="footer">
         <div class="footer__inner">
             <div class="footer__top">
-                <nav class="footer__legal" aria-label="법적 안내">
+                <nav class="footer__legal">
                     <a href="../../pages/privacy/privacy.html">개인정보처리방침</a>
                     <span>·</span>
                     <a href="../../pages/privacy/terms.html">이용약관</a>
                     <span>·</span>
                     <a href="../../pages/privacy/email.html">이메일무단수집거부</a>
                 </nav>
-                <div class="footer__partners" aria-label="협력 기관">
+                <div class="footer__partners">
                     <div class="footer__logos">
                         <img src="../../images/common/daegu_logo.svg" alt="대구그린파워" width="98" height="22">
                         <img src="../../images/common/motie_logo.svg" alt="산업통상부" width="89" height="23">

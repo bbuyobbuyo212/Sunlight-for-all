@@ -28,7 +28,6 @@ document.querySelectorAll(".monitoring-filter").forEach((filter) => {
                 item.setAttribute("aria-pressed", String(item === option));
             });
             label.textContent = option.textContent;
-            trigger.setAttribute("aria-label", `상태필터: ${option.textContent}`);
             setOpen(false);
             trigger.focus();
         });
