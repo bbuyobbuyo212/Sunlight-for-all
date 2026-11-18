@@ -586,18 +586,28 @@
     gap: 1.6rem;
     margin-top: 0;
 }
-
 @media (max-width: 768px) {
     .increase-actions {
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.6rem;
     }
 }
 
 .increase-actions .join-actions__previous,
 .increase-actions .join-actions__next {
-    min-width: 0;
+    max-width:22rem;
     height: auto;
 }
+@media (max-width: 768px) {
+    .increase-actions .join-actions__previous,
+    .increase-actions .join-actions__next {
+        width:100%;
+        min-width:0;
+        height: auto;
+    }
+}
+
 
 .increase-actions .join-actions__previous {
     border-radius: 1rem !important;
