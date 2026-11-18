@@ -8,6 +8,7 @@
     .mypage-topbar__selector-wrap {
         align-self: stretch;
         margin-left: 0;
+        margin-top:1rem;
     }
 }
 
@@ -371,13 +372,6 @@
     gap: 1.6rem;
 }
 
-@media (max-width: 768px) {
-    .dividend-bar__actions {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
 .dividend-bar__button {
     display: inline-flex;
     flex: 0 0 21rem;
@@ -398,6 +392,12 @@
     line-height: normal;
     letter-spacing: -0.1rem;
     white-space: nowrap;
+}
+@media (max-width: 768px) {
+    .dividend-bar__button {
+        flex: 0 0 auto;
+        width: 100%;
+    }
 }
 
 .dividend-bar__button span {
@@ -692,6 +692,12 @@
     align-items: center;
     gap: 3.2rem;
 }
+@media (max-width: 768px) {
+    .cooperative-card__details {
+        justify-content:space-between;
+    }
+}
+
 
 .cooperative-card__metrics {
     display: flex;
@@ -725,6 +731,9 @@
     display: flex;
     align-items: center;
     gap: 0.8rem;
+}
+@media (max-width:480px) {
+    .cooperative-card__buttons {margin-left:auto;}
 }
 
 .join-cooperative {position: relative;}
@@ -884,7 +893,13 @@
     justify-content: space-between;
     padding: 1.6rem 2.4rem .8rem;
 }
-
+@media (max-width: 768px) {
+    .community__toolbar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.6rem;
+    }
+}
 .community__cards {
     grid-template-columns: minmax(0, 733fr) minmax(0, 443fr);
     padding-bottom: .4rem;
